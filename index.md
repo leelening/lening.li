@@ -18,7 +18,7 @@ Prior to my doctoral studies, I completed two Master's degrees at WPI: one in **
 
 My academic background and industrial experience have equipped me with a diverse skill set to bridge the gap between theoretical research and real-world robotic applications.
 
-To see more details, click my [curriculum vitae](https://drive.google.com/file/d/1MmUvte9eJH49C5VyeVby-Z4RkXL9B-nW/view?usp=sharing) or [履历](https://drive.google.com/file/d/1MmJdGnNAjh3ZaCq0C7UZm_JhYPDgnekm/view?usp=sharing).
+To see more details, click my [curriculum vitae](https://github.com/leelening/Curriculum-Vitae/blob/main/CV_English.pdf) or [履历](https://github.com/leelening/Curriculum-Vitae/blob/main/cv_Chinese.pdf).
 
 Last modified date: 02/03/2026
 
