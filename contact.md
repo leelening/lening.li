@@ -5,11 +5,11 @@ permalink_name: /contact
 title: Contact
 ---
 
-Last modified date: 04/08/2023
+Last modified date: 02/03/2026
 
 ## Electronic:
 
-Email: leli AT symbotic.com
+Email: leningli AT outlook.com
 
 ## Office: 
 
