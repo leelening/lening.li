@@ -21,6 +21,7 @@ highlighter: rouge
 
 header_pages:
   - index.md
+  - education.md
   - publications.md
   - research.md
   # - software.md
