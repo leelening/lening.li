@@ -11,6 +11,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll/scholar
+  - jekyll-remote-theme
+  - jekyll-feed
 
 sass:
   style: compressed
