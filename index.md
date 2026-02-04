@@ -6,7 +6,7 @@ permalink_name: /home
 title: Home
 ---
 
-# Lening Li (郦乐宁), Ph.D. 
+# Lening Li (郦乐宁), Ph.D., MBA Candidate 
 
 ![](./assets/logo.jpg){:style="float: right;margin-left: 7px;margin-right: 7px;margin-top: 7px;"}
 
@@ -21,11 +21,12 @@ To see more details, click my [curriculum vitae](https://drive.google.com/file/d
 Last modified date: 02/03/2026
 
 ## News
-- My new paper [Probabilistic Planning with Prioritized Preferences over Temporal Logic Objectives](https://arxiv.org/abs/2304.11641) is accepted to 32nd International Joint Conference on Artificial Intelligence (IJCAI 2023, acceptance rate ~15%).
-- My new paper [Synthesis of Proactive Sensor Placement In Probabilistic Attack Graphs](https://arxiv.org/abs/2210.07385) is accepted to [2023 American Control Conference](https://acc2023.a2c2.org/) where I will be presenting my work.
-- I joined minibot routing team at Symbotic on 3rd October 2022.
-- I earned my Ph.D. degree in Robotics Engineering from WPI in December 2022.
-- My journal paper [Dynamic hypergames for synthesis of deceptive strategies with temporal logic objectives](https://ieeexplore.ieee.org/abstract/document/9716225) was published on [IEEE Transactions on Automation Science and Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856).
+- I started my MBA education at [Carnegie Mellon University](https://www.cmu.edu/) in August 2025.
+- ~~My new paper [Probabilistic Planning with Prioritized Preferences over Temporal Logic Objectives](https://arxiv.org/abs/2304.11641) is accepted to 32nd International Joint Conference on Artificial Intelligence (IJCAI 2023, acceptance rate ~15%).~~
+- ~~My new paper [Synthesis of Proactive Sensor Placement In Probabilistic Attack Graphs](https://arxiv.org/abs/2210.07385) is accepted to [2023 American Control Conference](https://acc2023.a2c2.org/) where I will be presenting my work.~~
+- ~~I joined minibot routing team at Symbotic on 3rd October 2022.~~
+- ~~I earned my Ph.D. degree in Robotics Engineering from WPI in December 2022.~~
+- ~~My journal paper [Dynamic hypergames for synthesis of deceptive strategies with temporal logic objectives](https://ieeexplore.ieee.org/abstract/document/9716225) was published on [IEEE Transactions on Automation Science and Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856).~~
 - ~~I passed my Ph.D. final defense on 23rd of August 2022.~~
 - ~~I joined pick team at [Berkshire Grey](https://www.berkshiregrey.com/) on 4th October 2021.~~
 - ~~I served as President of [Graduate Student Government](https://www.facebook.com/WPIGSG/) from Jan 2019 - May 2020.~~
