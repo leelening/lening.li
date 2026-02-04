@@ -10,7 +10,7 @@ title: Home
 
 ![](./assets/logo.jpg){:style="float: right;margin-left: 7px;margin-right: 7px;margin-top: 7px;"}
 
-I am currently a **Robotic Lab Advisor** at **Harvard University** (advising Prof. [Na Li](https://nali.seas.harvard.edu/)'s group) and a **Senior Software Engineer** at [Symbotic](https://www.symbotic.com/), specializing in multi-agent routing systems. Concurrently, I am pursuing an **MBA** at **Carnegie Mellon University** (starting August 2025).
+I am currently a **Robotic Lab Advisor** at **Harvard University** (advising Prof. [Na Li](https://nali.seas.harvard.edu/)'s group) and a **Senior Software Engineer** at [Symbotic](https://www.symbotic.com/), specializing in multi-agent systems. Concurrently, I am pursuing an **MBA** at **Carnegie Mellon University** (starting August 2025).
 
 I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in December 2022, where I was advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research and professional expertise lie at the intersection of **Reinforcement Learning**, **Stochastic Optimal Control**, **Game Theory**, **Formal Methods**, and **Robotics**.
 
