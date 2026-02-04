@@ -10,11 +10,13 @@ title: Home
 
 ![](./assets/logo.jpg){:style="float: right;margin-left: 7px;margin-right: 7px;margin-top: 7px;"}
 
-I am currently a Robotic Lab Advisor at Harvard University under Professor [Na Li](https://nali.seas.harvard.edu/), and a Senior Software Engineer at [Symbotic](https://www.symbotic.com/), where my focus is on routing for multi-agent systems. I am proud to have earned my Ph.D. in Robotics Engineering from Worcester Polytechnic Institute (WPI) in December 2022, under the guidance of Professor [Jie Fu](https://fujie.ece.ufl.edu/). My research interests include Reinforcement Learning, Stochastic Optimal Control, Game Theory, Formal Methods, and Robotics.
+I am currently a **Robotic Lab Advisor** at **Harvard University** (advising Prof. [Na Li](https://nali.seas.harvard.edu/)'s group) and a **Senior Software Engineer** at [Symbotic](https://www.symbotic.com/), specializing in multi-agent routing systems. Concurrently, I am pursuing an **MBA** at **Carnegie Mellon University** (starting August 2025).
 
-In 2014, I obtained my B.S. degree in Computer Science and my B.A. degree in English Language and Literature from Harbin Institute of Technology, China. Following that, I pursued a Master's degree in Computer Science under the mentorship of Professor [Michael A. Gennert](http://web.cs.wpi.edu/~michaelg/) at WPI, which I completed in May 2016. I continued my academic journey and earned another Master's degree in Robotics Engineering in May 2021 under the guidance of Professor Jie Fu from WPI.
+I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in December 2022, where I was advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research and professional expertise lie at the intersection of **Reinforcement Learning**, **Stochastic Optimal Control**, **Game Theory**, **Formal Methods**, and **Robotics**.
 
-Overall, my academic background and professional experience have equipped me with a diverse skill set, allowing me to make valuable contributions in the field of robotics engineering.
+Prior to my doctoral studies, I completed two Master's degrees at WPI: one in **Robotics Engineering** (May 2021) and another in **Computer Science** (May 2016), advised by Prof. [Michael A. Gennert](http://web.cs.wpi.edu/~michaelg/). I also hold a B.S. in Computer Science and a B.A. in English Language and Literature from **Harbin Institute of Technology**, China (2014).
+
+My academic background and industrial experience have equipped me with a diverse skill set to bridge the gap between theoretical research and real-world robotic applications.
 
 To see more details, click my [curriculum vitae](https://drive.google.com/file/d/1MmUvte9eJH49C5VyeVby-Z4RkXL9B-nW/view?usp=sharing) or [履历](https://drive.google.com/file/d/1MmJdGnNAjh3ZaCq0C7UZm_JhYPDgnekm/view?usp=sharing).
 
