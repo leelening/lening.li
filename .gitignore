@@ -3,6 +3,14 @@
 .jekyll-cache
 .sass-cache
 _site
-Gemfile.lock
+
 .history
-.vscodevendor/
+.vscode/
+vendor/
+
+# Jekyll
+.jekyll-metadata
+
+# OS
+.DS_Store
+Thumbs.db
