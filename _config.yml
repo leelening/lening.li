@@ -4,7 +4,7 @@ description: "This is the personal website for Lening Li."
 github_username: leelening
 twitter_username: LeeLening
 baseurl: ""
-url: "https://leelening.github.io"
+url: "https://lening.li"
 
 plugins:
   - jemoji
