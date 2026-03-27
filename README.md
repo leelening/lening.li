@@ -2,6 +2,7 @@
 
 [![Jekyll](https://img.shields.io/badge/Jekyll-CC0000?style=flat&logo=jekyll&logoColor=white)](https://jekyllrb.com/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat&logo=github&logoColor=white)](https://pages.github.com/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 
 Personal academic website of Lening Li (郦乐宁), Ph.D., MBA Candidate.
 
@@ -27,6 +28,7 @@ This is a Jekyll-based personal website built with the [jekyll-shell-theme](http
   - jekyll/scholar (for academic publications)
   - jemoji
 - **Hosting**: GitHub Pages
+- **CI/CD**: GitHub Actions for automated deployment
 
 ## Features
 
@@ -35,10 +37,26 @@ This is a Jekyll-based personal website built with the [jekyll-shell-theme](http
 - 📱 Responsive design using Bootstrap
 - 🖼️ Image galleries with Swipebox
 - 🔍 SEO optimized
+- 🐳 Docker support for local development
 
 ## Local Development
 
-### Prerequisites
+### Option 1: Using Docker (Recommended)
+
+```bash
+# Clone the repository
+git clone https://github.com/leelening/lening.li.git
+cd lening.li
+
+# Build and run with Docker Compose
+docker-compose up
+
+# Visit http://localhost:4000
+```
+
+### Option 2: Using Ruby/Bundler
+
+#### Prerequisites
 
 - Ruby 2.5+ with Bundler
 - Jekyll and Bundler gems
@@ -64,24 +82,40 @@ bundle exec jekyll serve
 
 ```
 .
-├── _config.yml          # Site configuration
-├── _layouts/            # HTML layouts
-├── _includes/           # Reusable HTML components
-├── _posts/              # Blog posts
-├── _research/           # Research project pages
-├── _bibliography/       # BibTeX references
-├── _data/               # Data files
-├── assets/              # Images, CSS, JS
-├── index.md             # Homepage
-├── education.md         # Education page
-├── publications.md      # Publications page
-├── research.md          # Research overview
-├── travel.md            # Travel page
-├── contact.md           # Contact page
-└── 404.md               # 404 error page
+├── _config.yml              # Site configuration
+├── _layouts/                # HTML layouts
+├── _includes/               # Reusable HTML components
+├── _posts/                  # Blog posts
+├── _research/               # Research project pages
+├── _bibliography/           # BibTeX references
+├── _data/                   # Data files
+├── assets/                  # Images, CSS, JS
+├── index.md                 # Homepage
+├── education.md             # Education page
+├── publications.md          # Publications page
+├── research.md              # Research overview
+├── travel.md                # Travel page
+├── contact.md               # Contact page
+├── docker-compose.yml       # Docker development
+└── Dockerfile               # Container configuration
 ```
+
+## Deployment
+
+This site is automatically deployed to GitHub Pages via GitHub Actions when changes are pushed to the `main` branch.
 
 ## Author
 
 **Lening Li**
 - GitHub: [@leelening](https://github.com/leelening)
+
+## License
+
+This project is open source. The Jekyll theme is licensed under the terms specified by [jekyll-shell-theme](https://github.com/tareqdandachi/jekyll-shell-theme).
+
+## Acknowledgments
+
+- [Jekyll](https://jekyllrb.com/) - Static site generator
+- [jekyll-shell-theme](https://github.com/tareqdandachi/jekyll-shell-theme) - Terminal-inspired theme
+- [GitHub Pages](https://pages.github.com/) - Free hosting
+- [Docker](https://www.docker.com/) - Containerization
