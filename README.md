@@ -84,17 +84,4 @@ bundle exec jekyll serve
 ## Author
 
 **Lening Li**
-- Robotic Lab Advisor at Harvard University
-- Senior Software Engineer at Symbotic
-- Ph.D. in Robotics Engineering (WPI)
-- MBA Candidate at Carnegie Mellon University
-
-## License
-
-This project is open source. The Jekyll theme is licensed under the terms specified by [jekyll-shell-theme](https://github.com/tareqdandachi/jekyll-shell-theme).
-
-## Acknowledgments
-
-- [Jekyll](https://jekyllrb.com/) - Static site generator
-- [jekyll-shell-theme](https://github.com/tareqdandachi/jekyll-shell-theme) - Terminal-inspired theme
-- [GitHub Pages](https://pages.github.com/) - Free hosting
+- GitHub: [@leelening](https://github.com/leelening)
