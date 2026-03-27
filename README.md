@@ -6,7 +6,7 @@
 
 Personal academic website of Lening Li (郦乐宁), Ph.D., MBA Candidate.
 
-🔗 **Live Site**: [https://leelening.github.io](https://leelening.github.io)
+🔗 **Live Site**: [https://lening.li](https://lening.li)
 
 ## About
 
