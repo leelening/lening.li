@@ -7,11 +7,11 @@ title: Contact
 
 Last modified date: 02/03/2026
 
-## Electronic:
+## Email
 
-Email: leningli AT outlook.com
+leningli AT outlook.com
 
-## Office: 
+## Office
 
 200 Research Dr, Wilmington, MA 01887 USA
 
