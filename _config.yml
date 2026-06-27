@@ -1,6 +1,6 @@
 title: "Lening Li"
-tagline: "A jekyll theme that looks like a shell/terminal"
-description: "This is the personal website for Lening Li."
+tagline: "Researcher · Engineer · MBA Candidate"
+description: "Personal website of Lening Li, PhD — researcher in reinforcement learning, robotics, and control systems; Senior Software Engineer at Symbotic; MBA candidate at Carnegie Mellon University."
 github_username: leelening
 twitter_username: LeeLening
 baseurl: ""
@@ -21,11 +21,9 @@ highlighter: rouge
 
 header_pages:
   - index.md
-  - education.md
-  - publications.md
   - research.md
-  # - software.md
-  # - posts.md
+  - publications.md
+  - education.md
   - travel.md
   - contact.md
 
