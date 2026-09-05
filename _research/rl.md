@@ -33,7 +33,7 @@ The goal is a **model-free reinforcement learning method for stochastic planning
 
 **Topological approximate dynamic programming.** For syntactically co-safe LTL tasks, we maximize the probability of satisfaction while addressing the sparse-reward problem in two steps: decompose the planning problem into a sequence of sub-problems using the topological structure of the task automaton, then solve one value function per automaton state in reverse causal order. The run time does not grow exponentially with the size of the specification.
 
-{% include gallery layout="half" caption="Value function approximation, the task automaton, the resulting trajectory, and convergence of the approximation error." %}
+{% include gallery caption="Value function approximation, the task automaton, the resulting trajectory, and convergence of the approximation error." %}
 
 {% include video id="MJRgdngLjbw" provider="youtube" %}
 

@@ -26,6 +26,14 @@ layout: compress
       notice in the source, which LICENSE still carries -- not on the page.
     {% endcomment %}
 
+    <footer class="site-footer">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</span>
+      <span class="site-footer__sep">·</span>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      <span class="site-footer__sep">·</span>
+      <span>Updated {{ site.time | date: '%B %Y' }}</span>
+    </footer>
+
     {% include scripts.html %}
 
   </body>

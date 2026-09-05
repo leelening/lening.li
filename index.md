@@ -7,7 +7,8 @@ excerpt: "Robotics engineer and researcher — reinforcement learning, optimal c
 author_profile: true
 ---
 
-I am a **Robotic Lab Advisor** at **Harvard University**, advising Prof. [Na Li](https://nali.seas.harvard.edu/)'s group, and a **Senior Software Engineer** at [Symbotic](https://www.symbotic.com/), where I design multi-agent path-planning and coordination algorithms for warehouse fleets of thousands of robots. I am also pursuing an **MBA** at **Carnegie Mellon University** (Tepper).
+I am a **Robotic Lab Advisor** at **Harvard University**, where I work with Prof. [Na Li](https://nali.seas.harvard.edu/)'s group on cutting-edge research in robotics, large language models, and coding agents, and a **Senior Software Engineer** at [Symbotic](https://www.symbotic.com/), where I work on everything on the robots — from planning and control to the software that runs them. I am also pursuing an **MBA** at **Carnegie Mellon University** (Tepper).
+{: .lede}
 
 I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in 2022, advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research lies at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: giving robots high-level task specifications and returning policies with provable guarantees. Before the Ph.D. I completed M.S. degrees in Robotics Engineering and Computer Science at WPI (advised by Prof. [Michael A. Gennert](http://web.cs.wpi.edu/~michaelg/)), and a B.S. in Computer Science with a B.A. in English Language and Literature at **Harbin Institute of Technology**.
 
@@ -38,7 +39,11 @@ Recent Updates
 
   <span class="updates__date">Feb 2022</span>
   <span>🎉 Journal paper <a href="https://ieeexplore.ieee.org/abstract/document/9716225">Dynamic hypergames for synthesis of deceptive strategies with temporal logic objectives</a> published in <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856">IEEE Transactions on Automation Science and Engineering</a>.</span>
+</div>
 
+<details class="updates-earlier">
+  <summary>Earlier</summary>
+  <div class="updates">
   <span class="updates__date">Oct 2021</span>
   <span>💼 Joined the pick team at <a href="https://www.berkshiregrey.com/">Berkshire Grey</a>.</span>
 
@@ -74,4 +79,6 @@ Recent Updates
 
   <span class="updates__date">Nov 2015</span>
   <span>🎉 Team WPI-CMU's paper <a href="/publications/">No falls, no resets: Reliable humanoid behavior in the DARPA Robotics Challenge</a> presented at <a href="https://www.humanoids2015.org/">Humanoids 2015</a>, Seoul.</span>
-</div>
+  </div>
+</details>
+

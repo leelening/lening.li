@@ -7,6 +7,8 @@ main:
     url: /publications/
   - title: "Experience"
     url: /experience/
+  - title: "Teaching & Service"
+    url: /service/
   - title: "Travel"
     url: /travel/
   - title: "Contact"
