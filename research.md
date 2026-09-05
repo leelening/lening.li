@@ -49,7 +49,7 @@ Research I have contributed to has been supported by:
 
 <div class="sponsor-grid">
   <figure class="sponsor"><img src="/assets/logos/nsf.png" alt="National Science Foundation"><figcaption>National Science Foundation</figcaption></figure>
-  <figure class="sponsor"><img src="/assets/logos/afosr.png" alt="Air Force Office of Scientific Research" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'sponsor__fallback',textContent:'AFOSR'}))"><figcaption>Air Force Office of Scientific Research</figcaption></figure>
+  <figure class="sponsor"><img src="/assets/logos/afosr.png" alt="Air Force Office of Scientific Research"><figcaption>Air Force Office of Scientific Research</figcaption></figure>
   <figure class="sponsor"><img src="/assets/aro-seal-300x300-1.png" alt="Army Research Office"><figcaption>Army Research Office</figcaption></figure>
   <figure class="sponsor"><img src="/assets/512px-DARPA-logo-300x165-1.png" alt="DARPA"><figcaption>Defense Advanced Research Projects Agency</figcaption></figure>
 </div>
