@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /posts/shortestpath
+layout: single
+permalink: /posts/shortestpath/
 permalink_name: /shortestpath
 title: Find the shortest path from source to destination in a matrix
 ---

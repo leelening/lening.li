@@ -1,17 +1,10 @@
 ---
 ---
-<details>
-    <summary style="list-style: none">
-        {{reference}}
-
-        {% if entry.pdf %}
-        <span>[<a href="{{ entry.pdf }}">pdf</a>]</span>
-        {% endif %}
-
-    </summary>
-
-
-    <div>
-        <pre>{{ entry.bibtex }}</pre>
-    </div>
-</details>
+<div class="bib-entry">
+  {{ reference }}
+  {% if entry.pdf %}<a class="btn btn--small btn--inverse" href="{{ entry.pdf }}">PDF</a>{% endif %}
+  <details class="bib-details">
+    <summary>BibTeX</summary>
+    <pre>{{ entry.bibtex }}</pre>
+  </details>
+</div>

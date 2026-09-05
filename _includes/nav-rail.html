@@ -1,0 +1,43 @@
+{% comment %}
+  Vertical site navigation for the left rail. Same source of truth as the
+  masthead -- _data/navigation.yml -- so a tab added there appears in both
+  places and the two can never drift apart.
+
+  An entry may carry `children`; they are always listed under it, so the
+  research statement is visible without having to open Research first.
+{% endcomment %}
+{% include base_path %}
+
+{% assign here = page.url | append: '/' | replace: '//', '/' %}
+
+<nav class="nav-rail" aria-label="Site sections">
+  <ul>
+    {% for link in site.data.navigation.main %}
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+      {% else %}
+        {% assign domain = base_path %}
+      {% endif %}
+      {% assign there = link.url | append: '/' | replace: '//', '/' %}
+      {% assign is_pdf = link.url | downcase | slice: -4, 4 %}
+
+      <li class="nav-rail__item{% if here == there %} nav-rail__item--current{% endif %}">
+        <a href="{{ domain }}{{ link.url }}"
+           {% if here == there %}aria-current="page"{% endif %}
+           {% if is_pdf == '.pdf' %}target="_blank" rel="noopener"{% endif %}>{{ link.title }}</a>
+
+        {% if link.children %}
+          <ul class="nav-rail__children">
+            {% for child in link.children %}
+              {% assign child_url = child.url | append: '/' | replace: '//', '/' %}
+              <li class="nav-rail__item nav-rail__item--child{% if here == child_url %} nav-rail__item--current{% endif %}">
+                <a href="{{ base_path }}{{ child.url }}"
+                   {% if here == child_url %}aria-current="page"{% endif %}>{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

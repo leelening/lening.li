@@ -1,6 +1,6 @@
 ---
-layout: page
-permalink: /software
+layout: single
+permalink: /software/
 permalink_name: /software
 title: Software
 ---

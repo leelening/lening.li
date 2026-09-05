@@ -1,0 +1,3 @@
+[submodule "files/cv"]
+	path = files/cv
+	url = https://github.com/leelening/curriculum_vitae.git

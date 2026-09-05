@@ -1,27 +1,43 @@
 ---
-layout: post
-permalink: /research/rl
+layout: single
+permalink: /research/rl/
 permalink_name: /rl
 title: Learning-based Planning with Temporal Logic Constraints
 description: Model-free reinforcement learning for stochastic planning under temporal logic constraints, using PCTL chance constraints and topological approximate dynamic programming.
+header:
+  teaser: teasers/rl.svg
+gallery:
+  - url: /assets/value_surf.png
+    image_path: rl/value_surf.png
+    alt: "Approximate value function surface"
+    title: "Approximate value function"
+  - url: /assets/automaton.png
+    image_path: rl/automaton.png
+    alt: "Task automaton translated from an scLTL formula"
+    title: "Task automaton"
+  - url: /assets/traj.png
+    image_path: rl/traj.png
+    alt: "Robot trajectory satisfying the specification"
+    title: "Resulting trajectory"
+  - url: /assets/errors.png
+    image_path: rl/errors.png
+    alt: "Convergence of approximation error"
+    title: "Approximation error"
 ---
 
-![](../assets/value_surf.png){:style="float: left;margin-left: 7px;margin-right: 7px;margin-top: 7px;margin-bottom: 7px" height="150"}
+The goal is a **model-free reinforcement learning method for stochastic planning under temporal logic constraints** — so that a robot can be given a high-level task and return a policy that provably satisfies it.
 
-![](../assets/automaton.png){:style="float: left;margin-left: 7px;margin-right: 7px;margin-top: 7px;margin-bottom: 7px" height="150"}
+{% include figure image_path="/assets/diagrams/tl-planning-pipeline.svg" alt="Pipeline from temporal-logic specification to feedback policy with satisfaction guarantee" caption="From specification to policy: the task formula is translated into an automaton, composed with the stochastic system, and solved with topological approximate dynamic programming." %}
 
-This objective is to develop a model-free reinforcement learning method for stochastic planning under temporal logic constraints. In recent work [1], we propose an approach to translate high-level system specifications expressed by a subclass of Probabilistic Computational Tree Logic (PCTL) into chance constraints. We devise a variant of Approximate Dynamic Programming method—approximate value iteration— to solve for the optimal policy while the satisfaction of the PCTL formula is guaranteed.
+**Chance-constrained planning.** We translate specifications expressed in a subclass of Probabilistic Computational Tree Logic (PCTL) into chance constraints, and devise a variant of approximate dynamic programming — approximate value iteration — that solves for the optimal policy while guaranteeing satisfaction of the PCTL formula.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MJRgdngLjbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Topological approximate dynamic programming.** For syntactically co-safe LTL tasks, we maximize the probability of satisfaction while addressing the sparse-reward problem in two steps: decompose the planning problem into a sequence of sub-problems using the topological structure of the task automaton, then solve one value function per automaton state in reverse causal order. The run time does not grow exponentially with the size of the specification.
 
-![](../assets/errors.png){:style="float: right;margin-left: 7px;margin-right: 7px;margin-top: 7px;margin-bottom: 7px" height="150"}
+{% include gallery layout="half" caption="Value function approximation, the task automaton, the resulting trajectory, and convergence of the approximation error." %}
 
-![](../assets/traj.png){:style="float: right;margin-left: 7px;margin-right: 7px;margin-top: 7px;margin-bottom: 7px" height="150"}
+{% include video id="MJRgdngLjbw" provider="youtube" %}
 
-In [2], we study model-free reinforcement learning to maximize the probability of satisfying high-level system specifications expressed in a subclass of temporal logic formulas—syntactically co-safe linear temporal logic. In order to address the issue of sparse reward given by satisfaction of temporal logic formula, we propose a topological approximate dynamic programming which includes two steps: First, we decompose the planning problem into a sequence of sub-problems based on the topological property of the task automaton which is translated from a temporal logic formula. Second, we extend a model-free approximate dynamic programming method to solve value functions, one for each state in the task automaton, in an order reverse to the causal dependency. Particularly, we show that the run-time of the proposed algorithm does not grow exponentially with the size of specifications. The correctness and efficiency of the algorithm are demonstrated using a robotic motion planning example.
+### Related work
 
-### Related work:
-
-1. {%reference li2019topological %}
-
-2. {%reference li2019approximate %}
+1. {% reference li2019topological %}
+2. {% reference li2019approximate %}

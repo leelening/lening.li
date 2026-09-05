@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /posts/scan
+layout: single
+permalink: /posts/scan/
 permalink_name: /scan
 title: Scan Docker image with OpenSCAP (OVAL) scanner
 ---
