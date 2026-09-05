@@ -43,7 +43,7 @@ words_per_minute         : 160
 future                   : true
 read_more                : "disabled"
 atom_feed:
-  hide                   : false
+  hide                   : true
 
 # Reading files
 include:
@@ -87,6 +87,12 @@ collections:
   research:
     output: true
     permalink: /research/:path/
+  talks:
+    output: true
+    permalink: /talks/:path/
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 
 defaults:
   - scope:
@@ -98,6 +104,19 @@ defaults:
   - scope:
       path: ""
       type: research
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+  - scope:
+      path: ""
+      type: portfolio
     values:
       layout: single
       author_profile: true

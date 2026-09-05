@@ -5,13 +5,15 @@ main:
     url: /research/
   - title: "Publications"
     url: /publications/
+  - title: "Talks"
+    url: /talks/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Portfolio"
+    url: /portfolio/
   - title: "Experience"
     url: /experience/
-  - title: "Teaching & Service"
+  - title: "Service"
     url: /service/
-  - title: "Travel"
-    url: /travel/
-  - title: "Contact"
-    url: /contact/
   - title: "CV"
     url: /cv/
