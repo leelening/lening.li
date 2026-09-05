@@ -12,3 +12,13 @@
 <!-- MathJax -->
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <!-- end custom head snippets -->
+<script>
+document.addEventListener('click', function (e) {
+  var btn = e.target.closest('.bib-copy'); if (!btn) return;
+  var pre = btn.parentNode.querySelector('pre'); if (!pre) return;
+  var text = pre.textContent;
+  function done(ok) { btn.textContent = ok ? 'Copied' : 'Press Ctrl+C'; btn.classList.add('is-done'); setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('is-done'); }, 1600); }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); }); }
+  else { var r = document.createRange(); r.selectNodeContents(pre); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); try { done(document.execCommand('copy')); } catch (err) { done(false); } }
+});
+</script>
