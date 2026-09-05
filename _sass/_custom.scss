@@ -178,3 +178,32 @@ ol.bibliography > li { line-height: 1.5; }
 
 /* The footer now lives in the content column, so the body no longer reserves space for it */
 body { padding-bottom: 2em; }
+
+/* ==========================================================================
+   Masthead: wordmark left, sections right, one hairline
+   ========================================================================== */
+.masthead { height: 64px; background: rgba(255,255,255,.96); border-bottom: 1px solid $rule-2; }
+.masthead__inner-wrap { padding: 0 2rem; height: 64px; max-width: none; }
+.masthead__menu { height: 100%; }
+#site-nav.greedy-nav { min-width: 0; height: 100%; background: transparent; display: flex; align-items: center; justify-content: space-between; }
+#site-nav .site-title { font-family: $serif; font-size: 1.2em; letter-spacing: -.01em; color: $ink; text-decoration: none; border-bottom: none; white-space: nowrap; margin-right: 2em; }
+#site-nav .site-title:hover { color: $accent; }
+#site-nav .visible-links { display: flex; align-items: center; margin: 0; padding: 0; }
+#site-nav .visible-links li { display: block; white-space: nowrap; }
+#site-nav .visible-links a {
+  font-family: $sans-serif; font-size: .78em; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: $ink-2;
+  margin: 0 0 0 1.7em; padding: .35em 0; border-bottom: 1px solid transparent; transition: color .15s ease, border-color .15s ease;
+}
+#site-nav .visible-links a:before { display: none; }              /* theme's thick hover bar */
+#site-nav .visible-links a:hover { color: $accent; border-bottom-color: rgba($accent,.35); }
+#site-nav .visible-links li.is-current a { color: $accent; border-bottom-color: $accent; }
+#site-nav button { position: static; height: 2.2rem; margin-left: 1em; background: transparent; color: $ink; }
+#site-nav button .navicon, #site-nav button .navicon:before, #site-nav button .navicon:after { background: $ink; }
+#site-nav .hidden-links { border-color: $rule-2; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+#site-nav .hidden-links a { font-family: $sans-serif; font-size: .8em; letter-spacing: .04em; text-transform: uppercase; color: $ink-2; }
+#site-nav .hidden-links li.is-current a { color: $accent; }
+#site-nav .hidden-links:before, #site-nav .hidden-links:after { display: none; }
+@media screen and (min-width: 1024px) {
+  body { padding-top: 64px; }
+  .sidebar.sticky { top: 64px; height: calc(100vh - 64px); }
+}
