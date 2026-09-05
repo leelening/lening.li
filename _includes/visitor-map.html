@@ -1,0 +1,11 @@
+{% comment %}
+  Visitor map (mapmyvisitors.com). Rendered only when `visitor_map.id` is set in
+  _config.yml. The widget is a third-party script; colours are passed in the URL so
+  the map picks up the site's accent.
+{% endcomment %}
+{% if site.visitor_map.id and site.visitor_map.id != "" %}
+<div class="visitor-map">
+  <span class="visitor-map__label">Visitors</span>
+  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d={{ site.visitor_map.id }}&co={{ site.visitor_map.ocean | default: 'f5f6f7' }}&cmo={{ site.visitor_map.dot | default: 'A51C30' }}&cmn={{ site.visitor_map.dot_new | default: 'e36c7a' }}&ct={{ site.visitor_map.land | default: 'cfd3d8' }}"></script>
+</div>
+{% endif %}
