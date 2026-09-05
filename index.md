@@ -15,6 +15,9 @@ Recent Updates
 ----
 
 <div class="updates">
+  <span class="updates__date">2026</span>
+  <span>🎉 Our paper <a href="https://arxiv.org/abs/2304.10041">Topological Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives</a> was accepted to the <a href="https://www.icicc.org/">4th International Conference on Intelligent Control and Computing (IC&amp;C 2026)</a>, Harbin, China.</span>
+
   <span class="updates__date">Dec 2025</span>
   <span>💼 Joined <a href="https://www.harvard.edu/">Harvard University</a> as Robotic Lab Advisor to Prof. <a href="https://nali.seas.harvard.edu/">Na Li</a>'s group.</span>
 
@@ -39,18 +42,36 @@ Recent Updates
   <span class="updates__date">Oct 2021</span>
   <span>💼 Joined the pick team at <a href="https://www.berkshiregrey.com/">Berkshire Grey</a>.</span>
 
+  <span class="updates__date">May 2021</span>
+  <span>📄 New preprint <a href="https://arxiv.org/abs/2105.04593">Policy synthesis for metric interval temporal logic with probabilistic distributions</a> is on arXiv.</span>
+
   <span class="updates__date">2019–2020</span>
   <span>🏛️ Served as President of the WPI <a href="https://www.facebook.com/WPIGSG/">Graduate Student Government</a>.</span>
+
+  <span class="updates__date">Dec 2019</span>
+  <span>🎤 Presented <a href="/publications/">Topological approximate dynamic programming under temporal logic constraints</a> at the <a href="https://cdc2019.ieeecss.org/">58th IEEE Conference on Decision and Control (CDC 2019)</a>, Nice, France.</span>
 
   <span class="updates__date">Jul 2019</span>
   <span>🎤 Presented <a href="https://ieeexplore.ieee.org/abstract/document/8815215">Approximate dynamic programming with probabilistic temporal logic constraints</a> at <a href="https://acc2019.a2c2.org/">ACC 2019</a>; attended <a href="https://sung.seas.upenn.edu/nerc-penn/">NERC 2019</a> at UPenn and the <a href="https://wordpress.lehigh.edu/robotics/2019/10/09/robotics-workshop/">Robot Learning Workshop</a> at Lehigh.</span>
 
   <span class="updates__date">2018</span>
+  <span>🎉 Journal paper <a href="/publications/">Building an autonomous lane keeping simulator using real-world data and end-to-end learning</a> published in <i>IEEE Intelligent Transportation Systems Magazine</i>.</span>
+
+  <span class="updates__date">2018</span>
+  <span>📚 Two chapters on Team WPI-CMU's approach — <a href="/publications/">Achieving reliable humanoid robot operations in the DARPA Robotics Challenge</a> and <a href="/publications/">What happened at the DARPA Robotics Challenge Finals</a> — published in <i>The DARPA Robotics Challenge Finals: Humanoid Robots to the Rescue</i> (Springer).</span>
+
+  <span class="updates__date">2018</span>
   <span>🎤 Attended <a href="https://pdo.princeton.edu/">Princeton Day of Optimization</a>.</span>
+
+  <span class="updates__date">Mar 2017</span>
+  <span>🎉 Journal paper <a href="/publications/">Team WPI-CMU: Achieving reliable humanoid behavior in the DARPA Robotics Challenge</a> published in the <i>Journal of Field Robotics</i>.</span>
 
   <span class="updates__date">May 2017</span>
   <span>🎤 Presented <a href="https://ieeexplore.ieee.org/abstract/document/7989157">Sampling-based approximate optimal temporal logic planning</a> at <a href="http://icra2017.org/">ICRA 2017</a>, Singapore.</span>
 
   <span class="updates__date">Nov 2016</span>
   <span>🎤 Presented <a href="https://ieeexplore.ieee.org/document/7803317">Birrtopt: A combined sampling and optimizing motion planner for humanoid robots</a> at <a href="https://www.humanoids2016.org/">Humanoids 2016</a>, Cancún; attended <a href="https://www.facebook.com/Cornell.Robotics/">NERC 2016</a> at Cornell.</span>
+
+  <span class="updates__date">Nov 2015</span>
+  <span>🎉 Team WPI-CMU's paper <a href="/publications/">No falls, no resets: Reliable humanoid behavior in the DARPA Robotics Challenge</a> presented at <a href="https://www.humanoids2015.org/">Humanoids 2015</a>, Seoul.</span>
 </div>
