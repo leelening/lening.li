@@ -23,12 +23,14 @@ author:
   github           : "leelening"
   linkedin         : "lening-li"
 
-# Visitor map in the sidebar (mapmyvisitors.com). Register lening.li there and paste the
-# `d=` value from the snippet as `id`; leave empty to hide the widget.
+# Visitor map in the sidebar. provider: "clustrmaps" (the old site's counter, so its history
+# carries over; plain image, no script) or "mapmyvisitors" (script widget). Empty id hides it.
 visitor_map:
-  id       : ""
-  dot      : "A51C30"   # visitor dots (accent)
-  dot_new  : "e36c7a"   # recent visitors
+  provider : "clustrmaps"
+  id       : "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ"
+  site     : "1bh5y"     # clustrmaps.com/site/<site> (stats page)
+  dot      : "A51C30"    # visitor dots (accent)
+  dot_new  : "e36c7a"    # recent visitors
   land     : "cfd3d8"
   ocean    : "f5f6f7"
 

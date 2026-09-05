@@ -8,7 +8,7 @@ author_profile: true
 
 <div class="cv-tabs" role="tablist" aria-label="CV language">
   <button class="cv-tab is-active" role="tab" aria-selected="true" data-src="/files/cv/CV_English.pdf" data-name="CV_English.pdf">English</button>
-  <button class="cv-tab" role="tab" aria-selected="false" data-src="/files/cv/cv_Chinese.pdf" data-name="cv_Chinese.pdf">中文履历</button>
+  <button class="cv-tab" role="tab" aria-selected="false" data-src="/files/cv/cv_Chinese.pdf" data-name="cv_Chinese.pdf">中文</button>
   <a class="cv-download" id="cv-download" href="/files/cv/CV_English.pdf" download="CV_English.pdf"><i class="fas fa-fw fa-download" aria-hidden="true"></i> Download PDF</a>
 </div>
 
