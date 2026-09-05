@@ -8,7 +8,7 @@ title: Education
 ## Carnegie Mellon University ![CMU](/assets/cmu_logo.svg){:style="height: 50px; vertical-align: middle; margin-left: 10px;"}
 <div style="margin-left: 20px;" markdown="1">
 **Master of Business Administration (MBA)**  
-*Pittsburgh, PA, USA | Aug. 2025 – Present*
+*Pittsburgh, PA, USA | Aug. 2025 – Present (expected May 2028)*
 </div>
 
 ## Worcester Polytechnic Institute (WPI) ![WPI](/assets/wpi_logo.svg){:style="height: 34px; vertical-align: middle; margin-left: 10px;"}

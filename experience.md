@@ -8,7 +8,7 @@ title: Experience
 ## Harvard University
 <div style="margin-left: 20px;" markdown="1">
 **Robotic Lab Advisor**  
-*Cambridge, MA, USA | Dec. 2025 – Present*
+*Allston, MA, USA | Dec. 2025 – Present*
 
 I work with Prof. Na Li's group on cutting-edge research at the meeting point of robotics, large language models, and coding agents, and advise student researchers on algorithm design, system evaluation, and reproducible methodology — with an emphasis on carrying ideas from theory through to deployment. Structured reviews, careful project scoping, and pointed technical feedback are the tools I use to help the group move faster.
 </div>
