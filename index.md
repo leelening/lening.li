@@ -7,18 +7,16 @@ excerpt: "Robotics engineer and researcher — reinforcement learning, optimal c
 author_profile: true
 ---
 
-I am a **Robotics Lab Advisor** at **Harvard University**, advising Prof. [Na Li](https://nali.seas.harvard.edu/)'s group, and a **Senior Software Engineer** at [Symbotic](https://www.symbotic.com/), where I design multi-agent path-planning and coordination algorithms for warehouse fleets of thousands of robots. I am also pursuing an **MBA** at **Carnegie Mellon University** (Tepper).
+I am a **Robotic Lab Advisor** at **Harvard University**, advising Prof. [Na Li](https://nali.seas.harvard.edu/)'s group, and a **Senior Software Engineer** at [Symbotic](https://www.symbotic.com/), where I design multi-agent path-planning and coordination algorithms for warehouse fleets of thousands of robots. I am also pursuing an **MBA** at **Carnegie Mellon University** (Tepper).
 
 I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in 2022, advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research lies at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: giving robots high-level task specifications and returning policies with provable guarantees. Before the Ph.D. I completed M.S. degrees in Robotics Engineering and Computer Science at WPI (advised by Prof. [Michael A. Gennert](http://web.cs.wpi.edu/~michaelg/)), and a B.S. in Computer Science with a B.A. in English Language and Literature at **Harbin Institute of Technology**.
-
-[Curriculum Vitae](/files/cv/CV_English.pdf){: .btn .btn--primary} [Research](/research/){: .btn .btn--inverse} [Publications](/publications/){: .btn .btn--inverse} [GitHub](https://github.com/leelening){: .btn .btn--inverse}
 
 Recent Updates
 ----
 
 <div class="updates">
   <span class="updates__date">Dec 2025</span>
-  <span>💼 Joined <a href="https://www.harvard.edu/">Harvard University</a> as Robotics Lab Advisor to Prof. <a href="https://nali.seas.harvard.edu/">Na Li</a>'s group.</span>
+  <span>💼 Joined <a href="https://www.harvard.edu/">Harvard University</a> as Robotic Lab Advisor to Prof. <a href="https://nali.seas.harvard.edu/">Na Li</a>'s group.</span>
 
   <span class="updates__date">Aug 2025</span>
   <span>🎓 Started the MBA program at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (Tepper School of Business).</span>
