@@ -26,11 +26,13 @@ author:
 # Visitor map in the sidebar. provider: "clustrmaps" (the old site's counter, so its history
 # carries over; plain image, no script) or "mapmyvisitors" (script widget). Empty id hides it.
 visitor_map:
-  provider : "clustrmaps"
-  id       : "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ"
-  site     : "1bh5y"     # clustrmaps.com/site/<site> (stats page)
-  dot      : "A51C30"    # visitor dots (accent)
-  dot_new  : "e36c7a"    # recent visitors
+  provider : "mapmyvisitors"
+  style    : "globe"       # "globe" (3-D) or "map" (flat, recolored to the theme)
+  id       : "tVdjN8b6KosYJvE8oJMyDPjyPk4Y3GdLcmzDXgfG-NY"
+  # Previous counter (ClustrMaps, used on the old site): provider "clustrmaps",
+  # id "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ", site "1bh5y"
+  dot      : "A51C30"    # flat-map colours (ignored by the globe)
+  dot_new  : "e36c7a"
   land     : "cfd3d8"
   ocean    : "f5f6f7"
 
