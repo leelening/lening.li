@@ -3,7 +3,7 @@
     <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b463d"/></marker>
     <style>
       .st { fill:#fff; stroke:#15130f; stroke-width:2.5; }
-      .acc { fill:#f1dcd6; stroke:#7a2e22; }
+      .acc { fill:#f6dfe2; stroke:#A51C30; }
       .lbl { font-size:22px; fill:#15130f; text-anchor:middle; font-weight:600; }
       .edge { stroke:#4b463d; stroke-width:2.2; fill:none; marker-end:url(#m); }
       .el { font-size:18px; fill:#4b463d; text-anchor:middle; font-style:italic; }
@@ -25,21 +25,21 @@
     <text x="175" y="112" class="el" font-style="normal" fill="#b91c1c">c</text>
     <text x="105" y="252" class="el" font-style="normal" fill="#b91c1c">c</text>
     <rect x="0" y="140" width="70" height="70" fill="#dbeafe"/><text x="14" y="202" class="el" font-style="normal" fill="#1d4ed8" text-anchor="start">a</text>
-    <rect x="210" y="210" width="70" height="70" fill="#f1dcd6"/><text x="266" y="272" class="el" font-style="normal" fill="#7a2e22" text-anchor="end">b</text>
+    <rect x="210" y="210" width="70" height="70" fill="#f6dfe2"/><text x="266" y="272" class="el" font-style="normal" fill="#A51C30" text-anchor="end">b</text>
     <!-- trajectory -->
-    <path d="M35,35 L35,175 L245,175 L245,245" fill="none" stroke="#7a2e22" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 0"/>
-    <circle cx="35" cy="35" r="9" fill="#7a2e22"/>
-    <circle cx="245" cy="245" r="9" fill="#7a2e22"/>
+    <path d="M35,35 L35,175 L245,175 L245,245" fill="none" stroke="#A51C30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 0"/>
+    <circle cx="35" cy="35" r="9" fill="#A51C30"/>
+    <circle cx="245" cy="245" r="9" fill="#A51C30"/>
   </g>
 
   <!-- automaton (left) -->
   <circle cx="90"  cy="210" r="34" class="st"/>
   <circle cx="230" cy="210" r="34" class="st"/>
   <circle cx="370" cy="210" r="34" class="acc st"/>
-  <circle cx="370" cy="210" r="27" fill="none" stroke="#7a2e22" stroke-width="2"/>
+  <circle cx="370" cy="210" r="27" fill="none" stroke="#A51C30" stroke-width="2"/>
   <text x="90"  y="218" class="lbl">q₀</text>
   <text x="230" y="218" class="lbl">q₁</text>
-  <text x="370" y="218" class="lbl" fill="#7a2e22">q₂</text>
+  <text x="370" y="218" class="lbl" fill="#A51C30">q₂</text>
   <line x1="124" y1="210" x2="194" y2="210" class="edge"/>
   <line x1="264" y1="210" x2="334" y2="210" class="edge"/>
   <text x="159" y="196" class="el">a ∧ ¬c</text>
@@ -51,6 +51,6 @@
   <line x1="20" y1="210" x2="54" y2="210" class="edge"/>
 
   <text x="40" y="300" class="cap">φ = ◇(a ∧ ◇b) ∧ □¬c</text>
-  <text x="40" y="330" font-size="15" fill="#7a2e22" font-weight="600">Pr(σ ⊨ φ) ≥ 1 − δ</text>
+  <text x="40" y="330" font-size="15" fill="#A51C30" font-weight="600">Pr(σ ⊨ φ) ≥ 1 − δ</text>
   <text x="40" y="400" class="cap">SPEC  →  AUTOMATON  →  POLICY</text>
 </svg>

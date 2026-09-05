@@ -7,11 +7,11 @@
       .pillar { fill:#f7f8f9; stroke:#d3d7dc; stroke-width:1.5; rx:10; }
       .pillar-title { font-size:15px; font-weight:600; fill:#15130f; text-anchor:middle; }
       .pillar-sub { font-size:11px; fill:#4b463d; text-anchor:middle; }
-      .core { fill:#7a2e22; rx:12; }
+      .core { fill:#A51C30; rx:12; }
       .core-title { font-size:18px; font-weight:700; fill:#ffffff; text-anchor:middle; }
-      .core-sub { font-size:12px; fill:#f1dcd6; text-anchor:middle; }
-      .app { fill:#ffffff; stroke:#7a2e22; stroke-width:1.5; rx:18; }
-      .app-t { font-size:13px; font-weight:600; fill:#7a2e22; text-anchor:middle; }
+      .core-sub { font-size:12px; fill:#f6dfe2; text-anchor:middle; }
+      .app { fill:#ffffff; stroke:#A51C30; stroke-width:1.5; rx:18; }
+      .app-t { font-size:13px; font-weight:600; fill:#A51C30; text-anchor:middle; }
       .flow { stroke:#867f71; stroke-width:1.6; fill:none; marker-end:url(#arr); }
       .label { font-size:11px; fill:#867f71; text-anchor:middle; letter-spacing:.12em; }
     </style>

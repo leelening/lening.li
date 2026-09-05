@@ -5,13 +5,13 @@
     </marker>
     <style>
       .box { fill:#f7f8f9; stroke:#d3d7dc; stroke-width:1.5; rx:10; }
-      .hi  { fill:#7a2e22; stroke:none; }
+      .hi  { fill:#A51C30; stroke:none; }
       .t   { font-size:14px; font-weight:600; fill:#15130f; text-anchor:middle; }
       .s   { font-size:11px; fill:#4b463d; text-anchor:middle; }
-      .t.w { fill:#fff; } .s.w { fill:#f1dcd6; }
+      .t.w { fill:#fff; } .s.w { fill:#f6dfe2; }
       .step { font-size:10.5px; fill:#a9a294; text-anchor:middle; letter-spacing:.12em; }
       .f { stroke:#867f71; stroke-width:1.6; marker-end:url(#a); }
-      .g { font-size:12px; fill:#7a2e22; text-anchor:middle; font-style:italic; }
+      .g { font-size:12px; fill:#A51C30; text-anchor:middle; font-style:italic; }
     </style>
   </defs>
 
