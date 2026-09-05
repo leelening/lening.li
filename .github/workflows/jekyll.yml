@@ -11,11 +11,6 @@ on:
   push:
     branches: ["main"]
 
-  # Rebuild weekly so a CV pushed to leelening/curriculum_vitae is picked up
-  # even when this repository has not changed (Mondays 09:00 UTC)
-  schedule:
-    - cron: "0 9 * * 1"
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -39,22 +34,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
-      - name: Update CV submodule to the latest commit
-        # files/cv tracks leelening/curriculum_vitae; always build from its current main
-        run: git submodule update --remote --recursive files/cv
-      - name: Compile English CV (pdflatex + bibtex)
+          submodules: true          # files/cv -> leelening/curriculum_vitae (LaTeX sources only)
+      - name: Use latest CV sources
+        run: git submodule update --remote files/cv
+      - name: Build CV PDFs (pdfLaTeX)
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: files/cv
           root_file: CV_English.tex
+          latexmk_use_xelatex: false
           args: -pdf -file-line-error -interaction=nonstopmode
-      - name: Compile Chinese CV (xelatex, ctex)
+      - name: Build Chinese CV (XeLaTeX)
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: files/cv
           root_file: cv_Chinese.tex
-          args: -pdfxe -file-line-error -interaction=nonstopmode
+          latexmk_use_xelatex: true
+          args: -file-line-error -interaction=nonstopmode
+      - name: Check CV PDFs exist
+        run: ls -l files/cv/CV_English.pdf files/cv/cv_Chinese.pdf
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
