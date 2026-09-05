@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gemspec
 
 # Including GitHub Pages gem
 # explicit jekyll 4 dependencies to support ruby 3
@@ -12,7 +11,6 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "jekyll-remote-theme"
   gem 'jemoji'
   gem 'jekyll-scholar'
   gem 'faraday', '>= 1.0'
