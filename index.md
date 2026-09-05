@@ -56,8 +56,11 @@ Recent Updates
   <span class="updates__date">Dec 2019</span>
   <span>🎤 Presented <a href="/publications/">Topological approximate dynamic programming under temporal logic constraints</a> at the <a href="https://cdc2019.ieeecss.org/">58th IEEE Conference on Decision and Control (CDC 2019)</a>, Nice, France.</span>
 
+  <span class="updates__date">Oct 2019</span>
+  <span>🎤 Attended <a href="https://sung.seas.upenn.edu/nerc-penn/">NERC 2019</a> at the University of Pennsylvania and the <a href="https://wordpress.lehigh.edu/robotics/2019/10/09/robotics-workshop/">Robot Learning Workshop</a> at Lehigh University (travel grant).</span>
+
   <span class="updates__date">Jul 2019</span>
-  <span>🎤 Presented <a href="https://ieeexplore.ieee.org/abstract/document/8815215">Approximate dynamic programming with probabilistic temporal logic constraints</a> at <a href="https://acc2019.a2c2.org/">ACC 2019</a>; attended <a href="https://sung.seas.upenn.edu/nerc-penn/">NERC 2019</a> at UPenn and the <a href="https://wordpress.lehigh.edu/robotics/2019/10/09/robotics-workshop/">Robot Learning Workshop</a> at Lehigh.</span>
+  <span>🎤 Presented <a href="https://ieeexplore.ieee.org/abstract/document/8815215">Approximate dynamic programming with probabilistic temporal logic constraints</a> at <a href="https://acc2019.a2c2.org/">ACC 2019</a>, Philadelphia.</span>
 
   <span class="updates__date">Sep 2018</span>
   <span>🎤 Attended <a href="https://pdo.princeton.edu/">Princeton Day of Optimization</a>.</span>
@@ -75,7 +78,10 @@ Recent Updates
   <span>🎤 Presented <a href="https://ieeexplore.ieee.org/abstract/document/7989157">Sampling-based approximate optimal temporal logic planning</a> at <a href="http://icra2017.org/">ICRA 2017</a>, Singapore.</span>
 
   <span class="updates__date">Nov 2016</span>
-  <span>🎤 Presented <a href="https://ieeexplore.ieee.org/document/7803317">Birrtopt: A combined sampling and optimizing motion planner for humanoid robots</a> at <a href="https://www.humanoids2016.org/">Humanoids 2016</a>, Cancún; attended <a href="https://www.facebook.com/Cornell.Robotics/">NERC 2016</a> at Cornell.</span>
+  <span>🎤 Presented <a href="https://ieeexplore.ieee.org/document/7803317">Birrtopt: A combined sampling and optimizing motion planner for humanoid robots</a> at <a href="https://www.humanoids2016.org/">Humanoids 2016</a>, Cancún, Mexico.</span>
+
+  <span class="updates__date">Oct 2016</span>
+  <span>🎤 Attended <a href="https://www.facebook.com/Cornell.Robotics/">NERC 2016</a> at Cornell University.</span>
 
   <span class="updates__date">Nov 2015</span>
   <span>🎉 Team WPI-CMU's paper <a href="/publications/">No falls, no resets: Reliable humanoid behavior in the DARPA Robotics Challenge</a> presented at <a href="https://www.humanoids2015.org/">Humanoids 2015</a>, Seoul.</span>

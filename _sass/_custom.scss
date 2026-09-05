@@ -207,3 +207,58 @@ body { padding-bottom: 2em; }
   body { padding-top: 64px; }
   .sidebar.sticky { top: 64px; height: calc(100vh - 64px); }
 }
+
+/* ==========================================================================
+   Color
+   ========================================================================== */
+$grad: linear-gradient(90deg, $accent 0%, $gold 55%, $navy 100%);
+
+/* A thin spectrum line along the very top of the page */
+.masthead::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: $grad; }
+
+/* Headings: short gradient bar instead of a full-width hairline */
+.page__title { border-bottom: none; padding-bottom: .15em; margin-bottom: 1em; }
+.page__title::after { content: ''; display: block; width: 72px; height: 3px; margin-top: .45em; border-radius: 2px; background: $grad; }
+.page__content h2 { border-bottom: none; padding-bottom: 0; }
+.page__content h2::after { content: ''; display: block; width: 40px; height: 2px; margin-top: .35em; border-radius: 2px; background: $grad; }
+
+/* Rail: portrait ring, interest chips */
+.author__avatar img { border: 3px solid #fff !important; box-shadow: 0 0 0 2px rgba($accent, .45), 0 6px 18px rgba(0,0,0,.08); }
+.author__bio { margin-top: .6em; }
+.author__bio .chip { display: inline-block; font-family: $sans-serif; font-size: .66em; font-weight: 600; letter-spacing: .02em; padding: .18em .6em; margin: 0 .3em .35em 0; border-radius: 999px; }
+.author__bio .chip:nth-child(5n+1) { background: rgba($accent,.10); color: darken($accent,4%); }
+.author__bio .chip:nth-child(5n+2) { background: rgba($navy,.10);   color: $navy; }
+.author__bio .chip:nth-child(5n+3) { background: rgba($teal,.12);   color: $teal; }
+.author__bio .chip:nth-child(5n+4) { background: rgba($gold,.16);   color: darken($gold,8%); }
+.author__bio .chip:nth-child(5n+5) { background: rgba($ink,.07);    color: $ink-2; }
+.author__urls li a:hover, .author__urls li a:hover .author__urls-label { color: $accent !important; }
+
+/* Recent Updates: a soft tinted column for the dates */
+.updates__date { color: $accent; }
+
+/* Publications: colored markers per section */
+.pub-section::before { content: ''; display: inline-block; width: .55em; height: .55em; border-radius: 50%; margin: 0 .5em .1em 0; vertical-align: middle; background: $accent; }
+.pub-preprint::before { background: $gold; }
+.pub-conf::before     { background: $accent; }
+.pub-journal::before  { background: $navy; }
+.pub-book::before     { background: $teal; }
+.pub-thesis::before   { background: $ink-3; }
+ol.bibliography > li { border-left: 2px solid $rule-2; padding-left: 1em; border-bottom: 0; padding-bottom: 0; margin-bottom: 1.4em; transition: border-color .15s ease; }
+ol.bibliography > li:hover { border-left-color: $accent; }
+
+/* Research cards: tinted teaser mounts */
+.feature__item .archive__item-teaser { background: linear-gradient(135deg, rgba($accent,.06), rgba($navy,.06)); border-radius: 6px; padding: 10px; }
+.feature__item .archive__item-teaser img { border: 0 !important; padding: 0 !important; background: transparent !important; border-radius: 4px; }
+.feature__item .archive__item-title { color: $ink; }
+
+/* Buttons: primary is filled */
+.btn--primary, .page__content .btn--primary { background: $accent !important; color: #fff !important; border-color: $accent !important; }
+.btn--primary:hover, .page__content .btn--primary:hover { background: darken($accent,8%) !important; border-color: darken($accent,8%) !important; }
+
+/* Footer: same spectrum line */
+.page__footer.site-footer { border-top: 0; position: relative; padding-top: 1.2em; }
+.page__footer.site-footer::before { content: ''; position: absolute; top: 0; left: 0; width: 72px; height: 2px; border-radius: 2px; background: $grad; }
+
+/* CV tabs & funding captions pick up the palette */
+.cv-tab.is-active { border-bottom-color: $accent; }
+.sponsor figcaption { color: $ink-2; }

@@ -15,7 +15,7 @@ twitter_username         : LeeLening
 author:
   avatar           : "profile.jpg"
   name             : "Lening Li"
-  bio              : "Reinforcement learning, Optimal control, Game theory, Formal methods, Robotics"
+  bio              : "<span class=\"chip\">Reinforcement learning</span><span class=\"chip\">Optimal control</span><span class=\"chip\">Game theory</span><span class=\"chip\">Formal methods</span><span class=\"chip\">Robotics</span>"
   location         : "Science and Engineering Complex, Allston, MA"
   employer         : "Harvard University · Symbotic · CMU Tepper"
   email            : "leningli@outlook.com"
