@@ -5,6 +5,9 @@
   {% if entry.pdf %}<a class="btn btn--small btn--inverse" href="{{ entry.pdf }}">PDF</a>{% endif %}
   <details class="bib-details">
     <summary>BibTeX</summary>
-    <pre>{{ entry.bibtex }}</pre>
+    <div class="bib-code">
+      <button type="button" class="bib-copy" aria-label="Copy BibTeX to clipboard">Copy</button>
+      <pre>{{ entry.bibtex }}</pre>
+    </div>
   </details>
 </div>

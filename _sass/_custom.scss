@@ -221,7 +221,8 @@ $grad: linear-gradient(90deg, $accent 0%, $gold 55%, $navy 100%);
 .page__content h2::after { content: ''; display: block; width: 40px; height: 2px; margin-top: .35em; border-radius: 2px; background: $grad; }
 
 /* Rail: portrait ring, interest chips */
-.author__avatar img { border: 3px solid #fff !important; box-shadow: 0 0 0 2px rgba($accent, .45), 0 6px 18px rgba(0,0,0,.08); }
+.author__avatar { padding: 4px 0 0 5px; overflow: visible; }
+.author__avatar img { padding: 0 !important; border: 3px solid #fff !important; border-radius: 4px !important; box-shadow: 0 0 0 2px rgba($accent, .45), 0 6px 18px rgba(0,0,0,.08); }
 .author__bio { margin-top: .6em; }
 .author__bio .chip { display: inline-block; font-family: $sans-serif; font-size: .66em; font-weight: 600; letter-spacing: .02em; padding: .18em .6em; margin: 0 .3em .35em 0; border-radius: 999px; }
 .author__bio .chip:nth-child(5n+1) { background: rgba($accent,.10); color: darken($accent,4%); }
@@ -260,3 +261,15 @@ ol.bibliography > li:hover { border-left-color: $accent; }
 /* CV tabs & funding captions pick up the palette */
 .cv-tab.is-active { border-bottom-color: $accent; }
 .sponsor figcaption { color: $ink-2; }
+
+/* BibTeX copy button */
+.bib-code { position: relative; }
+.bib-code pre { margin: .4em 0 0; padding: .9em 5.5em .9em 1em; }
+.bib-copy {
+  position: absolute; top: .9em; right: .6em; appearance: none; cursor: pointer;
+  font-family: $sans-serif; font-size: .62em; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: $ink-2; background: #fff; border: 1px solid $rule; border-radius: 2px; padding: .35em .7em;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+  &:hover { color: $accent; border-color: $accent; }
+  &.is-done { color: #fff; background: $accent; border-color: $accent; }
+}
