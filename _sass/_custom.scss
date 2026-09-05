@@ -185,9 +185,7 @@ body { padding-bottom: 2em; }
 .masthead { height: 64px; background: rgba(255,255,255,.96); border-bottom: 1px solid $rule-2; }
 .masthead__inner-wrap { padding: 0 2rem; height: 64px; max-width: none; }
 .masthead__menu { height: 100%; }
-#site-nav.greedy-nav { min-width: 0; height: 100%; background: transparent; display: flex; align-items: center; justify-content: space-between; }
-#site-nav .site-title { font-family: $serif; font-size: 1.2em; letter-spacing: -.01em; color: $ink; text-decoration: none; border-bottom: none; white-space: nowrap; margin-right: 2em; }
-#site-nav .site-title:hover { color: $accent; }
+#site-nav.greedy-nav { min-width: 0; height: 100%; background: transparent; display: flex; align-items: center; justify-content: flex-end; }
 #site-nav .visible-links { display: flex; align-items: center; margin: 0; padding: 0; }
 #site-nav .visible-links li { display: block; white-space: nowrap; }
 #site-nav .visible-links a {
