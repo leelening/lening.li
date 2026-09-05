@@ -13,6 +13,11 @@
   &__date { color: $accent; font-weight: 700; font-family: $sans-serif; font-size: 0.85em; padding-top: 0.15em; white-space: nowrap; }
 }
 
+/* Logos are not figures: no mount, border or padding (the theme frames every content image) */
+.page__content .sponsor img,
+.page__content h2 img,
+.page__content h3 img { background: transparent; border: 0; padding: 0; box-shadow: none; }
+
 /* Funding logos */
 .sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1.25em; margin: 1em 0 2em; }
 .sponsor { margin: 0; text-align: center; display: flex; flex-direction: column; align-items: center; }
@@ -28,7 +33,6 @@ ol.bibliography > li { margin-bottom: 1.25em; padding-bottom: 1.25em; border-bot
 
 /* Misc */
 .page__content iframe { max-width: 100%; }
-.page__content figure img { background: $panel; }
 details > summary { cursor: pointer; }
 
 /* Buttons: hairline outline, small caps, accent on hover — no gray slabs */
