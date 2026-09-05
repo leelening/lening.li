@@ -7,19 +7,19 @@ description: Model-free reinforcement learning for stochastic planning under tem
 header:
   teaser: teasers/rl.svg
 gallery:
-  - url: /assets/value_surf.png
+  - url: rl/value_surf.png
     image_path: rl/value_surf.png
     alt: "Approximate value function surface"
     title: "Approximate value function"
-  - url: /assets/automaton.png
+  - url: rl/automaton.png
     image_path: rl/automaton.png
     alt: "Task automaton translated from an scLTL formula"
     title: "Task automaton"
-  - url: /assets/traj.png
+  - url: rl/traj.png
     image_path: rl/traj.png
     alt: "Robot trajectory satisfying the specification"
     title: "Resulting trajectory"
-  - url: /assets/errors.png
+  - url: rl/errors.png
     image_path: rl/errors.png
     alt: "Convergence of approximation error"
     title: "Approximation error"
