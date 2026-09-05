@@ -16,7 +16,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Lening Li"
   bio              : "Reinforcement learning, Optimal control, Game theory, Formal methods, Robotics"
-  location         : "Boston, MA"
+  location         : "Science and Engineering Complex, Allston, MA"
   employer         : "Harvard University · Symbotic · CMU Tepper"
   email            : "leningli@outlook.com"
   googlescholar    : "https://scholar.google.com/citations?user=KWUJ10wAAAAJ"
@@ -89,15 +89,6 @@ defaults:
       author_profile: true
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: false
-      related: true
-  - scope:
-      path: ""
       type: research
     values:
       layout: single
@@ -108,15 +99,14 @@ sass:
   sass_dir: _sass
   style: compressed
 
-permalink: /posts/:title/
 timezone: America/New_York
 
 plugins:
   - jemoji
   - jekyll-sitemap
+  - jekyll-feed
   - jekyll-seo-tag
   - jekyll/scholar
-  - jekyll-feed
 
 compress_html:
   clippings: all
@@ -136,7 +126,6 @@ scholar:
   bibliography_template: bib
   replace_strings: true
   join_strings:    true
-  use_raw_bibtex_entry: true
   details_dir:    bibliography
   details_layout: bibtex.html
   details_link:   Details

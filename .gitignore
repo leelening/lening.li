@@ -6,7 +6,7 @@ _site
 
 .history
 .vscode/
-vendor/
+/vendor/
 
 # Jekyll
 .jekyll-metadata

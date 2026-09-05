@@ -11,4 +11,4 @@ author_profile: true
   <p>Your browser can't display the PDF inline — <a href="/files/cv/CV_English.pdf">download the CV</a> instead.</p>
 </object>
 
-<p class="small" style="color:#867f71; margin-top:.75em;">The PDF is pulled directly from the <a href="https://github.com/leelening/curriculum_vitae">curriculum_vitae</a> repository, so it is always the latest version.</p>
+<p class="small" style="color:#867f71; margin-top:.75em;">Compiled at deploy time from the LaTeX source in <a href="https://github.com/leelening/curriculum_vitae">curriculum_vitae</a>, so it is always the latest version.</p>
