@@ -143,3 +143,37 @@ ol.bibliography > li { line-height: 1.5; }
 /* Tables (education/experience meta) and figures breathe */
 .page__content figure { margin: 1.6em 0 2em; }
 .page__content figcaption { font-family: $sans-serif; font-style: normal; font-size: .74em; color: $ink-3; }
+
+/* Top navigation: site name left, section links right, current section marked */
+.masthead { background: rgba(255,255,255,.96); }
+.masthead__inner-wrap { max-width: none; padding: 0 2em; }
+.masthead__menu-item--lg a { font-family: $serif; font-size: 1.05em; font-weight: 400; letter-spacing: 0; text-transform: none; color: $ink; }
+.greedy-nav .visible-links { justify-content: flex-end; }
+.greedy-nav .visible-links a { padding: 0 .9em; letter-spacing: .07em; text-transform: uppercase; color: $ink-2; }
+.greedy-nav .visible-links a:hover { color: $accent; }
+.greedy-nav .visible-links li.is-current a { color: $accent; }
+
+/* Footer inside the content column */
+.page__footer.site-footer { position: static; float: none; width: auto; animation: none; margin: 3.5em 0 1.5em; padding-top: 1em; border-top: 1px solid $rule-2; color: $ink-3; background: transparent; font-family: $sans-serif; font-size: .72em; letter-spacing: .02em; line-height: 1.8; }
+.page__footer.site-footer .page__footer-follow { margin: 0 0 .4em; }
+.page__footer.site-footer .social-icons li { display: inline-block; margin: 0 1.2em 0 0; letter-spacing: .06em; text-transform: uppercase; font-size: 1em; }
+.page__footer.site-footer .social-icons a, .page__footer.site-footer a { color: $ink-3; border-bottom: none !important; text-decoration: none; }
+.page__footer.site-footer a:hover { color: $accent; }
+.page__footer.site-footer .page__footer-copyright { font-family: $sans-serif; font-size: 1em; }
+.page__footer.site-footer .page__footer-copyright a { color: $ink-3; }
+.updates-earlier > summary:focus { outline: none; box-shadow: none; }
+.updates-earlier > summary:focus-visible { border-bottom-color: $accent; }
+
+/* Archive lists (talks, portfolio, sitemap) */
+.talkmap-lead { color: $ink-2; }
+.archive .list__item { margin-bottom: 1.6em; padding-bottom: 1.2em; border-bottom: 1px solid $rule-2; }
+.archive .list__item:last-of-type { border-bottom: 0; }
+.archive .archive__item-title { font-size: 1.12em; margin: 0 0 .25em; }
+.archive .archive__item-title a { border-bottom: none !important; }
+.archive .archive__item-title a:hover { color: $accent; }
+.archive .page__meta { font-family: $sans-serif; font-size: .74em; color: $ink-3; margin: 0 0 .3em; }
+.archive .archive__item-excerpt { font-size: .95em; margin: .2em 0 0; color: $ink-2; }
+.archive .archive__item-excerpt p { margin: 0; }
+
+/* The footer now lives in the content column, so the body no longer reserves space for it */
+body { padding-bottom: 2em; }

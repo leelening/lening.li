@@ -19,6 +19,8 @@ layout: compress
     {{ content }}
 
     {% comment %}
+      The footer is rendered inside the content column by single.html / archive.html
+      (the rail is position:fixed, so a body-level footer would overlap it).
       Footer removed at the author's request: the Sitemap link, the Follow/Feed
       row and the "Powered by Jekyll & AcademicPages" credit. _includes/footer.html
       and _includes/footer/custom.html are left in place, so restoring it is a
@@ -26,13 +28,6 @@ layout: compress
       notice in the source, which LICENSE still carries -- not on the page.
     {% endcomment %}
 
-    <footer class="site-footer">
-      <span>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</span>
-      <span class="site-footer__sep">·</span>
-      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-      <span class="site-footer__sep">·</span>
-      <span>Updated {{ site.time | date: '%B %Y' }}</span>
-    </footer>
 
     {% include scripts.html %}
 

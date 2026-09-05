@@ -13,7 +13,8 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign here = page.url | append: '/' | replace: '//', '/' %}{% assign there = link.url | append: '/' | replace: '//', '/' %}
+            <li class="masthead__menu-item{% if here == there or (there != '/' and here contains there) %} is-current{% endif %}"><a href="{{ domain }}{{ link.url }}"{% if here == there %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
