@@ -1,15 +1,32 @@
-<!DOCTYPE html>
-<html>
+---
+layout: compress
+---
 
-  {% include head.html %}
+{% include base_path %}
 
-  <body class="{{ site.font-size }}">
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-    {% include header.html %}
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
     {{ content }}
 
-    {% include footer.html %}
+    {% comment %}
+      Footer removed at the author's request: the Sitemap link, the Follow/Feed
+      row and the "Powered by Jekyll & AcademicPages" credit. _includes/footer.html
+      and _includes/footer/custom.html are left in place, so restoring it is a
+      matter of putting this block back. The theme's MIT licence asks for the
+      notice in the source, which LICENSE still carries -- not on the page.
+    {% endcomment %}
+
+    {% include scripts.html %}
 
   </body>
 </html>

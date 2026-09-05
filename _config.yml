@@ -1,65 +1,143 @@
-title: "Lening Li"
-tagline: "Researcher · Engineer · MBA Candidate"
-description: "Personal website of Lening Li, PhD — researcher in reinforcement learning, robotics, and control systems; Senior Software Engineer at Symbotic; MBA candidate at Carnegie Mellon University."
-github_username: leelening
-twitter_username: LeeLening
-baseurl: ""
-url: "https://lening.li"
+# Site
+locale                   : "en-US"
+title                    : "Lening Li"
+title_separator          : "-"
+name                     : "Lening Li"
+tagline                  : "Researcher · Engineer · MBA Candidate"
+description              : "Personal website of Lening Li, PhD — researcher in reinforcement learning, robotics, and control systems; Senior Software Engineer at Symbotic; MBA candidate at Carnegie Mellon University."
+url                      : "https://lening.li"
+baseurl                  : ""
+repository               : "leelening/lening.li"
+github_username          : leelening
+twitter_username         : LeeLening
+
+# Sidebar author profile
+author:
+  avatar           : "profile.jpg"
+  name             : "Lening Li"
+  bio              : "Reinforcement learning, Optimal control, Game theory, Formal methods, Robotics"
+  location         : "Boston, MA"
+  employer         : "Harvard University · Symbotic · CMU Tepper"
+  email            : "leningli@outlook.com"
+  googlescholar    : "https://scholar.google.com/citations?user=KWUJ10wAAAAJ"
+  github           : "leelening"
+  linkedin         : "lening-li"
+
+# Site settings
+teaser                   :
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
+comments:
+  provider               : false
+analytics:
+  provider               : "false"
+atom_feed:
+  hide                   : false
+
+# Reading files
+include:
+  - files
+  - files/cv/CV_English.pdf
+  - files/cv/cv_Chinese.pdf
+exclude:
+  - files/cv          # git submodule (leelening/curriculum_vitae); only the two PDFs above are published
+  - .bundle
+  - .sass-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
+  - jekyll-shell-theme.gemspec
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - node_modules
+  - vendor
+keep_files:
+  - .git
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n"
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+      related: true
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /posts/:title/
+timezone: America/New_York
 
 plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll/scholar
-  - jekyll-remote-theme
   - jekyll-feed
 
-sass:
-  style: compressed
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
-highlighter: rouge
-
-header_pages:
-  - index.md
-  - research.md
-  - publications.md
-  - education.md
-  - travel.md
-  - contact.md
-
-collections:
-  research:
-    output: true
-
-include:
-  - _data
-
-# set the size of the text to 'large' or 'small', default is small
-font-size: small
-
-remote_theme: "tareqdandachi/jekyll-shell-theme"
-
+# jekyll-scholar
 scholar:
   style: apa
   locale: en
-
   sort_by: year, month
   order: descending
-
   group_by: none
   group_order: ascending
-
   source: ./_bibliography
   bibliography: references.bib
   bibliography_template: bib
-
   replace_strings: true
   join_strings:    true
-
   use_raw_bibtex_entry: true
-
   details_dir:    bibliography
   details_layout: bibtex.html
   details_link:   Details
-
   query: "@*"

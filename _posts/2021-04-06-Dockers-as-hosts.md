@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /posts/docker
+layout: single
+permalink: /posts/docker/
 permalink_name: /docker
 title: Dockers as hosts
 ---

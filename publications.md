@@ -1,11 +1,12 @@
 ---
-layout: page
-permalink: /publications
+layout: single
+permalink: /publications/
 permalink_name: /publications
 title: Publications
 ---
 
-Last modified date: 04/16/2023
+[Google Scholar](https://scholar.google.com/citations?user=KWUJ10wAAAAJ){: .btn .btn--primary} [CV](/files/cv/CV_English.pdf){: .btn .btn--inverse}
+
 
 ## Under review
 

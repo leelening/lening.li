@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /posts/mtd
+layout: single
+permalink: /posts/mtd/
 permalink_name: /mtd
 title: Demonstration of IP addresses randomization (MTD) 
 ---

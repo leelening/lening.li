@@ -1,0 +1,549 @@
+/* ==========================================================================
+   EDITORIAL CHROME
+   --------------------------------------------------------------------------
+   Pulls the site's furniture -- masthead, left rail, page titles, links --
+   into the research showcase's design language, so /research/ reads as one
+   more spread in the same publication rather than a different website.
+
+   The palette and typefaces come from _variables.scss (which now holds the
+   showcase's tokens). This file handles the shapes those variables can't:
+   the rail's order and rhythm, the hairline rules that do the structural
+   work, and the removal of the theme's rounded corners and bold weights.
+   ========================================================================== */
+
+$ui-font: $sans-serif;          // Gill Sans -- labels, nav, small caps
+$rail-width: 250px;
+
+/*
+   Base
+   ========================================================================== */
+
+/* One text setting across every tab.
+
+   The theme runs at a 16px root that steps up to 18px, with a 1.5 leading;
+   the showcase was designed at 17px / 1.62. Two tabs of the same site should
+   not be set differently, so the site adopts the showcase's measure. The
+   showcase itself is unaffected -- its stylesheets are baked to px. */
+html {
+  font-size: 17px;
+
+  @include breakpoint($medium) {
+    font-size: 17px;
+  }
+}
+
+body {
+  background-color: $paper;
+  line-height: 1.62;
+}
+
+.page__content,
+.archive {
+  p, li, dl, dd, blockquote {
+    font-size: 1em;
+    line-height: 1.62;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  li {
+    margin-bottom: 0.35em;
+  }
+}
+
+/* The showcase sets display type at 400. Bold serif headings alongside it
+   look like a different publication. */
+h1, h2, h3, h4, h5, h6,
+.page__title, .archive__item-title {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: $ink;
+}
+
+.page__title {
+  font-size: 1.73em;                   // ~29px, the showcase's section-heading size
+  line-height: 1.15;
+  margin-bottom: 0.7em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid $rule;
+}
+
+/* The in-page heading scale, stepped down from the page title so the
+   hierarchy reads the same on every tab. */
+.page__content,
+.archive {
+  h2 { font-size: 1.36em; margin: 1.6em 0 0.5em; }
+  h3 { font-size: 1.12em; margin: 1.5em 0 0.4em; }
+  h4, h5, h6 { font-size: 1em; margin: 1.4em 0 0.35em; }
+}
+
+/* Links: the showcase's brick red, underlined with a hairline rather than
+   the browser's heavy default. */
+a {
+  color: $accent;
+
+  &:hover,
+  &:focus {
+    color: mix(#000, $accent, 20%);
+  }
+}
+
+.page__content,
+.archive {
+  a:not(.btn) {
+    text-decoration: none;
+    border-bottom: 1px solid rgba($accent, 0.32);
+    transition: border-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      border-bottom-color: $accent;
+    }
+  }
+}
+
+/* Editorial signature: rules do the structural work, nothing is rounded. */
+.page__content img,
+.archive img,
+.author__avatar img,
+.btn,
+.notice,
+.notice--info,
+.notice--warning,
+.notice--danger,
+.notice--success {
+  border-radius: 0;
+}
+
+/*
+   Masthead
+   ========================================================================== */
+
+.masthead {
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid $rule;
+}
+
+.masthead__menu-item--lg a,
+.greedy-nav .visible-links a {
+  font-family: $ui-font;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: $ink;
+  border-bottom: none;
+}
+
+.greedy-nav {
+  background: transparent;
+
+  .visible-links li::before,
+  .hidden-links li::before {
+    background: transparent;             // the theme's hover underline bar
+  }
+}
+
+/*
+   Left rail
+   --------------------------------------------------------------------------
+   Reordered without touching the markup: the author-profile wrapper is set
+   to `display: contents`, which promotes the portrait, the bio and the
+   contact links to direct children of the flex column. That lets the site
+   tabs -- the reason the rail exists -- sit directly under the name, with
+   the contact links kept below as a quieter footer.
+   ========================================================================== */
+
+/*
+   The top bar
+   --------------------------------------------------------------------------
+   Where the rail is fixed it already carries the name and every tab, so the
+   bar above it is a second copy of both. Retire it there and give the page
+   back its 70px.
+
+   `visibility` rather than `display`: the theme's greedy-nav measures the
+   bar's links on load and recurses while they overflow. Collapse their
+   widths to zero and that loop can never terminate. Hidden this way they
+   keep their geometry, so the script behaves exactly as it does untouched.
+   ========================================================================== */
+
+@media screen and (min-width: #{$sidebar-screen-min-width}) {
+  .masthead {
+    visibility: hidden;
+  }
+
+  body {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: #{$sidebar-screen-min-width}) {
+  .sidebar.sticky {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* The masthead is visibility:hidden at this width (see above), so there
+       is no bar to sit under -- reserving $masthead-height for it cost 70px
+       of rail and pushed the contact links towards the fold. Start at the top
+       of the screen and own all of it, with the portrait aligned to where the
+       page content begins. */
+    top: 0;
+    height: 100vh;
+    padding-top: 22px;
+    padding-right: 26px;
+    border-right: 1px solid $rule-2;
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+    > div[itemscope] {
+      display: contents;
+    }
+
+    .author__avatar { order: 1; }
+    .author__content { order: 2; }
+    .nav-rail        { order: 3; }
+    .author__urls-wrapper { order: 4; }
+  }
+
+  .sidebar .author__avatar {
+    display: block;
+    width: auto;
+    margin-bottom: 14px;
+
+    img {
+      width: 207px;
+      height: 207px;
+      max-width: 207px;
+      object-fit: cover;
+      border-radius: 0;
+      border: 1px solid $rule;
+      filter: saturate(0.92);
+    }
+  }
+
+  .sidebar .author__content {
+    display: block;
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .sidebar .author__urls-wrapper {
+    display: block;
+    width: auto;
+    padding-top: 12px;
+    margin-top: 2px;
+    border-top: 1px solid $rule-2;
+
+    button { display: none; }
+  }
+}
+
+/* The theme's contact-links toggle, shown only where the rail is not fixed.
+   Squared off and put into the palette so it stops reading as a stray widget. */
+.author__urls-wrapper .btn--inverse {
+  font-family: $ui-font;
+  font-size: 0.68em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: $ink-2;
+  background-color: transparent;
+  border: 1px solid $rule;
+  border-radius: 0;
+  box-shadow: none;
+
+  &:hover {
+    color: $accent;
+    border-color: $accent;
+    background-color: transparent;
+  }
+}
+
+.sidebar {
+  .author__name {
+    font-family: $serif;
+    /* 26px sets the name on one line inside the 273px rail: 254px in Iowan
+       Old Style, 248px in the Georgia fallback, so it holds either way.
+       Left wrappable rather than nowrap, so an unexpected face folds it
+       instead of running it out of the rail. */
+    font-size: 1.53em;                  // ~26px
+    white-space: normal;
+    font-weight: 400;
+    letter-spacing: -0.014em;
+    line-height: 1.14;
+    margin: 0 0 11px;
+    color: $ink;
+  }
+
+  .author__bio {
+    font-family: $ui-font;
+    font-size: 0.81em;
+    line-height: 1.52;
+    letter-spacing: 0.005em;
+    color: $ink-2;                      // was $ink-3: too faint once it is this size
+    margin: 0;
+  }
+
+  /* Two shapes share this list: plain facts (<i> + text) and links
+     (<a> wrapping <i> + text). Both are laid out as a fixed icon column
+     beside a text column, so every row starts on the same vertical line and
+     a long address wraps under itself instead of under the icon. */
+  .author__urls {
+    li {
+      display: flex;
+      align-items: baseline;
+      font-family: $ui-font;
+      font-size: 0.79em;
+      letter-spacing: 0.012em;
+      line-height: 1.5;
+      color: $ink-3;
+      margin-bottom: 8px;
+      padding: 0;
+      text-indent: 0;
+      white-space: normal;         // the theme sets nowrap, which clips the address
+      overflow-wrap: break-word;
+
+      &:last-child { margin-bottom: 0; }   // no trailing gap at the rail's foot
+    }
+
+    li > a {
+      display: flex;
+      align-items: baseline;
+      flex: 1 1 auto;
+      min-width: 0;                // let a long link wrap rather than overflow
+      /* The theme pads these anchors and gives them a bottom margin, which
+         made the link rows 10px taller than the plain ones beside them. The
+         row spacing belongs to the li. */
+      margin: 0;
+      padding: 0;
+      color: $ink-2;
+      text-decoration: none;
+      border-bottom: none;
+
+      &:hover { color: $accent; }
+      &:hover .author__urls-label { border-bottom-color: rgba($accent, 0.4); }
+    }
+
+    /* Font Awesome only reserves a fixed advance for .fa-fw, and the profile
+       markup applies it unevenly -- the pin and the scholar cap come out at
+       6px against the envelope's 15px, so every row started at a different
+       indent. Pin them all to one box instead. */
+    i {
+      flex: 0 0 16px;
+      width: 16px;
+      margin-right: 9px;
+      padding-right: 0;            // overrides .icon-pad-right
+      font-size: 1.05em;
+      line-height: inherit;
+      text-align: center;
+      color: $ink-3;
+    }
+
+    .author__urls-label {
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Pointer from the Research page to the showcase. Set as a standing card
+   rather than a sentence, so it reads as a door out of the page and not as
+   another line of prose.
+   -------------------------------------------------------------------------- */
+
+.research-statement-link {
+  clear: both;
+  margin: 0 0 2em;
+  padding: 0.85em 1.1em;
+  border: 1px solid $rule-2;
+  border-left: 3px solid $accent;
+  background: $panel;
+
+  a {
+    display: block;
+    font-family: $sans-serif;
+    font-size: 0.92em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: $accent;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  span {
+    display: block;
+    margin-top: 0.25em;
+    font-size: 0.86em;
+    color: $ink-3;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   FIGURES IN PAGE CONTENT
+
+   These pages are hand-written HTML, authored against a white page: inline
+   `width` in pixels, inline `float`, inline `margin-left`. On the editorial
+   paper two things go wrong. The images carry their own white grounds, which
+   read as torn patches against the cream. And the widths were picked one at a
+   time -- 600px, 450px, 300px -- so no two topics share a rhythm.
+
+   Both are corrected here rather than in the markup, which is the author's
+   and stays untouched. Overriding an inline style needs !important; that is
+   the only reason it appears below.
+   -------------------------------------------------------------------------- */
+
+.page__content,
+.archive {
+  /* A white mount under every figure. Images whose own ground is already
+     white now sit inside an intentional card instead of a torn edge, and
+     line art on transparency gets the same ground as its neighbours. */
+  img {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid $rule-2;
+    padding: 10px;
+  }
+
+  /* Animations are their own frame -- padding round a GIF reads as a bug. */
+  img[src$=".gif"] {
+    padding: 6px;
+  }
+}
+
+/* Topic illustrations: authored as a floated block of whatever width the
+   image happened to be. Pinned to one proportion so each topic opens the
+   same way and the prose beside it keeps a readable measure. */
+.archive > div[style*="float"] {
+  max-width: 42%;
+  margin: 0.25em 26px 1.1em 0 !important;
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Too narrow to set text beside: let the figure take the measure. */
+  @media screen and (max-width: 40em) {
+    float: none !important;
+    max-width: 100%;
+    margin: 0 0 1.2em !important;
+  }
+}
+
+/* Selected-publication rows: thumbnail beside its citation. The inline
+   margin-left varies from 0 to 50px between rows; one gap replaces it. */
+.archive > div[style*="flex"] {
+  gap: 24px;
+  margin-bottom: 1.4em;
+
+  > img {
+    flex: 0 0 200px;
+    width: 200px !important;
+    align-self: flex-start;
+  }
+
+  > div {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-left: 0 !important;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1em;
+  }
+
+  @media screen and (max-width: 40em) {
+    display: block !important;
+
+    > img {
+      width: 200px !important;
+      margin-bottom: 0.8em;
+    }
+  }
+}
+
+/* The topic illustration floats, and nothing in the markup ever clears it.
+   When a topic's paragraph is shorter than its figure is tall -- Topic 2,
+   where the figure runs 312px against five lines of prose -- the float is
+   still live when "Selected publications:" arrives, so the heading and the
+   rows beneath it get pushed into the gutter beside the image. Start every
+   heading and every publication row on a clean line. */
+.archive {
+  h1, h2, h3, h4, h5, h6 {
+    clear: both;
+  }
+
+  > div[style*="flex"] {
+    clear: both;
+  }
+}
+
+/* A measure, not a column. The theme's grid hands the content 1035px at a
+   1280px viewport, which at this size and leading is about 110 characters a
+   line -- roughly half again the width the eye tracks comfortably. The
+   showcase sets its own text in 940px for the same reason. */
+.page__content,
+.archive {
+  max-width: 880px;
+}
+
+/* --------------------------------------------------------------------------
+   THE COLUMN GRID
+
+   The theme gives the rail 2 of 12 columns -- capped at 250px -- and then
+   indents the content by another half column on top of the gutter. At 1680px
+   that opens a 116px trough between the navigation and the first word, while
+   the rail itself is too narrow to hold "Teaching and Services" without
+   crowding.
+
+   Above the width where the rail is fixed, the float grid is replaced by a
+   plain fixed rail plus an offset content column: a wider rail, one measured
+   gap, and no trough.
+   -------------------------------------------------------------------------- */
+
+$rail-width: 300px;
+$rail-gap: 44px;                       // rail to first word
+
+@media screen and (min-width: #{$sidebar-screen-min-width}) {
+  /* .sidebar.sticky above already sets the rail's padding and its right
+     rule; matching that specificity here keeps the width in the same place
+     rather than in a rule the next reader has to go looking for. */
+  .sidebar,
+  .sidebar.sticky {
+    width: $rail-width;
+    max-width: $rail-width;
+  }
+
+  .archive,
+  .page,
+  .showcase-main {
+    float: none;
+    width: auto;
+    margin-left: $rail-width + $rail-gap;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* A link that *is* a heading. The body-text hairline is sized for 17px prose
+   and reads as a heavy rule when it runs the width of a 23px heading, so it
+   is held back until hover. */
+.page__content,
+.archive {
+  h1, h2, h3, h4, h5, h6 {
+    a:not(.btn) {
+      border-bottom-color: transparent;
+
+      &:hover,
+      &:focus {
+        border-bottom-color: rgba($accent, 0.45);
+      }
+    }
+  }
+}

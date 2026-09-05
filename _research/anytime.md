@@ -1,21 +1,23 @@
 ---
-layout: post
-permalink: /research/anytime
+layout: single
+permalink: /research/anytime/
 permalink_name: /anytime
 title: Anytime Planning via Function Approximation and Importance Sampling
 description: Scalable anytime motion planning using function approximation and importance sampling, with support for parallel and cloud-accelerated computation.
+header:
+  teaser: teasers/anytime.jpg
 ---
 
-![](../assets/dubinstraj.jpg){:style="float: left;margin-left: 7px;margin-right: 7px;margin-top: 7px;margin-bottom: 7px" height="200"}
+Planning for nonlinear robotic systems is NP-complete, so approximate schemes — discretization-based (A\*) and sampling-based (RRT\*) — dominate practice. We explore a third approach: **function approximation**, which transforms planning in the state space into planning in a low-dimensional **parameter space** of policy function approximators.
 
-Planning of nonlinear robotic systems is NP-complete. Thus, approximate solutions have been investigated, such as discretization-based (A*) and sampling based (RRT*). We explore a different approximation scheme  —  **function approximation** —  that transforms the planning problem in state space or workspace to a planning problem in a parameter space for policy function approximation. A dimensionality reduction is achieved because the parameter space can be low dimensional, comparing to the state space. In our preliminary work, we introduced **importance sampling** to efficiently search for optimal feedback policy function approximation. See the left figure for applying the sampling-based algorithm for motion planning for a Dubins Car-like robot for goal reaching and obstacle avoidance. Lines from the initial sample to the last sample upon convergence vary from the lightest to darkest grey.
+{% include figure image_path="/assets/dubinstraj.jpg" alt="Sampled Dubins-car trajectories converging to the optimal policy" caption="Importance sampling for a Dubins-car robot reaching a goal while avoiding obstacles (red). Trajectories shade from light (first sample) to dark (converged)." %}
 
-The algorithm supports parallel computation and anytime planning. Thus, it has the potential to take full advantage of scalable parallelization computing scheme in cloud robotics and GPU-accelerated robotics.
+We use **importance sampling** to search efficiently for the optimal feedback policy. The algorithm supports parallel computation and anytime planning, making it a natural fit for cloud robotics and GPU-accelerated planning.
 
-<iframe width="300" src="https://www.youtube.com/embed/zIt7lSJgWpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include video id="zIt7lSJgWpc" provider="youtube" %}
 
-<iframe width="300" src="https://www.youtube.com/embed/WkkSpqLudss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include video id="WkkSpqLudss" provider="youtube" %}
 
-### Related Work
+### Related work
 
 1. {% reference li2017sampling %}

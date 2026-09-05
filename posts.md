@@ -1,6 +1,6 @@
 ---
-layout: page
-permalink: /posts
+layout: single
+permalink: /posts/
 permalink_name: /posts
 title: Posts
 ---

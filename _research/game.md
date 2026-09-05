@@ -1,20 +1,21 @@
 ---
-layout: post
-permalink: /research/game
+layout: single
+permalink: /research/game/
 permalink_name: /game
 title: Formal Methods and Game Theory for Cyber-Physical Security
 description: Hypergame-theoretic framework for synthesizing deceptive strategies in adversarial environments, with applications to security in cyber-physical systems.
+header:
+  teaser: teasers/game.svg
 ---
 
-![](../assets/t-ase-hypergame-300x150-1.jpg){:style="float: left;margin-left: 7px;margin-right: 7px;margin-top: 7px;margin-bottom: 7px" height="200"}
+In an adversarial environment, information — and the lack of it — is decisive for strategic decision-making. We developed a class of **hypergames on graphs** to model the interaction between an intelligent robot and its adversary when the task is given in temporal logic and the two players hold asymmetric information.
 
+{% include figure image_path="/assets/t-ase-hypergame-300x150-1.jpg" alt="Hypergame model for deceptive planning" caption="A dynamic hypergame: each player reasons about a different perception of the game." %}
 
-To carry out tasks in an adversarial environment, the information (or the lack of information) plays a key role in strategic decision-making. In recent work, we developed a class of hypergames on graphs for modeling the adversarial interactions between an intelligent robot and its adversary, given the task specification in temporal logic and asymmetric information. We investigate the solution concepts of hypergames to design deceptive strategies that ensure to achieve the mission with provable guarantees. The concept of game-theory for deception and counter-deception has important applications in military operations, contested search and rescue, and the synthesis of secured cyber network systems (including industrial control systems and other networks) using deception mechanisms.
+We study the solution concepts of these hypergames to design **deceptive strategies with provable mission guarantees**. Game theory for deception and counter-deception has applications in military operations, contested search and rescue, and the design of secured cyber networks — including industrial control systems — that use deception mechanisms.
 
+{% include video id="J6JVcfapAcE" provider="youtube" %}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J6JVcfapAcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-### Related work:
+### Related work
 
 1. {% reference li2022dynamic %}
