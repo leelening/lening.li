@@ -2,7 +2,7 @@
   <defs>
     <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b463d"/></marker>
     <style>
-      .p1 { fill:#fff; stroke:#7a2e22; stroke-width:2.5; }
+      .p1 { fill:#fff; stroke:#A51C30; stroke-width:2.5; }
       .p2 { fill:#fff; stroke:#b45309; stroke-width:2.5; }
       .e  { stroke:#4b463d; stroke-width:2; fill:none; marker-end:url(#g); }
       .hid { stroke:#a9a294; stroke-width:2; stroke-dasharray:7 6; fill:none; marker-end:url(#g); }
@@ -26,7 +26,7 @@
     <rect x="276" y="126" width="48" height="48" class="p2"/><text x="300" y="157" class="t">s₁</text>
     <circle cx="460" cy="150" r="24" class="p1"/><text x="460" y="157" class="t">s₂</text>
     <rect x="596" y="126" width="48" height="48" class="p2"/><text x="620" y="157" class="t">s₃</text>
-    <circle cx="700" cy="150" r="24" fill="#f1dcd6" stroke="#7a2e22" stroke-width="2.5"/><text x="700" y="157" class="t" fill="#7a2e22">✓</text>
+    <circle cx="700" cy="150" r="24" fill="#f6dfe2" stroke="#A51C30" stroke-width="2.5"/><text x="700" y="157" class="t" fill="#A51C30">✓</text>
     <line x1="164" y1="150" x2="274" y2="150" class="e"/>
     <line x1="324" y1="150" x2="434" y2="150" class="e"/>
     <line x1="484" y1="150" x2="594" y2="150" class="e"/>
