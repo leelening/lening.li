@@ -13,7 +13,7 @@ author_profile: true
 </div>
 
 <div class="cv-frame">
-  <object id="cv-viewer" data="/files/cv/CV_English.pdf" type="application/pdf" width="100%" height="900">
+  <object id="cv-viewer" data="/files/cv/CV_English.pdf" type="application/pdf" width="880" height="1140">
     <p>Your browser can't display the PDF inline — <a id="cv-fallback" href="/files/cv/CV_English.pdf">download the CV</a> instead.</p>
   </object>
 </div>
