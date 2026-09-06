@@ -11,7 +11,7 @@ excerpt: "Academic service, leadership and honors of Lening Li: journal and conf
 
 **Journal reviewer** — IEEE Robotics and Automation Letters (RA-L); IEEE Transactions on Intelligent Transportation Systems; IET Cyber-Systems and Robotics; Discover Robotics; The Journal of Supercomputing.
 
-**Conference reviewer** — ICRA, IROS, CDC, ACC, ECC, and the International Conference on Ubiquitous Robots (UR).
+**Conference reviewer** — ICRA, IROS, CDC, ACC, ECC, and UR.
 
 **Memberships** — IEEE, IEEE Young Professionals, IEEE Robotics and Automation Society, Association for Women in Mathematics, and the Alpha Chapter of Rho Beta Epsilon (robotics honor society) at WPI.
 
