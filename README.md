@@ -30,8 +30,8 @@ bundle exec jekyll serve --livereload
 Or with Docker: `docker compose up` (serves on http://localhost:4000).
 
 The CV is compiled from LaTeX during deployment (`xu-cheng/latex-action`), always from the latest
-commit of `curriculum_vitae`, so pushing to that repo is enough. The site rebuilds on every push here,
-every Monday (scheduled), or on demand from the Actions tab (**Run workflow**). To pin the submodule
+commit of `curriculum_vitae`. The site rebuilds on every push here or on demand from the Actions tab
+(**Run workflow**) — after pushing a CV change, trigger a run to publish it. To pin the submodule
 locally to the current CV commit:
 
 ```bash
