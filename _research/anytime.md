@@ -8,7 +8,7 @@ header:
   teaser: teasers/anytime.jpg
 ---
 
-Planning for nonlinear robotic systems is NP-complete, so approximate schemes — discretization-based (A\*) and sampling-based (RRT\*) — dominate practice. We explore a third approach: **function approximation**, which transforms planning in the state space into planning in a low-dimensional **parameter space** of policy function approximators.
+Motion planning for nonlinear robotic systems is computationally intractable in general (PSPACE-hard), so approximate schemes — discretization-based (A\*) and sampling-based (RRT\*) — dominate practice. We explore a third approach: **function approximation**, which transforms planning in the state space into planning in a low-dimensional **parameter space** of policy function approximators.
 
 {% include figure image_path="/assets/dubinstraj.jpg" alt="Sampled Dubins-car trajectories converging to the optimal policy" caption="Importance sampling for a Dubins-car robot reaching a goal while avoiding obstacles (red). Trajectories shade from light (first sample) to dark (converged)." %}
 
