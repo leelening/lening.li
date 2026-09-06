@@ -76,7 +76,9 @@ details > summary { cursor: pointer; }
   appearance: none; background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px;
   padding: .55em 1em; cursor: pointer; font-family: $sans-serif; font-size: .78em; font-weight: 600; letter-spacing: .06em;
   text-transform: uppercase; color: $ink-3; transition: color .15s ease, border-color .15s ease;
-  &:hover, &:focus { color: $accent; outline: none; }
+  &:hover, &:focus { color: $accent; }
+  &:focus { outline: none; }
+  &:focus-visible { outline: 2px solid $accent; outline-offset: 2px; }
   &.is-active { color: $accent; border-bottom-color: $accent; }
 }
 .cv-download {
@@ -292,3 +294,18 @@ body { padding-bottom: 2em; }
   .project-pager__title { display: block; font-family: $serif; font-size: 1.15em; color: inherit; }
 }
 @media screen and (max-width: 767px) { .project-pager { flex-direction: column; } .project-pager .is-empty { display: none; } }
+
+/* Responsive 16:9 frame for embedded video (the video include wraps its iframe in this) */
+.responsive-video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1em; }
+.responsive-video-container iframe, .responsive-video-container embed, .responsive-video-container object { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+/* Skip link: off-screen until focused */
+.skip-link { position: absolute; top: -100px; left: 1em; z-index: 100; padding: .5em 1em; background: $panel; color: $accent; border: 1px solid $rule; border-radius: 3px; font-family: $sans-serif; font-size: .85em; }
+.skip-link:focus { top: 1em; }
+
+/* Utilities that replace former inline styles */
+.indent { margin-left: 20px; }
+.edu-logo { height: 50px; vertical-align: middle; margin-left: 10px; }
+.edu-logo--sm { height: 34px; }
+.u-capitalize { text-transform: capitalize; }
+.page__citation { font-size: smaller; }
