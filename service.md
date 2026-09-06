@@ -9,7 +9,7 @@ excerpt: "Academic service, leadership and honors of Lening Li: journal and conf
 
 ## Academic service
 
-**Journal reviewer** — IEEE Robotics and Automation Letters (RA-L); IEEE Transactions on Intelligent Transportation Systems; IET Cyber-Systems and Robotics; Discover Robotics; The Journal of Supercomputing.
+**Journal reviewer** — IEEE Transactions on Automation Science and Engineering (T-ASE); IEEE Transactions on Systems, Man, and Cybernetics: Systems; IEEE Transactions on Intelligent Transportation Systems; IEEE Robotics and Automation Letters (RA-L); IEEE Access; IET Cyber-Systems and Robotics; Discover Robotics; The Journal of Supercomputing.
 
 **Conference reviewer** — ICRA, IROS, CDC, ACC, ECC, and UR.
 
