@@ -11,5 +11,7 @@ main:
     url: /experience/
   - title: "Service"
     url: /service/
+  - title: "Travel"
+    url: /travel/
   - title: "CV"
     url: /cv/

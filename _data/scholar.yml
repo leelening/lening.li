@@ -1,0 +1,7 @@
+# Fallback values shown if the live Semantic Scholar lookup fails (fill from your profiles).
+semantic_scholar_id: "8447450"
+google_scholar_id: "KWUJ10wAAAAJ"
+citations: 289
+h_index: 7
+papers: 16
+updated: "September 2026"

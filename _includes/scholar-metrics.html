@@ -1,0 +1,23 @@
+{% assign sc = site.data.scholar %}
+{% if sc.semantic_scholar_id or sc.citations %}
+<div class="scholar-metrics" data-s2="{{ sc.semantic_scholar_id }}">
+  <div class="scholar-metric"><span class="scholar-metric__n" data-k="citationCount">{{ sc.citations }}</span><span class="scholar-metric__l">Citations</span></div>
+  <div class="scholar-metric"><span class="scholar-metric__n" data-k="hIndex">{{ sc.h_index }}</span><span class="scholar-metric__l">h-index</span></div>
+  <div class="scholar-metric"><span class="scholar-metric__n" data-k="paperCount">{{ sc.papers }}</span><span class="scholar-metric__l">Papers</span></div>
+  <div class="scholar-metric__src">
+    <span class="scholar-metric__note">via <a href="https://www.semanticscholar.org/author/{{ sc.semantic_scholar_id }}" rel="noopener">Semantic Scholar</a>{% if sc.updated %}<span class="scholar-metric__asof"> · as of {{ sc.updated }}</span>{% endif %}</span>
+    {% if sc.google_scholar_id %}<a class="scholar-metric__gs" href="https://scholar.google.com/citations?user={{ sc.google_scholar_id }}" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar profile</a>{% endif %}
+  </div>
+</div>
+<script>
+(function () {
+  var box = document.querySelector('.scholar-metrics'); if (!box || !box.getAttribute('data-s2')) return;
+  var url = 'https://api.semanticscholar.org/graph/v1/author/' + box.getAttribute('data-s2') + '?fields=citationCount,hIndex,paperCount';
+  fetch(url).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    if (!d) return;
+    box.querySelectorAll('.scholar-metric__n').forEach(function (el) { var k = el.getAttribute('data-k'); if (d[k] != null) el.textContent = d[k].toLocaleString(); });
+    var asof = box.querySelector('.scholar-metric__asof'); if (asof) asof.textContent = ' · live';
+  }).catch(function () {});
+})();
+</script>
+{% endif %}

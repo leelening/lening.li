@@ -18,6 +18,6 @@ We study the solution concepts of these hypergames to design **deceptive strateg
 
 {% include video id="J6JVcfapAcE" provider="youtube" %}
 
-### Related work
+### Outcomes
 
 1. {% reference li2022dynamic %}
