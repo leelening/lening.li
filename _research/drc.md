@@ -61,7 +61,7 @@ From the practice course behind the lab at WPI in the run-up to the Finals: the 
 
 {% include gallery caption="Team WPI-CMU's Atlas at WPI — in the lab and on the practice course — in the run-up to the 2015 Finals." %}
 
-### Related work
+### Outcomes
 
 1. {% reference li2016birrtopt %}
 2. {% reference atkeson2015no %}

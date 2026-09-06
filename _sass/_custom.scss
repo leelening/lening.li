@@ -257,3 +257,13 @@ body { padding-bottom: 2em; }
 
 /* Gallery tiles: no link underline under images */
 .page__content figure a, .page__content figure a:hover { border-bottom: none !important; }
+
+/* Scholar metrics strip (Publications) */
+.scholar-metrics { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 2.4em; margin: 0 0 2.2em; padding: 1em 0 1.1em; border-top: 1px solid $rule-2; border-bottom: 1px solid $rule-2; }
+.scholar-metric { display: flex; flex-direction: column; }
+.scholar-metric__n { font-family: $serif; font-size: 1.9em; line-height: 1.1; color: $ink; font-variant-numeric: tabular-nums; }
+.scholar-metric__l { font-family: $sans-serif; font-size: .66em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: $ink-3; margin-top: .25em; }
+.scholar-metric__src { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: .25em; font-family: $sans-serif; font-size: .7em; color: $ink-3; }
+.scholar-metric__src a { color: $ink-2; border-bottom: none !important; }
+.scholar-metric__src a:hover { color: $accent; }
+@media screen and (max-width: 700px) { .scholar-metric__src { margin-left: 0; align-items: flex-start; width: 100%; margin-top: .8em; } }

@@ -18,6 +18,6 @@ We use **importance sampling** to search efficiently for the optimal feedback po
 
 {% include video id="WkkSpqLudss" provider="youtube" %}
 
-### Related work
+### Outcomes
 
 1. {% reference li2017sampling %}

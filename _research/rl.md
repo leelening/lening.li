@@ -37,7 +37,7 @@ The goal is a **model-free reinforcement learning method for stochastic planning
 
 {% include video id="MJRgdngLjbw" provider="youtube" %}
 
-### Related work
+### Outcomes
 
 1. {% reference li2019topological %}
 2. {% reference li2019approximate %}

@@ -6,6 +6,8 @@ title: Publications
 excerpt: "Publications by Lening Li — conference and journal papers on temporal-logic planning, reinforcement learning, game-theoretic security, and humanoid robotics, with PDFs and BibTeX."
 ---
 
+{% include scholar-metrics.html %}
+
 ## Draft
 {: .pub-section .pub-preprint}
 
