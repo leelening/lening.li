@@ -228,7 +228,7 @@ body { padding-bottom: 2em; }
 
 /* Rail: quiet portrait, neutral interest chips */
 .author__avatar { padding: 0; overflow: visible; }
-.author__avatar img { padding: 0 !important; border: 1px solid $rule !important; border-radius: 3px !important; box-shadow: 0 4px 14px rgba(0,0,0,.06); }
+.author__avatar img { padding: 0 !important; border: 1px solid $rule !important; border-radius: 50% !important; box-shadow: 0 4px 14px rgba(0,0,0,.06); }
 .author__bio { margin-top: .6em; }
 .author__bio .chip { display: inline-block; font-family: $sans-serif; font-size: .66em; font-weight: 500; letter-spacing: .02em; padding: .18em .6em; margin: 0 .3em .35em 0; border-radius: 3px; background: rgba($ink,.06); color: $ink-2; }
 .author__urls li a:hover, .author__urls li a:hover .author__urls-label { color: $accent !important; }
