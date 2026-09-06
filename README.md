@@ -42,5 +42,6 @@ git submodule update --remote files/cv && git commit -am "Bump CV submodule"
 
 - **News** — the "Recent Updates" grid in `index.md`.
 - **Publications** — add BibTeX to `_bibliography/references.bib` (types used: `@preprint`, `@inproceedings`, `@article`, `@inbook`, `@phdthesis`; add a `pdf = {…}` field for the PDF button).
+- **Fonts** — Source Serif 4 and Inter are self-hosted in `assets/fonts/text/` (Fontsource builds, declared in `_sass/_webfonts.scss`). Font Awesome (`assets/webfonts/`) and Academicons (`assets/fonts/`) are **subset** to the icons the templates reference (see `_includes/author-profile.html`); to use a new icon, re-run `pyftsubset` on the full font with the extra codepoint added.
 - **Research projects** — one Markdown file per project in `_research/`, plus a card in `research.md`.
 - **Sidebar** — `author:` block in `_config.yml`.
