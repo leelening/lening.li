@@ -25,6 +25,9 @@ Recent Updates
   <span class="updates__date">Aug 2025</span>
   <span>🎓 Started the MBA program at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (Tepper School of Business).</span>
 
+  <span class="updates__date">May 2025</span>
+  <span>🏆 Team 10102Z (<a href="https://www.vincisteam.com">Vinci STEAM</a>), which I coach, won the Middle School World Championship at <a href="https://www.vincisteam.com/post/global-stage-vinci-pride-vinci-steam-dominates-vex-worlds">VEX Worlds 2025</a> in Dallas.</span>
+
   <span class="updates__date">Apr 2023</span>
   <span>🎉 Our paper <a href="https://arxiv.org/abs/2304.11641">Probabilistic Planning with Prioritized Preferences over Temporal Logic Objectives</a> was accepted to IJCAI 2023 (acceptance rate ~15%).</span>
 
