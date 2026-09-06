@@ -39,10 +39,6 @@ gallery:
     image_path: drc/course-overhead-th.jpg
     alt: "Overhead view of the outdoor DRC practice course at WPI"
     title: "The practice course behind the lab at WPI"
-  - url: drc/atlas-walk-2.jpg
-    image_path: drc/atlas-walk-2-th.jpg
-    alt: "Atlas walking, tethered, with an operator alongside"
-    title: "Tethered walking test"
 ---
 
 {% include figure image_path="/assets/drc_team.jpg" alt="WPI-CMU team with the Atlas humanoid robot" caption="Team WPI-CMU with Boston Dynamics' Atlas at the DARPA Robotics Challenge Finals, 2015." %}
