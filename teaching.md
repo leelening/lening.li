@@ -23,4 +23,4 @@ Managed and mentored a team of five undergraduate peer learning assistants; desi
 
 ## Mentoring
 
-At Harvard I advise student researchers in Prof. Na Li's group on algorithm design, system evaluation and reproducible methodology. Outside the university I coach school robotics teams as a certified REC Foundation coach (2023–2024) and certified FIRST Tech Challenge coach (2022–2023), guiding students through robot design, programming and competition strategy.
+At Harvard I advise student researchers in Prof. Na Li's group on algorithm design, system evaluation and reproducible methodology. Outside the university I coach school robotics teams as a certified REC Foundation coach (2023–2024) and certified FIRST Tech Challenge coach (2022–2023), guiding students through robot design, programming and competition strategy. In the 2023–2024 VEX season I coached [Vinci STEAM](https://www.vincisteam.com)'s middle-school team **10102Z** to a winning result.
