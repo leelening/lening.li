@@ -3,6 +3,7 @@ layout: single
 permalink: /travel/
 permalink_name: /travel
 title: Travel
+excerpt: "Places Lening Li has travelled for conferences and collaborations."
 ---
 
 

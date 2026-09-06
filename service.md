@@ -4,6 +4,7 @@ permalink: /service/
 permalink_name: /service
 title: Service
 author_profile: true
+excerpt: "Academic service, leadership and honors of Lening Li: journal and conference reviewing, WPI Graduate Student Government presidency, memberships and awards."
 ---
 
 ## Academic service

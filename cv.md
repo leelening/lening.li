@@ -4,6 +4,7 @@ permalink: /cv/
 permalink_name: /cv
 title: Curriculum Vitae
 author_profile: true
+excerpt: "Curriculum vitae of Lening Li (English and Chinese), compiled from the latest LaTeX source."
 ---
 
 <div class="cv-tabs" role="tablist" aria-label="CV language">

@@ -37,6 +37,7 @@ visitor_map:
   ocean    : "f5f6f7"
 
 # Site settings
+og_image                 : "profile.jpg"   # default social-preview image (in /images/)
 teaser                   :
 breadcrumbs              : false
 words_per_minute         : 160

@@ -4,6 +4,7 @@ permalink: /teaching/
 permalink_name: /teaching
 title: Teaching
 author_profile: true
+excerpt: "Teaching and mentoring by Lening Li: WPI robotics and computer-vision courses, Harvard research advising, and VEX / FIRST robotics coaching."
 ---
 
 I taught for five years at WPI as a graduate teaching assistant, from the first-year robotics sequence to graduate computer vision, and hold a Certification in College Teaching from the Higher Education Consortium of Central Massachusetts (2017–2019).

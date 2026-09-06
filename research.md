@@ -33,6 +33,7 @@ feature_row:
     url: /research/drc/
     btn_label: "Read more"
     btn_class: "btn--primary"
+excerpt: "Research by Lening Li: reinforcement learning and optimal control under temporal-logic specifications, hypergames for cyber-physical security, anytime motion planning, and the DARPA Robotics Challenge."
 ---
 
 My work sits at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: turning high-level task specifications into robot policies that come with provable guarantees, and deploying those ideas on real systems — from humanoids to fleets of thousands of warehouse robots.
