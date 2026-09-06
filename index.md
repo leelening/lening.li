@@ -17,7 +17,7 @@ Recent Updates
 
 <div class="updates">
   <span class="updates__date">Sep 2026</span>
-  <span>🎉 Our paper <a href="https://arxiv.org/abs/2304.10041">Topological Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives</a> was accepted to the <a href="https://www.icicc.org/">4th International Conference on Intelligent Control and Computing (IC&amp;C 2026)</a>, Harbin, China.</span>
+  <span>🎉 Our paper <a href="https://arxiv.org/abs/2304.10041">Topology-Guided Modular Actor-Critic Learning for Continuous Systems under Temporal Objectives</a> was accepted to the <a href="https://www.icicc.org/">4th International Conference on Intelligent Control and Computing (IC&amp;C 2026)</a>, Harbin, China.</span>
 
   <span class="updates__date">Dec 2025</span>
   <span>💼 Joined <a href="https://www.harvard.edu/">Harvard University</a> as Robotic Lab Advisor to Prof. <a href="https://nali.seas.harvard.edu/">Na Li</a>'s group.</span>
