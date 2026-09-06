@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /research/drc/
-permalink_name: /drc
 title: DARPA Robotics Challenge
 description: Motion planning and control for humanoid robots competing in the DARPA Robotics Challenge, focused on bipedal locomotion in disaster-response environments.
 header:
@@ -61,7 +60,7 @@ From the practice course behind the lab at WPI in the run-up to the Finals: the 
 
 {% include gallery caption="Team WPI-CMU's Atlas at WPI — in the lab and on the practice course." %}
 
-### Outcomes
+## Outcomes
 
 1. {% reference li2016birrtopt %}
 2. {% reference atkeson2015no %}

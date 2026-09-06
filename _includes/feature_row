@@ -26,13 +26,13 @@
               {% else %}
                 "{{ f.image_path | prepend: "/images/" | prepend: base_path }}"
               {% endif %}
-            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}" loading="lazy" decoding="async">
           </div>
         {% endif %}
 
         <div class="archive__item-body">
           {% if f.title %}
-            <h2 class="archive__item-title">{{ f.title }}</h2>
+            <h3 class="archive__item-title">{{ f.title }}</h3>
           {% endif %}
 
           {% if f.excerpt %}

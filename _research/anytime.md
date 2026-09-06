@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /research/anytime/
-permalink_name: /anytime
 title: Anytime Planning via Function Approximation and Importance Sampling
 description: Scalable anytime motion planning using function approximation and importance sampling, with support for parallel and cloud-accelerated computation.
 header:
@@ -18,6 +17,6 @@ We use **importance sampling** to search efficiently for the optimal feedback po
 
 {% include video id="WkkSpqLudss" provider="youtube" %}
 
-### Outcomes
+## Outcomes
 
 1. {% reference li2017sampling %}

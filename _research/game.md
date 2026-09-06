@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /research/game/
-permalink_name: /game
 title: Formal Methods and Game Theory for Cyber-Physical Security
 description: Hypergame-theoretic framework for synthesizing deceptive strategies in adversarial environments, with applications to security in cyber-physical systems.
 header:
@@ -18,6 +17,6 @@ We study the solution concepts of these hypergames to design **deceptive strateg
 
 {% include video id="J6JVcfapAcE" provider="youtube" %}
 
-### Outcomes
+## Outcomes
 
 1. {% reference li2023dynamic %}
