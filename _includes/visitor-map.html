@@ -1,7 +1,7 @@
 {% comment %}
   Visitor map at the foot of the rail. `visitor_map.provider` is "clustrmaps" (plain image,
   no script — this is the counter the old site used, so its history carries over) or
-  "mapmyvisitors" (script widget; style "globe" or "map"). Rendered only when `visitor_map.id` is non-empty.
+  "mapmyvisitors" (style "image" = plain map.png with no script, "globe" = 3-D widget, "map" = flat script widget). Rendered only when `visitor_map.id` is non-empty.
 {% endcomment %}
 {% assign vm = site.visitor_map %}
 {% if vm.id and vm.id != "" %}
@@ -9,6 +9,8 @@
   <span class="visitor-map__label">Visitors</span>
   {% if vm.provider == "mapmyvisitors" and vm.style == "globe" %}
   <script type="text/javascript" id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d={{ vm.id }}"></script>
+  {% elsif vm.provider == "mapmyvisitors" and vm.style == "image" %}
+  <a href="https://mapmyvisitors.com/web/{{ vm.site | default: '1c81u' }}" title="Visit tracker" rel="nofollow noopener" target="_blank"><img src="https://mapmyvisitors.com/map.png?d={{ vm.id }}&cl=ffffff" alt="Map of recent visitors" loading="lazy"></a>
   {% elsif vm.provider == "mapmyvisitors" %}
   <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d={{ vm.id }}&co={{ vm.ocean | default: 'f5f6f7' }}&cmo={{ vm.dot | default: 'A51C30' }}&cmn={{ vm.dot_new | default: 'e36c7a' }}&ct={{ vm.land | default: 'cfd3d8' }}"></script>
   {% else %}

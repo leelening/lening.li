@@ -27,8 +27,9 @@ author:
 # carries over; plain image, no script) or "mapmyvisitors" (script widget). Empty id hides it.
 visitor_map:
   provider : "mapmyvisitors"
-  style    : "map"       # "globe" (3-D) or "map" (flat, recolored to the theme)
+  style    : "image"     # "image" (static map.png, no script) | "map" (flat widget) | "globe" (3-D)
   id       : "93Ge7jHpH5hunv9BfCt5UmZBOQCk1M7nkV-VtjGT-y4"
+  site     : "1c81u"     # public stats page: https://mapmyvisitors.com/web/1c81u
   # Previous counter (ClustrMaps, used on the old site): provider "clustrmaps",
   # id "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ", site "1bh5y"
   dot      : "A51C30"    # flat-map colours (ignored by the globe)
