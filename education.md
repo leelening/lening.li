@@ -28,7 +28,7 @@ excerpt: "Education of Lening Li: MBA at Carnegie Mellon (Tepper), Ph.D. and M.S
 <div style="margin-left: 20px;" markdown="1">
 **B.E. in Computer Science**  
 *China | Sep. 2010 – Jul. 2014*
-- Summa Cum Laude (Top 5% of class)
+- Summa Cum Laude (top 5% of class)
 
 **B.A. in English Language & Literature**  
 *China | Sep. 2011 – Jul. 2014*

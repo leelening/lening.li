@@ -19,8 +19,8 @@ excerpt: "Academic service, leadership and honors of Lening Li: journal and conf
 
 As **President of WPI's Graduate Student Government** (Jan. 2019 – May 2020) I led the organization's governance and served as the primary liaison between the graduate student body and the administration — escalating housing concerns to the Board of Trustees with the Graduate Studies Office, and serving on the Provost Search Committee. WPI's [profile of the Class of 2020](https://www.wpi.edu/news/gsg-president-fondly-recalls-graduate-class-2020) has a few words from that year.
 
-Earlier, I volunteered with the Lhasa Welfare Center for Children (2013), fundraising for children's education and tutoring Chinese, math and English.
+Earlier, I volunteered with the Lhasa Welfare Center for Children (2013), fundraising for children's education and tutoring Chinese, math, and English.
 
 ## Honors
 
-Alex F. Backlin Fund Scholarship, WPI (2021); Travel Grant Award, Lehigh University (2019); WPI Graduate Student Travel Awards (2017, 2019 ×2); Summa Cum Laude, Harbin Institute of Technology (2014).
+Tepper Professional Development Fund, Carnegie Mellon University (2026); Alex F. Backlin Fund Scholarship, WPI (2021); Travel Grant Award, Lehigh University (2019); WPI Graduate Student Travel Awards (2017, 2019 ×2); Summa Cum Laude, Harbin Institute of Technology (2014).

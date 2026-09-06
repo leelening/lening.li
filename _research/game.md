@@ -14,7 +14,7 @@ In an adversarial environment, information — and the lack of it — is decisiv
 
 Part of this work was carried out under the DARPA SI3-CMD program (*Serial Interactions in Imperfect Information Games for Complex Military Decision Making*) in collaboration with SSCI, where the framework was implemented in Python and shown to raise mission success probability by exploiting information asymmetry.
 
-We study the solution concepts of these hypergames to design **deceptive strategies with provable mission guarantees**. Game theory for deception and counter-deception has applications in military operations, contested search and rescue, and the design of secured cyber networks — including industrial control systems — that use deception mechanisms.
+We study the solution concepts of these hypergames to design **deceptive strategies with provable mission guarantees**. Game theory for deception and counter-deception has applications in military operations, contested search and rescue, and the design of secure cyber networks — including industrial control systems — that use deception mechanisms.
 
 {% include video id="J6JVcfapAcE" provider="youtube" %}
 

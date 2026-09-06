@@ -59,7 +59,7 @@ As a member of Team WPI-CMU I designed a **motion planner for arm manipulation**
 
 From the practice course behind the lab at WPI in the run-up to the Finals: the door task, tool grasping for the wall-cutting task, and walking trials with Atlas.
 
-{% include gallery caption="Team WPI-CMU's Atlas at WPI — in the lab and on the practice course — in the run-up to the 2015 Finals." %}
+{% include gallery caption="Team WPI-CMU's Atlas at WPI — in the lab and on the practice course." %}
 
 ### Outcomes
 
