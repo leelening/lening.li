@@ -67,7 +67,7 @@ $paper                      : #f6f8f7;   // page background (mist)
 $panel                      : #ffffff;   // panels / code background
 $ink                        : #15130f;   // --ink
 $ink-2                      : #4b463d;   // --ink2
-$ink-3                      : #867f71;   // --ink3
+$ink-3                      : #6f695d;   // --ink3 (was #867f71, 3.7:1 — failed AA on small text; now 5.1:1 on $paper)
 $rule                       : #d3d7dc;   // --rule
 $rule-2                     : #e6e9ec;   // --rule2
 $accent                     : #A51C30;   // --accent (crimson)
