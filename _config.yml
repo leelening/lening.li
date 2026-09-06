@@ -36,7 +36,7 @@ visitor_map:
   dot      : "3acc3a"    # cmo visitor dots
   dot_new  : "ff5353"    # cmn recent visitors
   text     : "808080"    # ct  counter text
-  width    : "300"       # w   ("a" = auto)
+  width    : "a"         # w   "a" = auto-fit the sidebar (a fixed 300 overflowed it and caused a horizontal scrollbar)
   # Previous counter (ClustrMaps, used on the old site): provider "clustrmaps",
   # id "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ", site "1bh5y"
 
