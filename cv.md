@@ -19,6 +19,11 @@ excerpt: "Curriculum vitae of Lening Li (English and Chinese), compiled from the
   </object>
 </div>
 
+<div class="cv-mobile">
+  <a class="btn btn--primary" href="/files/cv/CV_English.pdf"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> English CV (PDF)</a>
+  <a class="btn" href="/files/cv/cv_Chinese.pdf"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> 中文简历 (PDF)</a>
+</div>
+
 <p class="cv-note">Compiled at deploy time from the LaTeX source in <a href="https://github.com/leelening/curriculum_vitae">curriculum_vitae</a>, so it is always the latest version.</p>
 
 <script>
