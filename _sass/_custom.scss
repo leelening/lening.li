@@ -254,3 +254,6 @@ body { padding-bottom: 2em; }
   &:hover { color: $accent; border-color: $accent; }
   &.is-done { color: #fff; background: $accent; border-color: $accent; }
 }
+
+/* Gallery tiles: no link underline under images */
+.page__content figure a, .page__content figure a:hover { border-bottom: none !important; }

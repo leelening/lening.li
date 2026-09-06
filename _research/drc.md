@@ -7,6 +7,10 @@ description: Motion planning and control for humanoid robots competing in the DA
 header:
   teaser: teasers/drc.jpg
 gallery:
+  - url: drc/atlas-lab.jpg
+    image_path: drc/atlas-lab-th.jpg
+    alt: "Atlas standing in the WPI Robotics lab"
+    title: "Atlas in the WPI Robotics lab"
   - url: drc/atlas-drill.jpg
     image_path: drc/atlas-drill-th.jpg
     alt: "Atlas holding a cordless drill during the wall task"
@@ -55,7 +59,7 @@ As a member of Team WPI-CMU I designed a **motion planner for arm manipulation**
 
 From the practice course behind the lab at WPI in the run-up to the Finals: the door task, tool grasping for the wall-cutting task, and walking trials with Atlas.
 
-{% include gallery caption="Team WPI-CMU's Atlas on the practice course at WPI, spring 2015." %}
+{% include gallery caption="Team WPI-CMU's Atlas at WPI — in the lab and on the practice course — in the run-up to the 2015 Finals." %}
 
 ### Related work
 
