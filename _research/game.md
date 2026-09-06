@@ -20,4 +20,4 @@ We study the solution concepts of these hypergames to design **deceptive strateg
 
 ### Outcomes
 
-1. {% reference li2022dynamic %}
+1. {% reference li2023dynamic %}
