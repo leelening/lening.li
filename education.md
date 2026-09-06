@@ -3,6 +3,7 @@ layout: single
 permalink: /education/
 permalink_name: /education
 title: Education
+excerpt: "Education of Lening Li: MBA at Carnegie Mellon (Tepper), Ph.D. and M.S. degrees from WPI, B.E. and B.A. from Harbin Institute of Technology."
 ---
 
 ## Carnegie Mellon University ![CMU](/assets/cmu_logo.svg){:style="height: 50px; vertical-align: middle; margin-left: 10px;"}

@@ -3,6 +3,7 @@ layout: single
 permalink: /experience/
 permalink_name: /experience
 title: Experience
+excerpt: "Industry and advisory experience of Lening Li: Harvard University, Symbotic, Berkshire Grey, Rudolph Technologies, Neusoft."
 ---
 
 ## Harvard University
