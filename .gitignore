@@ -14,3 +14,10 @@ _site
 # OS
 .DS_Store
 Thumbs.db
+
+# Local-only: Claude session deliveries, screenshots, raw photo originals
+*.bundle
+/Claude outputs/
+/assets/_DSC*.jpg
+/assets/_dsc*.jpg
+/assets/1712546447351.jpg
