@@ -12,7 +12,7 @@
   {% elsif vm.provider == "mapmyvisitors" and vm.style == "image" %}
   <a href="https://mapmyvisitors.com/web/{{ vm.site | default: '1c81u' }}" title="Visit tracker" rel="nofollow noopener" target="_blank"><img src="https://mapmyvisitors.com/map.png?d={{ vm.id }}&cl={{ vm.background | default: 'ffffff' }}" alt="Map of recent visitors" loading="lazy"></a>
   {% elsif vm.provider == "mapmyvisitors" %}
-  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d={{ vm.id }}&cl={{ vm.background | default: 'ffffff' }}&w=a"></script>
+  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl={{ vm.background | default: 'ffffff' }}&w={{ vm.width | default: 'a' }}&t=n&d={{ vm.id }}&co={{ vm.ocean | default: 'ffffff' }}&cmo={{ vm.dot | default: '3acc3a' }}&cmn={{ vm.dot_new | default: 'ff5353' }}&ct={{ vm.land | default: '808080' }}"></script>
   {% else %}
   <a href="https://clustrmaps.com/site/{{ vm.site | default: '1bh5y' }}" title="Visitor map" rel="nofollow noopener" target="_blank"><img src="https://www.clustrmaps.com/map_v2.png?d={{ vm.id }}&cl=ffffff&w=a&t=n&co={{ vm.ocean | default: 'f5f6f7' }}&cmo={{ vm.dot | default: 'A51C30' }}&cmn={{ vm.dot_new | default: 'e36c7a' }}&ct={{ vm.land | default: 'cfd3d8' }}" alt="Map of recent visitors" loading="lazy"></a>
   {% endif %}

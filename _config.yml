@@ -30,13 +30,15 @@ visitor_map:
   style    : "map"       # "map" (flat widget, auto width) | "image" (static map.png, no script) | "globe" (3-D)
   id       : "93Ge7jHpH5hunv9BfCt5UmZBOQCk1M7nkV-VtjGT-y4"
   site     : "1c81u"     # public stats page: https://mapmyvisitors.com/web/1c81u
-  background : "f6f8f7"  # widget background (hex, no #); matches the page background
+  # Colors from the MapMyVisitors customizer (hex, no #)
+  background : "080808"  # cl
+  width      : "300"     # w  ("a" = auto)
+  ocean      : "ffffff"  # co
+  dot        : "3acc3a"  # cmo
+  dot_new    : "ff5353"  # cmn
+  land       : "808080"  # ct
   # Previous counter (ClustrMaps, used on the old site): provider "clustrmaps",
   # id "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ", site "1bh5y"
-  dot      : "A51C30"    # flat-map colours (ignored by the globe)
-  dot_new  : "e36c7a"
-  land     : "cfd3d8"
-  ocean    : "f5f6f7"
 
 # Site settings
 og_image                 : "profile.jpg"   # default social-preview image (in /images/)
