@@ -7,17 +7,9 @@ author_profile: true
 excerpt: "Teaching and mentoring by Lening Li: WPI robotics and computer-vision courses, Harvard research advising, and VEX / FIRST robotics coaching."
 ---
 
-I taught for five years at WPI as a graduate teaching assistant, from the first-year robotics sequence to graduate computer vision, and hold a Certification in College Teaching from the Higher Education Consortium of Central Massachusetts (2017–2019).
+I used to be a bad student who lacked interest in pursuing knowledge, until my middle-school teacher changed my life fundamentally and I became hungry to learn. That is why I believe a teacher has the choice and the power to do much more than merely teach the course material. Teaching is not the passive delivery of what students should know; it should motivate students to learn actively and think reflectively. And learning is not mechanically memorizing information — it is digesting it into one's own knowledge, ultimately in order to solve problems.
 
-## Teaching philosophy
-
-I was not a good student until a middle-school teacher changed how I saw learning, and that experience is the root of how I teach: a teacher can do far more than transmit course material. Teaching, to me, is not the passive delivery of facts but the work of getting students to learn actively, think reflectively, and eventually use what they know to solve problems that were not in the syllabus. Learning is not memorizing; it is digesting information until it becomes one's own.
-
-I like to describe a course as a voyage: the instructor is the captain, the students are the crew, and the semester's goals are agreed on before leaving port. The captain's job is to motivate, train and sometimes push — through lectures, labs and projects — while the crew's is to engage, question and work as a team, because nobody reaches the destination alone. The crew also needs a bit of a pirate spirit: the freedom and courage to take what they learned in class and apply it, combining ideas from several fields, to a practical problem they have never seen.
-
-In practice this means a few habits. A short survey at the start of term to learn students' backgrounds, needs and learning styles, followed by a quick review so everyone begins on the same page; a "muddiest point" check at the end of each lecture, and an open door at office hours. Group projects deliberately mixing complementary strengths, with attention to team dynamics when a group struggles. Rubrics handed out with the assignment rather than after, and assessment weighted toward labs and final projects, where hands-on ability is built. Recorded lectures and optional extended readings — including a glimpse of current research even in introductory courses, which I have found does more to spark curiosity than anything else. And a deliberate effort to encourage women in engineering, who are still given too few opportunities in the field.
-
-Finally, *live and learn*: a good teacher keeps learning — through teaching-certificate programs such as HECCMA, conferences that keep the material current, and peer feedback from colleagues. My short-term goal is to deliver material accurately enough to serve as a solid foundation for whatever students do next; the long-term one is to be the kind of teacher who doesn't just inform students but changes their trajectory, as one once changed mine.
+I think of a course as a pirate ship setting out for the ultimate treasure: the instructor is the captain, the students are the sailors, and the goals are made clear before leaving port. The captain motivates, trains and sometimes pushes the crew through lectures, labs and final projects; the sailors follow the instructions, work as a team and think reflectively about the problems that come up — because without everyone's enthusiasm and hard work, nobody reaches the destination by the end of the semester. In practice that means a survey and a quick review at the start so everyone is on the same page, a "muddiest point" check after each lecture, groups built from complementary strengths, rubrics released the day an assignment goes out, assessment weighted toward labs and projects, recorded lectures and extended readings that hint at current research. And, as the old Chinese saying goes, *live and learn*: I keep sharpening my own teaching so that I can be a teacher who not only delivers knowledge but inspires students.
 
 ## Courses
 
@@ -31,6 +23,8 @@ Supervised the hands-on labs — kinematics and control of a 3D-printed robot ar
 **RBE 1001 · Introduction to Robotics** — *2017–2018*  
 Managed and mentored a team of five undergraduate peer learning assistants; designed and graded projects, lab reports and homework.
 </div>
+
+Certification in College Teaching, Higher Education Consortium of Central Massachusetts (HECCMA), 2017–2019.
 
 ## Mentoring
 
