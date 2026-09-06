@@ -19,7 +19,7 @@ I work with Prof. Na Li's group on cutting-edge research at the meeting point of
 **Senior Software Engineer**  
 *Wilmington, MA, USA | Oct. 2022 – Present*
 
-I work on everything on the robots: the multi-agent path-planning and coordination algorithms (C++) that run warehouse fleets numbering in the thousands, the control design, state estimation, and fault-tolerant behavior architectures that keep those fleets robust in production, and the real-time decision-making pipelines that have to meet strict latency budgets while thousands of autonomous robots act concurrently.
+I work on everything on the robots: the multi-agent path-planning and coordination algorithms (C++) that run warehouse fleets numbering in the thousands, the control design, state estimation, and fault-tolerant behavior architectures that keep those fleets robust in production, and the real-time decision-making pipelines that have to meet strict latency budgets while the whole fleet acts concurrently.
 </div>
 
 ## Berkshire Grey
@@ -27,7 +27,7 @@ I work on everything on the robots: the multi-agent path-planning and coordinati
 **Senior Software Engineer**  
 *Bedford, MA, USA | Oct. 2021 – Aug. 2022*
 
-On the pick team I led development of perception and manipulation algorithms (ROS, C++, Python) that let robots grasp novel, previously unseen SKUs reliably, and cut end-to-end system latency by reworking the inter-process communication and execution pipelines.
+On the pick team I led development of perception and manipulation algorithms (ROS, C++, Python) that let robots grasp previously unseen SKUs reliably, and cut end-to-end system latency by reworking the inter-process communication and execution pipelines.
 </div>
 
 ## Rudolph Technologies
