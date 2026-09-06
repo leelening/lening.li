@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /teaching/
-permalink_name: /teaching
 title: Teaching
 author_profile: true
 excerpt: "Teaching and mentoring by Lening Li: WPI robotics and computer-vision courses, Harvard research advising, and VEX / FIRST robotics coaching."
@@ -13,7 +12,7 @@ I think of a course as a pirate ship setting out for the ultimate treasure: the 
 
 ## Courses
 
-<div style="margin-left: 20px;" markdown="1">
+<div class="indent" markdown="1">
 **RBE 549 · Computer Vision** (graduate) — *Fall 2022, Fall 2018*  
 Co-designed and delivered the Fall 2022 edition of the course, covering classical and deep-learning approaches, with weekly lectures and office hours supporting student projects ([course site](https://nitinjsanket.github.io/teaching/rbe549/fall2022.html)).
 

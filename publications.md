@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /publications/
-permalink_name: /publications
 title: Publications
 excerpt: "Publications by Lening Li — conference and journal papers on temporal-logic planning, reinforcement learning, game-theoretic security, and humanoid robotics, with PDFs and BibTeX."
 ---

@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /software/
-permalink_name: /software
 title: Software
 excerpt: "Open-source software by Lening Li: MulVAL-to-PDDL and pddl-parser."
 ---

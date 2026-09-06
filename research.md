@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /research/
-permalink_name: /research
 title: Research
 author_profile: true
 feature_row:

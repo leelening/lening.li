@@ -13,7 +13,7 @@ excerpt: "Curriculum vitae of Lening Li (English and Chinese), compiled from the
 </div>
 
 <div class="cv-frame" id="cv-panel" role="tabpanel" aria-labelledby="cv-tab-en">
-  <object id="cv-viewer" data="/files/cv/CV_English.pdf" type="application/pdf" width="100%" height="1140">
+  <object id="cv-viewer" data="/files/cv/CV_English.pdf" type="application/pdf" height="1140">
     <p>Your browser can't display the PDF inline — <a id="cv-fallback" href="/files/cv/CV_English.pdf">download the CV</a> instead.</p>
   </object>
 </div>
