@@ -26,7 +26,7 @@ excerpt: "Education of Lening Li: MBA at Carnegie Mellon (Tepper), Ph.D. and M.S
 
 ## Harbin Institute of Technology (HIT) ![HIT](/assets/hit_logo.gif){:style="height: 50px; vertical-align: middle; margin-left: 10px;"}
 <div style="margin-left: 20px;" markdown="1">
-**B.S. in Computer Science**  
+**B.E. in Computer Science**  
 *China | Sep. 2010 – Jul. 2014*
 - Summa Cum Laude (Top 5% of class)
 

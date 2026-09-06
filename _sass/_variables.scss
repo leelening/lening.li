@@ -116,9 +116,10 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $accent;
+$link                       : #2f6fb3;   // body links (blue); the crimson accent stays for navigation, headings and buttons
+$link-color                 : $link;
 $link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
+$link-color-visited         : $link-color;
 $masthead-link-color        : $ink-2;
 $masthead-link-color-hover  : $accent;
 

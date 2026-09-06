@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6,
 /* Links: the showcase's brick red, underlined with a hairline rather than
    the browser's heavy default. */
 a {
-  color: $accent;
+  color: $link-color;
 
   &:hover,
   &:focus {
@@ -94,11 +94,11 @@ a {
 .archive {
   a:not(.btn) {
     text-decoration: none;
-    border-bottom: 1px solid rgba($accent, 0.32);
+    border-bottom: 1px solid rgba($link-color, 0.35);
     transition: border-color 0.15s ease, color 0.15s ease;
 
     &:hover {
-      border-bottom-color: $accent;
+      border-bottom-color: $link-color;
     }
   }
 }
