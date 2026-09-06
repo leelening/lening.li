@@ -27,7 +27,7 @@ author:
 # carries over; plain image, no script) or "mapmyvisitors" (script widget). Empty id hides it.
 visitor_map:
   provider : "mapmyvisitors"
-  style    : "image"     # "image" (static map.png, no script) | "map" (flat widget) | "globe" (3-D)
+  style    : "map"       # "map" (flat widget, auto width) | "image" (static map.png, no script) | "globe" (3-D)
   id       : "93Ge7jHpH5hunv9BfCt5UmZBOQCk1M7nkV-VtjGT-y4"
   site     : "1c81u"     # public stats page: https://mapmyvisitors.com/web/1c81u
   # Previous counter (ClustrMaps, used on the old site): provider "clustrmaps",
