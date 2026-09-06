@@ -1,6 +1,6 @@
 # Site
 locale                   : "en-US"
-title                    : "Lening Li"
+title                    : "Dr. Lening Li"
 title_separator          : "-"
 name                     : "Lening Li"
 tagline                  : "Researcher · Engineer · MBA Candidate"
@@ -14,7 +14,7 @@ twitter_username         : LeeLening
 # Sidebar author profile
 author:
   avatar           : "profile.jpg"
-  name             : "Lening Li"
+  name             : "Dr. Lening Li"
   bio              : "<span class=\"chip\">Reinforcement learning</span><span class=\"chip\">Optimal control</span><span class=\"chip\">Game theory</span><span class=\"chip\">Formal methods</span><span class=\"chip\">Robotics</span>"
   location         : "Science and Engineering Complex, Allston, MA"
   employer         : "Harvard University · Symbotic · CMU Tepper"
