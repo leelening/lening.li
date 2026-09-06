@@ -2,7 +2,7 @@
 layout: single
 permalink: /
 permalink_name: /home
-title: "Dr. Lening Li (郦乐宁)"
+title: "Lening Li (郦乐宁)"
 excerpt: "Robotics engineer and researcher — reinforcement learning, optimal control, game theory, and formal methods."
 author_profile: true
 ---
