@@ -157,31 +157,18 @@ a {
    ========================================================================== */
 
 /*
-   The top bar
+   The rail
    --------------------------------------------------------------------------
-   Where the rail is fixed it already carries the name and every tab, so the
-   bar above it is a second copy of both. Retire it there and give the page
-   back its 70px.
-
-   `visibility` rather than `display`: the theme's greedy-nav measures the
-   bar's links on load and recurses while they overflow. Collapse their
-   widths to zero and that loop can never terminate. Hidden this way they
-   keep their geometry, so the script behaves exactly as it does untouched.
+   Navigation lives in the top bar on every screen size; the rail keeps the
+   profile, contacts and visitor map.
    ========================================================================== */
-
-/* Navigation lives in the top bar on every screen size; the rail keeps the
-   profile, contacts and visitor map. */
 
 @media screen and (min-width: #{$sidebar-screen-min-width}) {
   .sidebar.sticky {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    /* The masthead is visibility:hidden at this width (see above), so there
-       is no bar to sit under -- reserving $masthead-height for it cost 70px
-       of rail and pushed the contact links towards the fold. Start at the top
-       of the screen and own all of it, with the portrait aligned to where the
-       page content begins. */
+    /* Sits under the fixed top bar and owns the rest of the viewport. */
     top: $masthead-height;
     height: calc(100vh - #{$masthead-height});
     padding-top: 22px;
@@ -196,7 +183,6 @@ a {
 
     .author__avatar { order: 1; }
     .author__content { order: 2; }
-    .nav-rail        { order: 3; }
     .author__urls-wrapper { order: 4; }
   }
 

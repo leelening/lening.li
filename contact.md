@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /contact/
-permalink_name: /contact
 title: Contact
 excerpt: "Contact Lening Li — email and office at the Harvard Science and Engineering Complex, Allston, MA."
 ---

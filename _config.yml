@@ -52,6 +52,7 @@ atom_feed:
 
 # Reading files
 include:
+  - files
   - files/cv/CV_English.pdf
   - files/cv/cv_Chinese.pdf
 exclude:
@@ -138,6 +139,6 @@ scholar:
   replace_strings: true
   join_strings:    true
   details_dir:    bibliography
-  details_layout: bib.html
+  details_layout: bibtex.html
   details_link:   Details
   query: "@*"

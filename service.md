@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /service/
-permalink_name: /service
 title: Service
 author_profile: true
 excerpt: "Academic service, leadership and honors of Lening Li: journal and conference reviewing, WPI Graduate Student Government presidency, memberships and awards."
@@ -39,14 +38,14 @@ excerpt: "Academic service, leadership and honors of Lening Li: journal and conf
 
 ## Leadership
 
-**President, WPI Graduate Student Government** — *Jan. 2019 – May 2020*
+**President, WPI Graduate Student Government** — *Jan 2019 – May 2020*
 
 - Led the organization's governance and served as the primary liaison between the graduate student body and the university administration.
 - Partnered with the Graduate Studies Office to escalate housing concerns directly to the Board of Trustees.
 - Served on the Provost Search Committee and provided formal recommendations.
 - WPI's [profile of the Class of 2020](https://www.wpi.edu/news/gsg-president-fondly-recalls-graduate-class-2020) has a few words from that year.
 
-**Volunteer, Lhasa Welfare Center for Children** — *Jul. – Sep. 2013*
+**Volunteer, Lhasa Welfare Center for Children** — *Jul – Sep 2013*
 
 - Fundraised to support educational services for children from low-income families.
 - Tutored children in Chinese, math, and English.
