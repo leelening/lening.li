@@ -10,19 +10,19 @@
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}" width="640" height="640">
     {% endif %}
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <p class="author__name">{{ author.name }}</p>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+    <button class="btn btn--inverse" aria-expanded="false" aria-controls="author-urls">Follow</button>
+    <ul class="author__urls social-icons" id="author-urls">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
@@ -39,22 +39,22 @@
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.arxiv %}
-        <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i><span class="author__urls-label">arXiv</span></a></li>
+        <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right" aria-hidden="true"></i><span class="author__urls-label">arXiv</span></a></li>
       {% endif %}      
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar icon-pad-right"></i><span class="author__urls-label">Google Scholar</span></a></li>
+        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar icon-pad-right" aria-hidden="true"></i><span class="author__urls-label">Google Scholar</span></a></li>
       {% endif %}
       {% if author.semantic %}
-        <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i><span class="author__urls-label">Semantic Scholar</span></a></li>
+        <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right" aria-hidden="true"></i><span class="author__urls-label">Semantic Scholar</span></a></li>
       {% endif %}
       {% if author.impactstory %}
-        <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw icon-pad-right"></i><span class="author__urls-label">Impactstory</span></a></li>
+        <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw icon-pad-right" aria-hidden="true"></i><span class="author__urls-label">Impactstory</span></a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i><span class="author__urls-label">ORCID</span></a></li>
+        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right" aria-hidden="true"></i><span class="author__urls-label">ORCID</span></a></li>
       {% endif %}
       {% if author.pubmed %}
-        <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i><span class="author__urls-label">PubMed</span></a></li>
+        <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right" aria-hidden="true"></i><span class="author__urls-label">PubMed</span></a></li>
       {% endif %}                        
       {% if author.researchgate %}
         <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i><span class="author__urls-label">ResearchGate</span></a></li>

@@ -1,10 +1,11 @@
 {% include base_path %}
 
-<div class="masthead">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button aria-label="Menu" aria-expanded="false" aria-controls="site-nav-hidden"><div class="navicon"></div></button>
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
@@ -17,8 +18,8 @@
             <li class="masthead__menu-item{% if cur %} is-current{% endif %}"><a href="{{ domain }}{{ link.url }}"{% if cur %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul class="hidden-links hidden" id="site-nav-hidden"></ul>
       </nav>
     </div>
   </div>
-</div>
+</header>

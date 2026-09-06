@@ -15,7 +15,7 @@ twitter_username         : LeeLening
 author:
   avatar           : "profile.jpg"
   name             : "Dr. Lening Li"
-  bio              : "<span class=\"chip\">Reinforcement learning</span><span class=\"chip\">Optimal control</span><span class=\"chip\">Game theory</span><span class=\"chip\">Formal methods</span><span class=\"chip\">Robotics</span>"
+  bio              : "<span class=\"chip\">Reinforcement learning</span> <span class=\"chip\">Optimal control</span> <span class=\"chip\">Game theory</span> <span class=\"chip\">Formal methods</span> <span class=\"chip\">Robotics</span>"
   location         : "Science and Engineering Complex, Allston, MA"
   employer         : "Harvard University · Symbotic · CMU Tepper"
   email            : "leningli@outlook.com"
@@ -52,7 +52,6 @@ atom_feed:
 
 # Reading files
 include:
-  - files
   - files/cv/CV_English.pdf
   - files/cv/cv_Chinese.pdf
 exclude:
@@ -65,7 +64,6 @@ exclude:
   - README.md
   - Dockerfile
   - docker-compose.yml
-  - jekyll-shell-theme.gemspec
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
@@ -140,6 +138,6 @@ scholar:
   replace_strings: true
   join_strings:    true
   details_dir:    bibliography
-  details_layout: bibtex.html
+  details_layout: bib.html
   details_link:   Details
   query: "@*"

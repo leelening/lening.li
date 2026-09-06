@@ -1,7 +1,6 @@
 ---
 layout: single
 permalink: /research/rl/
-permalink_name: /rl
 title: Learning-based Planning with Temporal Logic Constraints
 description: Model-free reinforcement learning for stochastic planning under temporal logic constraints, using PCTL chance constraints and topological approximate dynamic programming.
 header:
@@ -37,7 +36,7 @@ The goal is a **model-free reinforcement learning method for stochastic planning
 
 {% include video id="MJRgdngLjbw" provider="youtube" %}
 
-### Outcomes
+## Outcomes
 
 1. {% reference li2019topological %}
 2. {% reference li2019approximate %}

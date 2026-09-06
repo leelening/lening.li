@@ -7,13 +7,17 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-16x16.png" sizes="16x16">
 <meta name="theme-color" content="#f6f8f7">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="{{ base_path }}/assets/fonts/text/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ base_path }}/assets/fonts/text/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- end custom head snippets -->
 <script>
 document.addEventListener('click', function (e) {
+  var tgl = e.target.closest('#site-nav > button, .author__urls-wrapper > button');
+  if (tgl) { setTimeout(function () {
+    var panel = document.getElementById(tgl.getAttribute('aria-controls'));
+    if (panel) tgl.setAttribute('aria-expanded', panel.classList.contains('hidden') || getComputedStyle(panel).display === 'none' ? 'false' : 'true');
+  }, 250); }
   var btn = e.target.closest('.bib-copy'); if (!btn) return;
   var pre = btn.parentNode.querySelector('pre'); if (!pre) return;
   var text = pre.textContent;
