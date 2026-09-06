@@ -208,56 +208,38 @@ body { padding-bottom: 2em; }
 }
 
 /* ==========================================================================
-   Color
+   Color — one accent, everything else neutral
    ========================================================================== */
-$grad: linear-gradient(90deg, $accent 0%, $gold 55%, $navy 100%);
-
-/* A thin spectrum line along the very top of the page */
-.masthead::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: $grad; }
-
-/* Headings: short gradient bar instead of a full-width hairline */
+/* Headings: short crimson bar instead of a full-width hairline */
 .page__title { border-bottom: none; padding-bottom: .15em; margin-bottom: 1em; }
-.page__title::after { content: ''; display: block; width: 72px; height: 3px; margin-top: .45em; border-radius: 2px; background: $grad; }
+.page__title::after { content: ''; display: block; width: 56px; height: 2px; margin-top: .45em; background: $accent; }
 .page__content h2 { border-bottom: none; padding-bottom: 0; }
-.page__content h2::after { content: ''; display: block; width: 40px; height: 2px; margin-top: .35em; border-radius: 2px; background: $grad; }
+.page__content h2::after { content: ''; display: block; width: 32px; height: 2px; margin-top: .35em; background: $accent; opacity: .85; }
 
-/* Rail: portrait ring, interest chips */
-.author__avatar { padding: 4px 0 0 5px; overflow: visible; }
-.author__avatar img { padding: 0 !important; border: 3px solid #fff !important; border-radius: 4px !important; box-shadow: 0 0 0 2px rgba($accent, .45), 0 6px 18px rgba(0,0,0,.08); }
+/* Rail: quiet portrait, neutral interest chips */
+.author__avatar { padding: 0; overflow: visible; }
+.author__avatar img { padding: 0 !important; border: 1px solid $rule !important; border-radius: 3px !important; box-shadow: 0 4px 14px rgba(0,0,0,.06); }
 .author__bio { margin-top: .6em; }
-.author__bio .chip { display: inline-block; font-family: $sans-serif; font-size: .66em; font-weight: 600; letter-spacing: .02em; padding: .18em .6em; margin: 0 .3em .35em 0; border-radius: 999px; }
-.author__bio .chip:nth-child(5n+1) { background: rgba($accent,.10); color: darken($accent,4%); }
-.author__bio .chip:nth-child(5n+2) { background: rgba($navy,.10);   color: $navy; }
-.author__bio .chip:nth-child(5n+3) { background: rgba($teal,.12);   color: $teal; }
-.author__bio .chip:nth-child(5n+4) { background: rgba($gold,.16);   color: darken($gold,8%); }
-.author__bio .chip:nth-child(5n+5) { background: rgba($ink,.07);    color: $ink-2; }
+.author__bio .chip { display: inline-block; font-family: $sans-serif; font-size: .66em; font-weight: 500; letter-spacing: .02em; padding: .18em .6em; margin: 0 .3em .35em 0; border-radius: 3px; background: rgba($ink,.06); color: $ink-2; }
 .author__urls li a:hover, .author__urls li a:hover .author__urls-label { color: $accent !important; }
 
-/* Recent Updates: a soft tinted column for the dates */
-.updates__date { color: $accent; }
+/* Publications: plain section headings; numbering carries the structure */
+.pub-section::before { display: none; }
 
-/* Publications: colored markers per section */
-.pub-section::before { content: ''; display: inline-block; width: .55em; height: .55em; border-radius: 50%; margin: 0 .5em .1em 0; vertical-align: middle; background: $accent; }
-.pub-preprint::before { background: $gold; }
-.pub-conf::before     { background: $accent; }
-.pub-journal::before  { background: $navy; }
-.pub-book::before     { background: $teal; }
-.pub-thesis::before   { background: $ink-3; }
-
-/* Research cards: tinted teaser mounts */
-.feature__item .archive__item-teaser { background: linear-gradient(135deg, rgba($accent,.06), rgba($navy,.06)); border-radius: 6px; padding: 10px; }
-.feature__item .archive__item-teaser img { border: 0 !important; padding: 0 !important; background: transparent !important; border-radius: 4px; }
+/* Research cards: neutral mounts */
+.feature__item .archive__item-teaser { background: $panel; border: 1px solid $rule-2; border-radius: 3px; padding: 8px; }
+.feature__item .archive__item-teaser img { border: 0 !important; padding: 0 !important; background: transparent !important; border-radius: 2px; }
 .feature__item .archive__item-title { color: $ink; }
 
 /* Buttons: primary is filled */
 .btn--primary, .page__content .btn--primary { background: $accent !important; color: #fff !important; border-color: $accent !important; }
 .btn--primary:hover, .page__content .btn--primary:hover { background: darken($accent,8%) !important; border-color: darken($accent,8%) !important; }
 
-/* Footer: same spectrum line */
-.page__footer.site-footer { border-top: 0; position: relative; padding-top: 1.2em; }
-.page__footer.site-footer::before { content: ''; position: absolute; top: 0; left: 0; width: 72px; height: 2px; border-radius: 2px; background: $grad; }
+/* Footer */
+.page__footer.site-footer { border-top: 1px solid $rule-2; position: relative; padding-top: 1.2em; }
+.page__footer.site-footer::before { display: none; }
 
-/* CV tabs & funding captions pick up the palette */
+/* CV tabs */
 .cv-tab.is-active { border-bottom-color: $accent; }
 .sponsor figcaption { color: $ink-2; }
 
