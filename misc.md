@@ -18,7 +18,14 @@ feature_row:
     url: https://leelening.github.io/mulval_to_pddl/
     btn_label: "View project"
     btn_class: "btn--primary"
-excerpt: "Side projects by Lening Li: LineupIQ and MulVAL to PDDL."
+  - image_path: teasers/pddl-parser.svg
+    alt: "PDDL domain and problem expanded into a graph of reachable states and grounded actions"
+    title: "PDDL Parser"
+    excerpt: "A small, dependency-free Python tool that reads a STRIPS-style PDDL domain and problem (with typing and negative preconditions), grounds every lifted action over the declared objects, and explores the reachable state space by breadth-first search from the initial state. The result is a labelled, deterministic transition system ready for classical planning, MDP solving, or attack-graph analysis. Ships as a Python library, a CLI, and an in-browser demo. [Source on GitHub](https://github.com/leelening/pddl_parser)."
+    url: https://leelening.github.io/pddl_parser/
+    btn_label: "View project"
+    btn_class: "btn--primary"
+excerpt: "Side projects by Lening Li: LineupIQ, MulVAL to PDDL, and PDDL Parser."
 ---
 
 Side projects built outside of research and work.
