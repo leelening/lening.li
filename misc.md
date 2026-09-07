@@ -11,7 +11,14 @@ feature_row:
     url: https://leelening.github.io/lineupiq/
     btn_label: "View project"
     btn_class: "btn--primary"
-excerpt: "Side projects by Lening Li, including LineupIQ."
+  - image_path: teasers/mulval.svg
+    alt: "MulVAL attack graph nodes mapped to PDDL init state, actions, and goal"
+    title: "MulVAL to PDDL"
+    excerpt: "Converts MulVAL logical attack graphs into PDDL for automated planners: leaf facts become the initial state, interaction rules become STRIPS actions, and derived privileges become predicates and the goal. Runs entirely in the browser from MulVAL's `VERTICES.CSV` and `ARCS.CSV`, and produces `domain.pddl` and `problem.pddl`. Used in our [ACC 2023 paper](https://arxiv.org/abs/2210.07385) on proactive sensor placement in probabilistic attack graphs. [Source on GitHub](https://github.com/leelening/mulval_to_pddl)."
+    url: https://leelening.github.io/mulval_to_pddl/
+    btn_label: "View project"
+    btn_class: "btn--primary"
+excerpt: "Side projects by Lening Li: LineupIQ and MulVAL to PDDL."
 ---
 
 Side projects built outside of research and work.
