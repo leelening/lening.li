@@ -1,4 +1,4 @@
-<section class="books" id="books" data-base="https://leelening.github.io/books/" data-repo="leelening/books">
+<section class="books" id="books-app" data-base="https://leelening.github.io/books/" data-repo="leelening/books">
   <p class="books__lede">A short, opinionated list of the classic books in computer science and robotics, with the mathematics and control theory underneath them, and where to read each one. Links only: nothing is hosted, and every entry points to the author's or publisher's free copy when one exists. If a book you search for isn't listed, the search looks it up on <a href="https://openlibrary.org" rel="noopener">Open Library</a>, checks it against the "classic" bar, and lets you propose it.</p>
   <form class="books__search" role="search" onsubmit="return false">
     <label class="visually-hidden" for="books-q">Search books</label>
@@ -12,7 +12,7 @@
 </section>
 <script type="module">
 (async function () {
-  const root = document.getElementById('books'); if (!root) return;
+  const root = document.getElementById("books-app"); if (!root) return;
   const BASE = root.getAttribute('data-base'), REPO = root.getAttribute('data-repo');
   const OL_SEARCH = 'https://openlibrary.org/search.json';
   const OL_FIELDS = 'key,title,author_name,first_publish_year,edition_count,publisher,subject,ratings_average,ratings_count,readinglog_count,want_to_read_count,number_of_pages_median,cover_i,isbn';
