@@ -21,7 +21,8 @@
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const state = { books: [], topics: [], topic: 'All', q: '', timer: null, abort: null, gate: null };
 
-  // The "is this a classic?" check is shared with the books site and its GitHub Action; load it lazily and degrade if unavailable.
+  /* The "is this a classic?" check is shared with the books site and its GitHub Action; load it lazily and degrade if unavailable.
+     NOTE: the site is served through jekyll-compress-html, which strips newlines — never use double-slash comments in inline scripts. */
   const gate = () => state.gate || (state.gate = import(BASE + 'scripts/quality-gate.js').catch(() => null));
 
   try {
@@ -84,7 +85,7 @@
     if (!toks.length && state.topic === 'All') {
       count.textContent = state.books.length + ' books';
       hideOnline();
-      return; // idle: the chips are the overview; results appear on search or topic
+      return; /* idle: the chips are the overview; results appear on search or topic */
     }
     const hits = pool.map((b) => [score(b, toks), b]).filter(([s]) => s > 0).sort((a, b) => b[0] - a[0] || a[1].year - b[1].year);
     count.textContent = toks.length ? hits.length + ' of ' + pool.length : pool.length + ' books';
@@ -123,7 +124,7 @@
   }
   function link(href, text, cls) { const a = el('a', cls, text); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; }
 
-  // ---- not in the library: look it up on Open Library ----
+  /* ---- not in the library: look it up on Open Library ---- */
   function hideOnline() {
     clearTimeout(state.timer);
     if (state.abort) { state.abort.abort(); state.abort = null; }
