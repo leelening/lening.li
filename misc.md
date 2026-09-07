@@ -11,14 +11,10 @@ feature_row:
     url: https://leelening.github.io/lineupiq/
     btn_label: "View project"
     btn_class: "btn--primary"
-excerpt: "Side projects and open-source software by Lening Li: LineupIQ, MulVAL-to-PDDL, and pddl-parser."
+excerpt: "Side projects by Lening Li, including LineupIQ."
 ---
 
-Side projects and small tools built outside of research and work.
+Side projects built outside of research and work.
 
 {% include feature_row type="left" %}
 
-## Software
-
-- [MulVAL-to-pddl](https://github.com/leelening/MulVAL-to-pddl) — Converts MulVAL network attack graph output to PDDL format for use with automated planners.
-- [pddl-parser](https://github.com/leelening/pddl-parser) — A parser for Planning Domain Definition Language (PDDL) files.
