@@ -310,3 +310,62 @@ body { padding-bottom: 2em; }
 .edu-logo--sm { height: 34px; }
 .u-capitalize { text-transform: capitalize; }
 .page__citation { font-size: smaller; }
+
+/* Misc: classic CS & robotics books search (data from leelening.github.io/books) */
+.books { margin: 0 0 3em; }
+.books__lede { color: $ink-2; margin-bottom: 1.1em; }
+.books__search { position: relative; margin: 0 0 .8em; }
+.books__search input[type="search"] { width: 100%; box-sizing: border-box; font-family: $serif; font-size: 1.05em; color: $ink; background: $panel; border: 1px solid $rule; border-radius: 3px; padding: .6em 6.5em .6em .9em; box-shadow: none; -webkit-appearance: none; appearance: none; }
+.books__search input[type="search"]:focus { outline: none; border-color: $accent; box-shadow: 0 0 0 3px rgba($accent,.12); }
+.books__search input::placeholder { color: $ink-3; opacity: 1; }
+.books__count { position: absolute; right: .9em; top: 50%; transform: translateY(-50%); font-family: $sans-serif; font-size: .7em; letter-spacing: .04em; color: $ink-3; font-variant-numeric: tabular-nums; pointer-events: none; }
+.books__chips { display: flex; flex-wrap: wrap; gap: .35em .4em; margin: 0 0 1.2em; }
+.books__chip { font-family: $sans-serif; font-size: .72em; font-weight: 500; letter-spacing: .02em; padding: .3em .7em; border: 1px solid $rule; border-radius: 3px; background: $panel; color: $ink-2; cursor: pointer; line-height: 1.3; }
+.books__chip:hover { border-color: $ink-3; color: $ink; }
+.books__chip[aria-selected="true"] { background: $accent; border-color: $accent; color: #fff; }
+.books__chip-n { margin-left: .45em; opacity: .65; font-variant-numeric: tabular-nums; }
+.books__chip[aria-selected="true"] .books__chip-n { opacity: .8; }
+.books__results mark { background: #f6dfe2; color: inherit; padding: 0 .08em; border-radius: 2px; }
+.books__list { border-top: 1px solid $rule-2; }
+.book { padding: .8em 0 .85em; border-bottom: 1px solid $rule-2; }
+.book__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15em .7em; }
+.book__title { font-family: $serif; font-size: 1.05em; font-weight: 600; color: $ink !important; border-bottom: none !important; }
+.book__title:hover { color: $accent !important; }
+.book__meta { font-family: $sans-serif; font-size: .74em; color: $ink-3; }
+.book__why { font-size: .9em; color: $ink-2; margin: .25em 0 .4em; line-height: 1.5; }
+.book__links { display: flex; flex-wrap: wrap; align-items: center; gap: .3em .55em; font-family: $sans-serif; font-size: .7em; }
+.book__topic { font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .9em; color: $ink-3; margin-right: .35em; }
+.book__lnk { color: $ink-2 !important; border: 1px solid $rule; border-radius: 3px; padding: .15em .55em; text-decoration: none; background: $panel; }
+.book__lnk:hover { border-color: $accent; color: $accent !important; }
+.book__lnk--free { border-color: $accent; color: $accent !important; font-weight: 600; }
+.book__lnk--free:hover { background: $accent; color: #fff !important; }
+.books__empty { font-size: .95em; color: $ink-2; padding: .6em 0 0; }
+.books__online { margin-top: 1.2em; padding: 1em 1.1em 1.1em; background: $panel; border: 1px solid $rule-2; border-radius: 3px; }
+.books__online-title, .page__content .books__online-title { font-size: 1.05em; margin: 0 0 .3em; padding-top: 0; }
+.books__online-title::before { display: none; }
+.books__sub { font-size: .88em; color: $ink-2; margin: 0 0 .8em; }
+.books__spinner { display: inline-block; width: .8em; height: .8em; margin-right: .5em; vertical-align: -.1em; border: 2px solid $rule; border-top-color: $accent; border-radius: 50%; animation: books-spin .8s linear infinite; }
+@keyframes books-spin { to { transform: rotate(360deg); } }
+.books__hits { border-top: 1px solid $rule-2; }
+.hit { display: flex; gap: 1em; align-items: flex-start; padding: .75em 0; border-bottom: 1px solid $rule-2; }
+.hit__body { flex: 1 1 auto; min-width: 0; }
+.hit__t { font-weight: 600; font-size: .98em; }
+.hit__m { font-family: $sans-serif; font-size: .74em; color: $ink-3; margin-top: .1em; }
+.hit__reasons { font-family: $sans-serif; font-size: .74em; color: $ink-2; margin: .35em 0 0 1.1em; padding: 0; }
+.hit__reasons li { margin: 0; }
+.hit__badge { font-family: $sans-serif; font-size: .64em; font-weight: 600; letter-spacing: .04em; padding: .15em .5em; margin-left: .6em; border-radius: 3px; vertical-align: .12em; white-space: nowrap; }
+.hit__badge--pass { background: #e3f1e8; color: #1d6b3a; }
+.hit__badge--review { background: #fbefd6; color: #7a4d00; }
+.hit__badge--reject, .hit__badge--dup { background: rgba($ink,.07); color: $ink-2; }
+.hit__act { flex: 0 0 auto; }
+.hit__btn, .page__content .hit__btn { margin: 0; font-size: .7em; padding: .5em .9em; white-space: nowrap; }
+.hit__btn--quiet, .page__content .hit__btn--quiet { background: $panel !important; color: $ink-2 !important; border: 1px solid $rule !important; }
+.hit__btn--quiet:hover, .page__content .hit__btn--quiet:hover { border-color: $accent !important; color: $accent !important; }
+.hit__btn[disabled] { opacity: .45; cursor: not-allowed; }
+.books__foot { font-family: $sans-serif; font-size: .72em; color: $ink-3; margin: 1em 0 0; }
+.books__foot a { color: $ink-2; }
+@media screen and (max-width: 600px) {
+  .books__search input[type="search"] { padding-right: .9em; }
+  .books__count { position: static; transform: none; display: block; margin-top: .4em; }
+  .hit { flex-direction: column; gap: .5em; }
+}

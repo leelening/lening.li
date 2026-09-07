@@ -1,0 +1,217 @@
+<section class="books" id="books" data-base="https://leelening.github.io/books/" data-repo="leelening/books">
+  <p class="books__lede">A short, opinionated list of the classic books in computer science and robotics, with the mathematics and control theory underneath them, and where to read each one. Links only: nothing is hosted, and every entry points to the author's or publisher's free copy when one exists. If a book you search for isn't listed, the search looks it up on <a href="https://openlibrary.org" rel="noopener">Open Library</a>, checks it against the "classic" bar, and lets you propose it.</p>
+  <form class="books__search" role="search" onsubmit="return false">
+    <label class="visually-hidden" for="books-q">Search books</label>
+    <input id="books-q" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, author, or topic — “Kalman”, “Knuth”, “compilers”">
+    <span class="books__count" id="books-count" aria-live="polite"></span>
+  </form>
+  <div class="books__chips" id="books-chips" role="tablist" aria-label="Topics"></div>
+  <div class="books__results" id="books-results" aria-live="polite"></div>
+  <div class="books__online" id="books-online" hidden></div>
+  <p class="books__foot">The full library, and how additions are reviewed, lives at <a href="https://leelening.github.io/books/" rel="noopener">leelening.github.io/books</a> · <a href="https://github.com/leelening/books" rel="noopener">Source on GitHub</a></p>
+</section>
+<script type="module">
+(async function () {
+  const root = document.getElementById('books'); if (!root) return;
+  const BASE = root.getAttribute('data-base'), REPO = root.getAttribute('data-repo');
+  const OL_SEARCH = 'https://openlibrary.org/search.json';
+  const OL_FIELDS = 'key,title,author_name,first_publish_year,edition_count,publisher,subject,ratings_average,ratings_count,readinglog_count,want_to_read_count,number_of_pages_median,cover_i,isbn';
+  const $ = (s) => root.querySelector(s);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const state = { books: [], topics: [], topic: 'All', q: '', timer: null, abort: null, gate: null };
+
+  // The "is this a classic?" check is shared with the books site and its GitHub Action; load it lazily and degrade if unavailable.
+  const gate = () => state.gate || (state.gate = import(BASE + 'scripts/quality-gate.js').catch(() => null));
+
+  try {
+    const data = await (await fetch(BASE + 'books.json', { cache: 'no-cache' })).json();
+    state.books = data.books;
+  } catch (e) {
+    $('#books-results').innerHTML = '<p class="books__empty">The library could not be loaded right now. Browse it directly at <a href="' + BASE + '">leelening.github.io/books</a>.</p>';
+    return;
+  }
+  const order = ['Algorithms & Theory', 'Programming Languages', 'Software Engineering', 'Systems', 'AI & Machine Learning', 'Robotics', 'Control & Optimization', 'Mathematics'];
+  const seen = new Set(state.books.map((b) => b.topic));
+  state.topics = order.filter((t) => seen.has(t)).concat([...seen].filter((t) => !order.includes(t)).sort());
+
+  const input = $('#books-q');
+  input.addEventListener('input', (e) => { state.q = e.target.value; render(); });
+  input.addEventListener('keydown', (e) => { if (e.key === 'Escape') { input.value = ''; state.q = ''; render(); } });
+  renderChips(); render();
+
+  function renderChips() {
+    const box = $('#books-chips'); box.innerHTML = '';
+    const counts = {}; for (const b of state.books) counts[b.topic] = (counts[b.topic] || 0) + 1;
+    const mk = (label, n) => {
+      const c = el('button', 'books__chip'); c.type = 'button'; c.setAttribute('role', 'tab');
+      c.append(label, el('span', 'books__chip-n', n));
+      c.setAttribute('aria-selected', String(state.topic === label));
+      c.onclick = () => { state.topic = state.topic === label && label !== 'All' ? 'All' : label; renderChips(); render(); };
+      return c;
+    };
+    box.append(mk('All', state.books.length));
+    for (const t of state.topics) box.append(mk(t, counts[t]));
+  }
+
+  function tokens(q) { return q.toLowerCase().split(/[^a-z0-9+#]+/).filter((t) => t.length > 1); }
+  function score(b, toks) {
+    if (!toks.length) return 1;
+    const title = b.title.toLowerCase(), authors = b.authors.join(' ').toLowerCase(), tags = (b.tags || []).join(' ').toLowerCase(), why = (b.why || '').toLowerCase(), topic = b.topic.toLowerCase();
+    let s = 0;
+    for (const t of toks) {
+      if (title.includes(t)) s += title.startsWith(t) ? 6 : 4;
+      else if (authors.includes(t)) s += 4;
+      else if (tags.includes(t)) s += 3;
+      else if (topic.includes(t)) s += 2;
+      else if (why.includes(t)) s += 1;
+      else return 0;
+    }
+    return s;
+  }
+  function highlight(text, toks) {
+    if (!toks.length) return esc(text);
+    const re = new RegExp('(' + toks.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')', 'ig');
+    return esc(text).replace(re, '<mark>$1</mark>');
+  }
+
+  function render() {
+    const toks = tokens(state.q);
+    const pool = state.topic === 'All' ? state.books : state.books.filter((b) => b.topic === state.topic);
+    const out = $('#books-results'); out.innerHTML = '';
+    const count = $('#books-count');
+
+    if (!toks.length && state.topic === 'All') {
+      count.textContent = state.books.length + ' books';
+      hideOnline();
+      return; // idle: the chips are the overview; results appear on search or topic
+    }
+    const hits = pool.map((b) => [score(b, toks), b]).filter(([s]) => s > 0).sort((a, b) => b[0] - a[0] || a[1].year - b[1].year);
+    count.textContent = toks.length ? hits.length + ' of ' + pool.length : pool.length + ' books';
+
+    if (!hits.length) {
+      const e = el('p', 'books__empty');
+      e.innerHTML = 'Nothing in the library matches <strong>' + esc(state.q) + '</strong>' + (state.topic !== 'All' ? ' under ' + esc(state.topic) : '') + '.';
+      out.append(e);
+      scheduleOnline(state.q.trim());
+      return;
+    }
+    hideOnline();
+    const list = el('div', 'books__list');
+    for (const [, b] of (toks.length ? hits : hits.sort((a, b) => a[1].year - b[1].year))) list.append(row(b, toks));
+    out.append(list);
+  }
+
+  function row(b, toks) {
+    const L = b.links || {};
+    const r = el('div', 'book');
+    const head = el('div', 'book__head');
+    const title = el('a', 'book__title'); title.innerHTML = highlight(b.title, toks);
+    title.href = L.free || L.official || L.openlibrary || ('https://openlibrary.org/search?q=' + encodeURIComponent(b.title)); title.target = '_blank'; title.rel = 'noopener';
+    head.append(title);
+    const meta = el('span', 'book__meta'); meta.innerHTML = highlight([b.authors.join(', '), b.edition || (b.year ? String(b.year) : '')].filter(Boolean).join(' · '), toks);
+    head.append(meta);
+    r.append(head);
+    if (b.why) r.append(el('p', 'book__why', b.why));
+    const links = el('div', 'book__links');
+    if (state.topic === 'All') links.append(el('span', 'book__topic', b.topic));
+    if (L.free) links.append(link(L.free, 'Read free', 'book__lnk book__lnk--free'));
+    if (L.official) links.append(link(L.official, /link\.springer|mitpress|pearson|pragprog|oreilly|wiley|athenasc|cambridge/.test(L.official) ? 'Publisher' : 'Official site', 'book__lnk'));
+    links.append(link(L.openlibrary || ('https://openlibrary.org/search?q=' + encodeURIComponent(b.title + ' ' + (b.authors[0] || ''))), 'Open Library', 'book__lnk'));
+    r.append(links);
+    return r;
+  }
+  function link(href, text, cls) { const a = el('a', cls, text); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; }
+
+  // ---- not in the library: look it up on Open Library ----
+  function hideOnline() {
+    clearTimeout(state.timer);
+    if (state.abort) { state.abort.abort(); state.abort = null; }
+    $('#books-online').hidden = true;
+  }
+  function scheduleOnline(q) {
+    clearTimeout(state.timer);
+    if (state.abort) { state.abort.abort(); state.abort = null; }
+    const box = $('#books-online');
+    if (q.length < 3) { box.hidden = true; return; }
+    box.hidden = false;
+    box.innerHTML = '<h3 class="books__online-title">Not in the library yet</h3><p class="books__sub"><span class="books__spinner"></span>Looking up “' + esc(q) + '” on Open Library…</p>';
+    state.timer = setTimeout(() => searchOnline(q), 450);
+  }
+  async function searchOnline(q) {
+    const box = $('#books-online');
+    const ctrl = new AbortController(); state.abort = ctrl;
+    let docs, g;
+    try {
+      const [res, mod] = await Promise.all([fetch(OL_SEARCH + '?q=' + encodeURIComponent(q) + '&fields=' + OL_FIELDS + '&limit=8', { signal: ctrl.signal }), gate()]);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      docs = (await res.json()).docs || []; g = mod;
+    } catch (e) {
+      if (e.name === 'AbortError') return;
+      box.innerHTML = '<h3 class="books__online-title">Not in the library yet</h3><p class="books__sub">Couldn’t reach Open Library. You can still <a href="' + issueUrl({ title: q }) + '" target="_blank" rel="noopener">suggest “' + esc(q) + '” directly</a>.</p>';
+      return;
+    }
+    if (state.abort !== ctrl) return;
+    box.innerHTML = '';
+    box.append(el('h3', 'books__online-title', 'Not in the library yet'));
+    const p = el('p', 'books__sub');
+    if (!docs.length) {
+      p.innerHTML = 'Open Library has nothing for “' + esc(q) + '”. Try the author’s surname or a shorter title, or <a href="' + issueUrl({ title: q }) + '" target="_blank" rel="noopener">suggest it directly</a>.';
+      box.append(p); return;
+    }
+    p.innerHTML = g ? 'Found on Open Library. Each result is pre-checked against the library’s “classic” bar, the same check the GitHub Action runs. <strong>Add</strong> opens a pre-filled issue (GitHub account needed).'
+                    : 'Found on Open Library. <strong>Suggest</strong> opens a pre-filled issue (GitHub account needed); the GitHub Action then checks it against the library’s “classic” bar.';
+    box.append(p);
+    const list = el('div', 'books__hits'); const seenT = new Set();
+    for (const d of docs) { const k = (d.title || '').toLowerCase(); if (seenT.has(k)) continue; seenT.add(k); list.append(hit(d, g)); }
+    box.append(list);
+  }
+  function hit(d, g) {
+    const r = el('div', 'hit');
+    const body = el('div', 'hit__body');
+    const dup = g ? g.isDuplicate({ key: d.key, title: d.title, isbn: d.isbn, authors: d.author_name }, state.books) : null;
+    const a = g ? g.assessBook(d) : null;
+    const badge = dup ? '<span class="hit__badge hit__badge--dup">Already listed</span>'
+      : !a ? '' : a.verdict === 'pass' ? '<span class="hit__badge hit__badge--pass">Likely classic · auto-add</span>'
+      : a.verdict === 'review' ? '<span class="hit__badge hit__badge--review">Needs review</span>'
+      : '<span class="hit__badge hit__badge--reject">Not eligible</span>';
+    body.innerHTML = '<div class="hit__t">' + esc(d.title || 'Untitled') + badge + '</div>'
+      + '<div class="hit__m">' + esc((d.author_name || []).slice(0, 3).join(', ')) + (d.first_publish_year ? ' · ' + d.first_publish_year : '') + (d.edition_count ? ' · ' + d.edition_count + ' edition' + (d.edition_count === 1 ? '' : 's') : '') + '</div>'
+      + (a && a.reasons.length ? '<ul class="hit__reasons">' + a.reasons.slice(0, 3).map((x) => '<li>' + esc(x) + '</li>').join('') + '</ul>' : '');
+    r.append(body);
+    const act = el('div', 'hit__act');
+    if (dup) {
+      const b = el('button', 'btn btn--small hit__btn hit__btn--quiet', 'Show in library'); b.type = 'button';
+      b.onclick = () => { input.value = dup.title; state.q = dup.title; state.topic = 'All'; renderChips(); render(); root.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+      act.append(b);
+    } else if (a && a.verdict === 'reject') {
+      const b = el('button', 'btn btn--small hit__btn hit__btn--quiet', 'Add'); b.type = 'button'; b.disabled = true; b.title = 'Doesn’t meet the classic bar'; act.append(b);
+    } else {
+      const b = el('a', 'btn btn--small btn--primary hit__btn', !a ? 'Suggest' : a.verdict === 'pass' ? 'Add to library' : 'Submit for review');
+      b.href = issueUrl({ title: d.title, authors: (d.author_name || []).slice(0, 4).join(', '), year: d.first_publish_year, olkey: d.key, topic: guessTopic(d) });
+      b.target = '_blank'; b.rel = 'noopener'; act.append(b);
+    }
+    r.append(act);
+    return r;
+  }
+  function guessTopic(d) {
+    const h = [d.title, ...(d.subject || []).slice(0, 40)].join(' ').toLowerCase();
+    const rules = [
+      ['Robotics', /robot|kinematic|manipulat|slam|autonomous|computer vision|motion planning/],
+      ['Control & Optimization', /control|optimi[sz]ation|kalman|estimation|dynamic programming|mpc/],
+      ['AI & Machine Learning', /machine learning|artificial intelligence|neural|deep learning|reinforcement|pattern recognition|statistical learning|graphical model/],
+      ['Systems', /operating system|computer architecture|network|database|distributed|unix|linux|compiler/],
+      ['Software Engineering', /software engineering|refactor|design pattern|agile|clean code|software development/],
+      ['Programming Languages', /programming language|c\+\+|python|java\b|scheme|lisp|haskell|rust|\bgit\b/],
+      ['Mathematics', /mathematic|linear algebra|probability|statistics|calculus|discrete/],
+    ];
+    for (const [t, re] of rules) if (re.test(h)) return t;
+    return 'Algorithms & Theory';
+  }
+  function issueUrl({ title, authors, year, olkey, topic }) {
+    const p = new URLSearchParams({ template: 'add-book.yml', title: ('[Book] ' + (title || '')).trim() });
+    if (authors) p.set('authors', authors); if (year) p.set('year', String(year)); if (olkey) p.set('olkey', olkey); if (topic) p.set('topic', topic);
+    return 'https://github.com/' + REPO + '/issues/new?' + p;
+  }
+})();
+</script>
