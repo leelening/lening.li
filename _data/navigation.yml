@@ -13,5 +13,7 @@ main:
     url: /service/
   - title: "Travel"
     url: /travel/
+  - title: "Misc"
+    url: /misc/
   - title: "CV"
     url: /cv/
