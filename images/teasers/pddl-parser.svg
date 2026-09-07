@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Iowan Old Style', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif">
+  <defs>
+    <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b463d"/></marker>
+    <marker id="mr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#A51C30"/></marker>
+    <style>
+      .st   { fill:#fff; stroke:#15130f; stroke-width:2.5; }
+      .init { fill:#f6dfe2; stroke:#A51C30; }
+      .lbl  { font-size:20px; fill:#15130f; text-anchor:middle; font-weight:600; }
+      .edge { stroke:#4b463d; stroke-width:2.2; fill:none; marker-end:url(#m); }
+      .el   { font-size:15px; fill:#4b463d; text-anchor:middle; font-style:italic; }
+      .cap  { font-size:16px; fill:#867f71; letter-spacing:.12em; }
+      .code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size:15px; fill:#4b463d; }
+      .kw   { fill:#A51C30; font-weight:600; }
+      .step { font-size:14px; fill:#867f71; letter-spacing:.12em; text-anchor:middle; }
+    </style>
+  </defs>
+  <rect width="800" height="450" fill="#f7f8f9"/>
+
+  <!-- PDDL (left) -->
+  <text x="60" y="60" class="cap">PDDL DOMAIN + PROBLEM</text>
+  <g transform="translate(50,80)">
+    <rect x="0" y="0" width="290" height="250" fill="#fff" stroke="#d3d7dc" stroke-width="1.5"/>
+    <g class="code">
+      <text x="16" y="34">(<tspan class="kw">:types</tspan> block)</text>
+      <text x="16" y="70">(<tspan class="kw">:action</tspan> stack</text>
+      <text x="36" y="98">:parameters (?x ?y)</text>
+      <text x="36" y="126">:precondition (and</text>
+      <text x="56" y="154">(holding ?x) (clear ?y))</text>
+      <text x="36" y="182">:effect (and (on ?x ?y)</text>
+      <text x="56" y="210">(not (holding ?x)))</text>
+      <text x="16" y="238">(<tspan class="kw">:init</tspan> …) (<tspan class="kw">:goal</tspan> …)</text>
+    </g>
+  </g>
+
+  <!-- pipeline arrow -->
+  <path d="M360,205 L410,205" stroke="#A51C30" stroke-width="4" fill="none" marker-end="url(#mr)"/>
+  <g class="step">
+    <text x="385" y="160">PARSE</text>
+    <text x="385" y="180">GROUND</text>
+    <text x="385" y="238">EXPLORE</text>
+    <text x="385" y="258">EXPORT</text>
+  </g>
+
+  <!-- transition system (right) -->
+  <text x="440" y="60" class="cap">REACHABLE TRANSITION SYSTEM</text>
+  <g transform="translate(430,80)">
+    <!-- states -->
+    <circle class="st init" cx="50" cy="130" r="28"/><text x="50" y="137" class="lbl">s₀</text>
+    <circle class="st" cx="170" cy="50" r="28"/><text x="170" y="57" class="lbl">s₁</text>
+    <circle class="st" cx="170" cy="210" r="28"/><text x="170" y="217" class="lbl">s₂</text>
+    <circle class="st" cx="300" cy="130" r="28"/><text x="300" y="137" class="lbl">s₃</text>
+    <!-- edges -->
+    <path class="edge" d="M72,113 L146,64"/><text x="100" y="72" class="el">pick-up a</text>
+    <path class="edge" d="M72,147 L146,196"/><text x="100" y="192" class="el">pick-up b</text>
+    <path class="edge" d="M196,64 L277,116"/><text x="255" y="75" class="el">stack a b</text>
+    <path class="edge" d="M196,196 L277,144"/><text x="255" y="196" class="el">stack b a</text>
+    <path class="edge" d="M150,72 L150,190" stroke-dasharray="5 4"/><text x="128" y="136" class="el">put-down</text>
+    <!-- self-loop on s3 -->
+    <path class="edge" d="M288,155 C272,205 328,205 314,157"/><text x="300" y="222" class="el">no-op</text>
+  </g>
+  <text x="610" y="415" class="cap" text-anchor="middle">BFS FROM :init · GROUNDED ACTIONS</text>
+</svg>
