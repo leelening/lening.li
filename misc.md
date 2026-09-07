@@ -25,7 +25,14 @@ feature_row:
     url: https://leelening.github.io/pddl_parser/
     btn_label: "View project"
     btn_class: "btn--primary"
-excerpt: "Side projects by Lening Li: LineupIQ, MulVAL to PDDL, and PDDL Parser."
+  - image_path: teasers/cs-books.svg
+    alt: "Two shelves of computer science textbooks grouped into algorithms, learning and control, software craft, and systems"
+    title: "Computer Science Books"
+    excerpt: "A curated reading shelf of computer science textbooks and reference materials, organized by topic: Knuth's *The Art of Computer Programming*, the core AI, reinforcement learning, convex optimization, and dynamic programming texts, the software-craft classics (*Clean Code*, *Design Patterns*, *Refactoring*, *The Pragmatic Programmer*), and working references for C++, Python, Git, Docker, Kubernetes, MongoDB, and YAML. Kept for personal study and reference; the books remain under their publishers' copyrights."
+    url: https://github.com/leelening/computer_science_books
+    btn_label: "View on GitHub"
+    btn_class: "btn--primary"
+excerpt: "Side projects by Lening Li: LineupIQ, MulVAL to PDDL, PDDL Parser, and a curated computer science bookshelf."
 ---
 
 Side projects built outside of research and work.
