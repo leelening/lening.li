@@ -26,13 +26,13 @@ feature_row:
     btn_label: "View project"
     btn_class: "btn--primary"
   - image_path: teasers/cs-books.svg
-    alt: "Two shelves of computer science textbooks grouped into algorithms, learning and control, software craft, and systems"
-    title: "Computer Science Books"
-    excerpt: "A curated reading shelf of computer science textbooks and reference materials, organized by topic: Knuth's *The Art of Computer Programming*, the core AI, reinforcement learning, convex optimization, and dynamic programming texts, the software-craft classics (*Clean Code*, *Design Patterns*, *Refactoring*, *The Pragmatic Programmer*), and working references for C++, Python, Git, Docker, Kubernetes, MongoDB, and YAML. Kept for personal study and reference; the books remain under their publishers' copyrights."
-    url: https://github.com/leelening/computer_science_books
-    btn_label: "View on GitHub"
+    alt: "Two shelves of classic computer science and robotics books grouped into algorithms and theory, AI and machine learning, robotics, and control and optimization"
+    title: "Classic CS & Robotics Books"
+    excerpt: "A short, opinionated list of the classic books in computer science and robotics, with the mathematics and control theory underneath them, and where to read each one. Three rules: links only (no files are stored; every entry points to the author's or publisher's legal free copy when one exists, otherwise to the publisher and Open Library), classics only (books that have stayed in print and are what practitioners actually recommend), and computer science and robotics only. Search for a book that isn't listed and the site looks it up on Open Library, scores it against the classic bar, and lets you propose it; a GitHub Action adds it automatically if it passes and queues borderline cases for review. [Source on GitHub](https://github.com/leelening/books)."
+    url: https://leelening.github.io/books/
+    btn_label: "View project"
     btn_class: "btn--primary"
-excerpt: "Side projects by Lening Li: LineupIQ, MulVAL to PDDL, PDDL Parser, and a curated computer science bookshelf."
+excerpt: "Side projects by Lening Li: LineupIQ, MulVAL to PDDL, PDDL Parser, and a curated list of classic CS and robotics books."
 ---
 
 Side projects built outside of research and work.
