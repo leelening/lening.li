@@ -192,8 +192,12 @@ a {
     margin-bottom: 14px;
 
     img {
-      width: 207px;
-      height: 207px;
+      /* Sized to the window so the rail never needs its own scrollbar: 207px
+         on a tall screen, shrinking to 140px on a short one. The rest of the
+         rail (name, chips, 7 link rows, visitor map) takes ~650px + masthead. */
+      --avatar: clamp(140px, calc(100vh - 690px), 207px);
+      width: var(--avatar);
+      height: var(--avatar);
       max-width: 207px;
       object-fit: cover;
       border-radius: 0;
