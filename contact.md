@@ -9,6 +9,10 @@ excerpt: "Contact Lening Li — email and office at the Harvard Science and Engi
 
 leningli AT outlook.com
 
+## Book a meeting
+
+[Schedule a time on my calendar](https://calendar.app.google/2WAzksz5mSQYP4T2A)
+
 ## Office
 
 Science and Engineering Complex  
