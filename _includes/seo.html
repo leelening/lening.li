@@ -116,10 +116,9 @@
     "url": {{ seo_url | jsonify }},
     {% if site.og_image %}"image": {{ site.og_image | prepend: "/images/" | prepend: seo_url | jsonify }},{% endif %}
     "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
-    "jobTitle": ["Robotic Lab Advisor", "Senior Software Engineer"],
+    "jobTitle": "Robotic Lab Advisor",
     "affiliation": [
       { "@type": "CollegeOrUniversity", "name": "Harvard University" },
-      { "@type": "Organization", "name": "Symbotic" },
       { "@type": "CollegeOrUniversity", "name": "Carnegie Mellon University" }
     ],
     "alumniOf": [
