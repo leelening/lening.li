@@ -16,9 +16,9 @@ I work with Prof. Na Li's group on cutting-edge research at the meeting point of
 ## Symbotic
 <div class="indent" markdown="1">
 **Senior Software Engineer**  
-*Wilmington, MA, USA | Oct 2022 – Present*
+*Wilmington, MA, USA | Oct 2022 – Sep 2026*
 
-I work on everything on the robots: the multi-agent path-planning and coordination algorithms (C++) that run warehouse fleets numbering in the thousands, the control design, state estimation, and fault-tolerant behavior architectures that keep those fleets robust in production, and the real-time decision-making pipelines that have to meet strict latency budgets while the whole fleet acts concurrently.
+I worked on everything on the robots: the multi-agent path-planning and coordination algorithms (C++) that run warehouse fleets numbering in the thousands, the control design, state estimation, and fault-tolerant behavior architectures that keep those fleets robust in production, and the real-time decision-making pipelines that have to meet strict latency budgets while the whole fleet acts concurrently.
 </div>
 
 ## Berkshire Grey
