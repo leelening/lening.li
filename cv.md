@@ -3,11 +3,12 @@ layout: single
 permalink: /cv/
 title: Curriculum Vitae
 author_profile: true
-excerpt: "Curriculum vitae of Lening Li (English and Chinese), compiled from the latest LaTeX source."
+excerpt: "Curriculum vitae and one-page resume of Lening Li (English and Chinese), compiled from the latest LaTeX source."
 ---
 
 <div class="cv-tabs" role="tablist" aria-label="CV language">
   <button class="cv-tab is-active" role="tab" id="cv-tab-en" aria-selected="true" aria-controls="cv-panel" tabindex="0" data-src="/files/cv/CV_English.pdf" data-name="CV_English.pdf">English</button>
+  <button class="cv-tab" role="tab" id="cv-tab-resume" aria-selected="false" aria-controls="cv-panel" tabindex="-1" data-src="/files/cv/Resume.pdf" data-name="Resume.pdf">Resume</button>
   <button class="cv-tab" role="tab" id="cv-tab-zh" aria-selected="false" aria-controls="cv-panel" tabindex="-1" lang="zh" data-src="/files/cv/cv_Chinese.pdf" data-name="cv_Chinese.pdf">中文</button>
   <a class="cv-download" id="cv-download" href="/files/cv/CV_English.pdf" download="CV_English.pdf"><i class="fas fa-fw fa-download" aria-hidden="true"></i> Download PDF</a>
 </div>
@@ -20,6 +21,7 @@ excerpt: "Curriculum vitae of Lening Li (English and Chinese), compiled from the
 
 <div class="cv-mobile">
   <a class="btn btn--primary" href="/files/cv/CV_English.pdf"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> English CV (PDF)</a>
+  <a class="btn" href="/files/cv/Resume.pdf"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Resume (PDF)</a>
   <a class="btn" href="/files/cv/cv_Chinese.pdf"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> <span lang="zh">中文简历</span> (PDF)</a>
 </div>
 
@@ -40,7 +42,7 @@ excerpt: "Curriculum vitae of Lening Li (English and Chinese), compiled from the
     var fresh = viewer.cloneNode(true); fresh.setAttribute('data', src); viewer.parentNode.replaceChild(fresh, viewer); viewer = fresh;
     fb = document.getElementById('cv-fallback'); fb.href = src;
     dl.href = src; dl.setAttribute('download', tab.getAttribute('data-name'));
-    try { history.replaceState(null, '', '#' + (src.indexOf('Chinese') > -1 ? 'zh' : 'en')); } catch (e) {}
+    try { history.replaceState(null, '', '#' + (src.indexOf('Chinese') > -1 ? 'zh' : src.indexOf('Resume') > -1 ? 'resume' : 'en')); } catch (e) {}
   }
   tabs.forEach(function (t, i) {
     t.addEventListener('click', function () { show(t); });
@@ -49,6 +51,6 @@ excerpt: "Curriculum vitae of Lening Li (English and Chinese), compiled from the
       if (next < 0) return; e.preventDefault(); show(tabs[next]); tabs[next].focus();
     });
   });
-  if (location.hash === '#zh') show(tabs[1]);
+  if (location.hash === '#resume') show(tabs[1]); else if (location.hash === '#zh') show(tabs[2]);
 })();
 </script>

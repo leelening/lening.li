@@ -55,9 +55,10 @@ atom_feed:
 include:
   - files
   - files/cv/CV_English.pdf
+  - files/cv/Resume.pdf
   - files/cv/cv_Chinese.pdf
 exclude:
-  - files/cv          # git submodule (leelening/curriculum_vitae); only the two PDFs above are published
+  - files/cv          # git submodule (leelening/curriculum_vitae); only the three PDFs above are published
   - .bundle
   - .sass-cache
   - Gemfile

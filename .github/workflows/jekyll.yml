@@ -41,7 +41,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: files/cv
-          root_file: CV_English.tex
+          root_file: |
+            CV_English.tex
+            Resume.tex
           latexmk_use_xelatex: false
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
       - name: Build Chinese CV (XeLaTeX)
@@ -52,7 +54,7 @@ jobs:
           latexmk_use_xelatex: true
           args: -file-line-error -halt-on-error -interaction=nonstopmode
       - name: Check CV PDFs exist
-        run: ls -l files/cv/CV_English.pdf files/cv/cv_Chinese.pdf
+        run: ls -l files/cv/CV_English.pdf files/cv/Resume.pdf files/cv/cv_Chinese.pdf
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
