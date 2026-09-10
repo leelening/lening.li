@@ -53,6 +53,7 @@ excerpt: "Academic service, leadership and honors of Lening Li: journal and conf
 ## Honors
 
 - Tepper Professional Development Fund, Carnegie Mellon University (2026)
+- Tepper School Online Hybrid MBA Scholarship ($45,000), Carnegie Mellon University (2025)
 - Alex F. Backlin Fund Scholarship, WPI (2021)
 - Travel Grant Award, Lehigh University (2019)
 - Graduate Student Travel Award, WPI (2017, 2019 ×2)
