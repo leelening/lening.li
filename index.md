@@ -9,12 +9,6 @@ author_profile: true
 I am a **Robotic Lab Advisor** at **Harvard University**, where I work with Prof. [Na Li](https://nali.seas.harvard.edu/)'s group on cutting-edge research in robotics, large language models, and coding agents. I am also pursuing an **MBA** at **Carnegie Mellon University** (Tepper).
 {: .lede}
 
-<p>
-  <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">Explore research</a>
-  <a class="btn" href="{{ '/cv/' | relative_url }}">CV &amp; Resume</a>
-  <a class="btn" href="mailto:{{ site.author.email }}">Contact</a>
-</p>
-
 I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in 2022, advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research lies at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: giving robots high-level task specifications and returning policies with provable guarantees. Before my Ph.D., I completed M.S. degrees in Robotics Engineering and Computer Science at WPI (advised by Prof. [Michael A. Gennert](https://web.cs.wpi.edu/~michaelg/)), and a B.E. in Information Security alongside a B.A. in English Language and Literature at **Harbin Institute of Technology**.
 
 Recent Updates
