@@ -29,11 +29,11 @@ $(document).ready(function(){
   var stickySideBar = function(){
     const MINIMUM_WIDTH = 1024;
 
-    // Adjust if the follow button is shown based upon screen size
+    // Adjust if the contact button is shown based upon screen size
     var width = $(window).width();
     var show = $(".author__urls-wrapper button").length === 0 ? width > MINIMUM_WIDTH : !$(".author__urls-wrapper button").is(":visible");
 
-    // Don't show the follow button if there is no content for it
+    // Don't show the contact button if there is no content for it
     var count = $('.author__urls.social-icons li').length - $('li[class="author__desktop"]').length;
     if (width <= MINIMUM_WIDTH && count === 0) {
       $(".author__urls-wrapper button").hide();
@@ -50,6 +50,7 @@ $(document).ready(function(){
       Stickyfill.stop();
       $(".author__urls").hide();
     }
+    $(".author__urls-wrapper button").attr("aria-expanded", String(show)).removeClass("open");
   };
 
   stickySideBar();
@@ -58,10 +59,19 @@ $(document).ready(function(){
     stickySideBar();
   });
 
-  // Follow menu drop down
+  // Keep the contact menu's visible and accessible states in sync.
   $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
+    var expanded = $(this).attr("aria-expanded") !== "true";
+    $(".author__urls").toggle(expanded);
+    $(this).attr("aria-expanded", String(expanded)).toggleClass("open", expanded);
+  });
+  $(".author__urls-wrapper").on("keydown", function(e) {
+    var button = $(".author__urls-wrapper button");
+    if (e.key === "Escape" && button.is(":visible") && button.attr("aria-expanded") === "true") {
+      $(".author__urls").hide();
+      button.attr("aria-expanded", "false").removeClass("open").trigger("focus");
+      e.preventDefault();
+    }
   });
 
   // init smooth scroll, this needs to be slightly more than then fixed masthead height

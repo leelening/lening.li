@@ -7,10 +7,7 @@ excerpt: "Publications by Lening Li — conference and journal papers on tempora
 
 {% include scholar-metrics.html %}
 
-## Draft
-{: .pub-section .pub-preprint}
-
-{% bibliography -q @preprint %}
+Jump to: [Conferences](#conference) · [Journals](#journal) · [Preprints](#draft) · [Book chapters](#book) · [Theses](#thesis)
 
 ## Conference
 {: .pub-section .pub-conf}
@@ -22,12 +19,17 @@ excerpt: "Publications by Lening Li — conference and journal papers on tempora
 
 {% bibliography -q @article %}
 
-## Book
-{: .pub-section .pub-book}
+## Preprints
+{: #draft .pub-section .pub-preprint}
+
+{% bibliography -q @preprint %}
+
+## Book chapters
+{: #book .pub-section .pub-book}
 
 {% bibliography -q @inbook %}
 
-## Thesis
-{: .pub-section .pub-thesis}
+## Theses
+{: #thesis .pub-section .pub-thesis}
 
 {% bibliography -q @phdthesis %}

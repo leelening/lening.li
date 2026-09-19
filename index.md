@@ -9,6 +9,12 @@ author_profile: true
 I am a **Robotic Lab Advisor** at **Harvard University**, where I work with Prof. [Na Li](https://nali.seas.harvard.edu/)'s group on cutting-edge research in robotics, large language models, and coding agents. I am also pursuing an **MBA** at **Carnegie Mellon University** (Tepper).
 {: .lede}
 
+<p>
+  <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">Explore research</a>
+  <a class="btn" href="{{ '/cv/' | relative_url }}">CV &amp; Resume</a>
+  <a class="btn" href="mailto:{{ site.author.email }}">Contact</a>
+</p>
+
 I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in 2022, advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research lies at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: giving robots high-level task specifications and returning policies with provable guarantees. Before my Ph.D., I completed M.S. degrees in Robotics Engineering and Computer Science at WPI (advised by Prof. [Michael A. Gennert](https://web.cs.wpi.edu/~michaelg/)), and a B.E. in Information Security alongside a B.A. in English Language and Literature at **Harbin Institute of Technology**.
 
 Recent Updates
@@ -27,6 +33,11 @@ Recent Updates
   <span class="updates__date">May 2025</span>
   <span><span aria-hidden="true">🏆</span> Team 10102Z (<a href="https://www.vincisteam.com">Vinci STEAM</a>), which I coach, won the Middle School World Championship at <a href="https://www.vincisteam.com/post/global-stage-vinci-pride-vinci-steam-dominates-vex-worlds">VEX Worlds 2025</a> in Dallas.</span>
 
+</div>
+
+<details class="updates-earlier">
+  <summary>Earlier updates</summary>
+  <div class="updates">
   <span class="updates__date">Apr 2023</span>
   <span><span aria-hidden="true">🎉</span> Our paper <a href="https://arxiv.org/abs/2304.11641">Probabilistic Planning with Prioritized Preferences over Temporal Logic Objectives</a> was accepted to IJCAI 2023 (acceptance rate ~15%).</span>
 
@@ -41,11 +52,6 @@ Recent Updates
 
   <span class="updates__date">Feb 2022</span>
   <span><span aria-hidden="true">🎉</span> Journal paper <a href="https://ieeexplore.ieee.org/abstract/document/9716225">Dynamic hypergames for synthesis of deceptive strategies with temporal logic objectives</a> published in <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856">IEEE Transactions on Automation Science and Engineering</a>.</span>
-</div>
-
-<details class="updates-earlier">
-  <summary>Earlier</summary>
-  <div class="updates">
   <span class="updates__date">Oct 2021</span>
   <span><span aria-hidden="true">💼</span> Joined the pick team at <a href="https://www.berkshiregrey.com/">Berkshire Grey</a>.</span>
 
