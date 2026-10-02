@@ -65,4 +65,3 @@ I developed a map-management system with efficient insert, delete, and update op
 - **Research:** Formal Methods, Game Theory, Agentic AI for Robotics.
 - **Implementation:** Python, C, MATLAB, ROS / ROS 2, Linux.
 - **Learning and perception:** PyTorch, TensorFlow, OpenCV.
-- **Engineering tools:** Git, Docker, gRPC.
