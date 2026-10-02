@@ -15,7 +15,7 @@ twitter_username         : LeeLening
 author:
   avatar           : "profile.jpg"
   name             : "Dr. Lening Li"
-  bio              : "<span class=\"chip\">Robotics</span> <span class=\"chip\">C++</span> <span class=\"chip\">Motion Planning</span> <span class=\"chip\">Reinforcement Learning</span> <span class=\"chip\">Optimal Control</span>"
+  bio              : "<span class=\"chip\">Robotics</span> <span class=\"chip\">Motion Planning</span> <span class=\"chip\">Reinforcement Learning</span>"
   location         : "Science and Engineering Complex, Allston, MA"
   employer         : "Yale University · Harvard University · CMU Tepper"
   email            : "leningli@outlook.com"
