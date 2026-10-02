@@ -5,6 +5,9 @@ title: Experience
 excerpt: "Research, industry, and advisory experience of Lening Li: Yale University, Harvard University, Symbotic, Berkshire Grey, Rudolph Technologies, Neusoft."
 ---
 
+I build **robotics software for real-world deployment**, combining motion planning, control, state estimation, and teleoperation with research in reinforcement learning and formal methods. At **Symbotic**, I developed planning and control software for warehouse robots and served as technical lead for teleoperation, coordinating with R&D and operations to deliver it to production. At **Berkshire Grey**, I led the unknown-SKU effort, enabling robots to grasp previously unseen products.
+{: .lede}
+
 ## Yale University
 <div class="indent" markdown="1">
 **Research Affiliate**<br>

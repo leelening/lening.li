@@ -6,9 +6,6 @@ excerpt: "Robotics engineer and researcher — reinforcement learning, optimal c
 author_profile: true
 ---
 
-I build **robotics software for real-world deployment**, combining motion planning, control, state estimation, and teleoperation with research in reinforcement learning and formal methods. At **Symbotic**, I developed planning and control software for warehouse robots and served as technical lead for teleoperation, coordinating with R&D and operations to deliver it to production. At **Berkshire Grey**, I led the unknown-SKU effort, enabling robots to grasp previously unseen products.
-{: .lede}
-
 I am a **Research Affiliate** at **Yale University** and a **Robotic Lab Advisor** at **Harvard University**. My Yale research focuses on **agentic AI for robotics** in collaboration with Prof. [Na Li](https://nali.seas.harvard.edu/). At Harvard, I advise her group on robotics, large language models, and coding agents. I am also pursuing an **MBA** at **Carnegie Mellon University’s Tepper School of Business**, with expected graduation in **May 2028**.
 {: .lede}
 
