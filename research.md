@@ -28,16 +28,16 @@ feature_row:
   - image_path: teasers/drc.jpg
     alt: "WPI-CMU team with the Atlas humanoid at the DARPA Robotics Challenge"
     title: "DARPA Robotics Challenge"
-    excerpt: "Motion planning and control for humanoid robots competing in the DARPA Robotics Challenge, focused on bipedal locomotion in disaster-response environments."
+    excerpt: "Arm-manipulation motion planning and human-robot interaction for Team WPI-CMU’s Atlas humanoid in the DARPA Robotics Challenge."
     url: /research/drc/
     btn_label: "Read more"
     btn_class: "btn--primary"
 excerpt: "Research by Lening Li: reinforcement learning and optimal control under temporal-logic specifications, hypergames for cyber-physical security, anytime motion planning, and the DARPA Robotics Challenge."
 ---
 
-My work sits at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: turning high-level task specifications into robot policies that come with provable guarantees, and deploying those ideas on real systems — from humanoids to fleets of thousands of warehouse robots.
+My research combines **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods** to synthesize robot policies under high-level task specifications, with formal guarantees under stated model assumptions. My industry work focuses on production motion planning, control, state estimation, and teleoperation for warehouse robots. These are complementary parts of my experience; the production systems are not claimed to implement the formally guaranteed research methods.
 
-{% include figure image_path="/assets/diagrams/research-overview.svg" alt="Research overview: four foundations feeding provably-correct planning and control, applied to robot fleets, humanoids, and cyber-physical security" caption="Research at a glance." %}
+{% include figure image_path="/assets/diagrams/research-overview.svg" alt="Research overview: reinforcement learning, optimal control, game theory, and formal methods supporting policy synthesis under temporal-logic specifications" caption="Research at a glance." %}
 
 ## Projects
 

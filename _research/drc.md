@@ -2,7 +2,7 @@
 layout: single
 permalink: /research/drc/
 title: DARPA Robotics Challenge
-description: Motion planning and control for humanoid robots competing in the DARPA Robotics Challenge, focused on bipedal locomotion in disaster-response environments.
+description: Arm-manipulation motion planning and human-robot interaction for Team WPI-CMU’s Atlas humanoid in the DARPA Robotics Challenge.
 header:
   teaser: teasers/drc.jpg
 gallery:
@@ -48,7 +48,9 @@ gallery:
 
 The DARPA Robotics Challenge (DRC) sought human-supervised ground robots able to execute complex tasks in dangerous, degraded environments — disaster scenarios too hazardous for a timely human response. Trials were held in December 2013 and the Finals in June 2015; see the DRC program [archive](https://archive.darpa.mil/roboticschallenge).
 
-As a member of Team WPI-CMU I designed a **motion planner for arm manipulation** — door opening, valve turning, tool grasping — and a **human-robot interaction interface** that improved operator situational awareness. The team finished 7th of 24.
+From **September 2014 to June 2015**, as a member of Team WPI-CMU, I designed a **motion planner for arm manipulation** — door opening, valve turning, tool grasping — and a **human-robot interaction interface** that improved operator situational awareness. The team finished 7th of 24.
+
+Read [WPI’s account of Team WPI-CMU at the 2015 Finals](https://www.wpi.edu/news/darpa-third), where WARNER completed seven of eight disaster-response tasks on each day of the competition.
 
 {% include video id="BgfsxH3poCU" provider="youtube" %}
 

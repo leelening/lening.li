@@ -38,6 +38,8 @@ excerpt: "Academic service, leadership and honors of Lening Li: journal and conf
 
 ## Leadership
 
+**Committee Member, Wayland Youth Advisory Committee** — *Sep 2024 – Present*
+
 **President, WPI Graduate Student Government** — *Jan 2019 – May 2020*
 
 - Led the organization's governance and served as the primary liaison between the graduate student body and the university administration.

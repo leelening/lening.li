@@ -1,19 +1,19 @@
 main:
   - title: "About"
     url: /
+  - title: "Experience"
+    url: /experience/
+  - title: "CV"
+    url: /cv/
   - title: "Research"
     url: /research/
   - title: "Publications"
     url: /publications/
   - title: "Teaching"
     url: /teaching/
-  - title: "Experience"
-    url: /experience/
   - title: "Service"
     url: /service/
   - title: "Travel"
     url: /travel/
   - title: "Misc"
     url: /misc/
-  - title: "CV"
-    url: /cv/

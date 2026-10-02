@@ -116,8 +116,9 @@
     "url": {{ seo_url | jsonify }},
     {% if site.og_image %}"image": {{ site.og_image | prepend: "/images/" | prepend: seo_url | jsonify }},{% endif %}
     "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
-    "jobTitle": "Robotic Lab Advisor",
+    "jobTitle": ["Research Affiliate", "Robotic Lab Advisor"],
     "affiliation": [
+      { "@type": "CollegeOrUniversity", "name": "Yale University" },
       { "@type": "CollegeOrUniversity", "name": "Harvard University" },
       { "@type": "CollegeOrUniversity", "name": "Carnegie Mellon University" }
     ],

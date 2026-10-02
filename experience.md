@@ -2,23 +2,36 @@
 layout: single
 permalink: /experience/
 title: Experience
-excerpt: "Industry and advisory experience of Lening Li: Harvard University, Symbotic, Berkshire Grey, Rudolph Technologies, Neusoft."
+excerpt: "Research, industry, and advisory experience of Lening Li: Yale University, Harvard University, Symbotic, Berkshire Grey, Rudolph Technologies, Neusoft."
 ---
+
+## Yale University
+<div class="indent" markdown="1">
+**Research Affiliate**<br>
+*New Haven, CT, USA | Sep 2026 – Present*
+
+Research on agentic AI for robotics in collaboration with Prof. [Na Li](https://nali.seas.harvard.edu/).
+</div>
 
 ## Harvard University
 <div class="indent" markdown="1">
 **Robotic Lab Advisor**  
 *Allston, MA, USA | Dec 2025 – Present*
 
-I work with Prof. Na Li's group on cutting-edge research at the meeting point of robotics, large language models, and coding agents, and advise student researchers on algorithm design, system evaluation, and reproducible methodology — with an emphasis on carrying ideas from theory through to deployment. Structured reviews, careful project scoping, and pointed technical feedback are the tools I use to help the group move faster.
+I advise Prof. Na Li's group on robotics, large language models, and coding agents. I review algorithm designs, scope projects, and mentor students on evaluating learning-based planning and control through reproducible experiments.
 </div>
 
 ## Symbotic
 <div class="indent" markdown="1">
-**Senior Software Engineer**  
-*Wilmington, MA, USA | Oct 2022 – Sep 2026*
+**Senior Software Engineer (Symbot Control)**<br>
+*Wilmington, MA, USA | Aug 2024 – Sep 2026*
 
-I worked on everything on the robots: the multi-agent path-planning and coordination algorithms (C++) that run warehouse fleets numbering in the thousands, the control design, state estimation, and fault-tolerant behavior architectures that keep those fleets robust in production, and the real-time decision-making pipelines that have to meet strict latency budgets while the whole fleet acts concurrently.
+I served as technical lead for teleoperation, coordinating with R&D and operations to deliver the system to production. I also designed and deployed control, navigation, and behavior-planning algorithms for autonomous mobile robots in automated warehouses. I owned the architecture and reliability of real-time embedded C++ control software and motor control, and partnered with deployment and field teams to bring releases to customer facilities.
+
+**Senior Software Engineer (Minibot Routing)**<br>
+*Wilmington, MA, USA | Oct 2022 – Aug 2024*
+
+I built multi-agent path-planning and coordination algorithms in C++ for concurrent robot fleets operating under strict real-time latency requirements. I improved robot robustness through control design and state estimation, and tuned system performance against fleet-level KPIs in production warehouses.
 </div>
 
 ## Berkshire Grey
@@ -26,12 +39,12 @@ I worked on everything on the robots: the multi-agent path-planning and coordina
 **Senior Software Engineer**  
 *Bedford, MA, USA | Oct 2021 – Aug 2022*
 
-On the pick team I led development of perception and manipulation algorithms (ROS, C++, Python) that let robots grasp previously unseen SKUs reliably, and cut end-to-end system latency by reworking the inter-process communication and execution pipelines.
+On the pick team I led development of perception and manipulation algorithms (ROS, C++, Python) that let robots grasp previously unseen SKUs reliably. I reduced communication and end-to-end system latency by reworking the inter-process communication and execution pipelines.
 </div>
 
 ## Rudolph Technologies
 <div class="indent" markdown="1">
-**Software Engineering Intern**  
+**Software Engineer Intern**<br>
 *Tewksbury, MA, USA | Jun 2015 – Jan 2016*
 
 I built an automated migration tool that consolidated several legacy codebases onto one platform, and improved the accuracy of wafer-defect data through algorithmic changes to the collection and analysis pipelines.
@@ -39,8 +52,17 @@ I built an automated migration tool that consolidated several legacy codebases o
 
 ## Neusoft
 <div class="indent" markdown="1">
-**Software Engineering Intern**  
+**Software Engineer Intern**<br>
 *China | Jul 2013 – Aug 2013*
 
 I developed a map-management system with efficient insert, delete, and update operations over geographic datasets.
 </div>
+
+## Technical Skills
+
+- **Core:** Robotics, C++, Motion Planning, Reinforcement Learning, Optimal Control.
+- **Planning and control:** State Estimation, Control Design, Teleoperation, Multi-Robot Systems.
+- **Research:** Formal Methods, Game Theory, Agentic AI for Robotics.
+- **Implementation:** Python, C, MATLAB, ROS / ROS 2, Linux.
+- **Learning and perception:** PyTorch, TensorFlow, OpenCV.
+- **Engineering tools:** Git, Docker, gRPC.
