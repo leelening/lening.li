@@ -11,8 +11,6 @@ I am a **Research Affiliate** at **Yale University** and a **Robotic Lab Advisor
 
 I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in 2022, advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research lies at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: giving robots high-level task specifications and returning policies with provable guarantees. Before my Ph.D., I completed M.S. degrees in Robotics Engineering and Computer Science at WPI (advised by Prof. [Michael A. Gennert](https://web.cs.wpi.edu/~michaelg/)), and a B.E. in Information Security alongside a B.A. in English Language and Literature at **Harbin Institute of Technology**.
 
-[Industry experience](/experience/) · [Research projects](/research/) · [One-page résumé (PDF)](/files/cv/Resume.pdf) · [Full CV](/cv/)
-
 Recent Updates
 ----
 
