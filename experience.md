@@ -39,7 +39,7 @@ I built multi-agent path-planning and coordination algorithms in C++ for concurr
 **Senior Software Engineer**  
 *Bedford, MA, USA | Oct 2021 – Aug 2022*
 
-On the pick team I led development of perception and manipulation algorithms (ROS, C++, Python) that let robots grasp previously unseen SKUs reliably. I reduced communication and end-to-end system latency by reworking the inter-process communication and execution pipelines.
+On the pick team, I led the unknown-SKU effort, enabling robots to grasp previously unseen products (ROS, C++, Python). I reduced communication and end-to-end system latency by reworking the inter-process communication and execution pipelines.
 </div>
 
 ## Rudolph Technologies
