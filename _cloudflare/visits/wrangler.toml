@@ -1,7 +1,0 @@
-name = "visits"
-main = "worker.js"
-compatibility_date = "2026-08-01"
-
-[[kv_namespaces]]
-binding = "VISITS"
-id = "PASTE_NAMESPACE_ID_HERE"
