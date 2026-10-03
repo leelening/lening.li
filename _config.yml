@@ -24,22 +24,13 @@ author:
   github           : "leelening"
   linkedin         : "lening-li"
 
-# Visitor map in the sidebar. provider: "clustrmaps" (the old site's counter, so its history
-# carries over; plain image, no script) or "mapmyvisitors" (script widget). Empty id hides it.
-visitor_map:
-  provider : "mapmyvisitors"
-  style    : "map"       # "map" (flat widget, auto width) | "image" (static map.png, no script) | "globe" (3-D)
-  id       : "93Ge7jHpH5hunv9BfCt5UmZBOQCk1M7nkV-VtjGT-y4"
-  site     : "1c81u"     # public stats page: https://mapmyvisitors.com/web/1c81u
-  # Colors from the MapMyVisitors customizer (hex, no #)
-  land     : "080808"    # cl  continents
-  ocean    : "f6f8f7"    # co  ocean / widget background — same as the page background ($paper)
-  dot      : "3acc3a"    # cmo visitor dots
-  dot_new  : "ff5353"    # cmn recent visitors
-  text     : "808080"    # ct  counter text
-  width    : "a"         # w   "a" = auto-fit the sidebar (a fixed 300 overflowed it and caused a horizontal scrollbar)
-  # Previous counter (ClustrMaps, used on the old site): provider "clustrmaps",
-  # id "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ", site "1bh5y"
+# Visitor globe in the sidebar (_includes/visitor-globe.html). The globe itself is self-hosted;
+# visit counts come from a tiny Cloudflare Worker (free tier) — code and 5-minute setup in
+# _cloudflare/visits/README.md. Paste the deployed worker URL here; empty = globe without marks.
+visitor_stats_url        : ""
+# Previous counters: MapMyVisitors id "93Ge7jHpH5hunv9BfCt5UmZBOQCk1M7nkV-VtjGT-y4" (stats at
+# https://mapmyvisitors.com/web/1c81u); before that ClustrMaps id
+# "YKxOfcR9Q7KzszxH8liwU3S7J6NKaq45NNYZmS8IbzQ" (https://clustrmaps.com/site/1bh5y).
 
 # Site settings
 og_image                 : "profile.jpg"   # default social-preview image (in /images/)

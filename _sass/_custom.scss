@@ -97,12 +97,33 @@ details > summary { cursor: pointer; }
 @media screen and (max-width: 1023px) { .visitor-map { display: none; } }
 .cv-note { font-family: $sans-serif; font-size: .72em; color: $ink-3; margin-top: .75em; }
 
-/* Visitor map at the foot of the rail */
+/* Visitor globe at the foot of the rail (_includes/visitor-globe.html, assets/js/visitor-globe.js) */
 .visitor-map { order: 99; margin-top: 1.25em; padding-top: 1em; border-top: 1px solid $rule-2; }
 .visitor-map__label { display: block; font-family: $sans-serif; font-size: .66em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: $ink-3; margin-bottom: .5em; }
-.visitor-map img, .visitor-map a { display: block; max-width: 100%; border: 0 !important; padding: 0 !important; background: transparent !important; }
 .visitor-map { max-width: 100%; overflow: hidden; flex-shrink: 0; } /* flex-shrink: 0 — the rail is a flex column; without it a short window squashes this block instead of letting the rail scroll to it */
-.visitor-map > div, .visitor-map canvas, .visitor-map iframe, .visitor-map svg { max-width: 100% !important; }
+.visitor-globe { position: relative; }
+.visitor-globe canvas { display: block; margin: 0 auto; max-width: 100%; cursor: grab; touch-action: pan-y; }
+.visitor-globe canvas.is-dragging { cursor: grabbing; }
+/* "N visits · M places" — the two tallies are tabs onto the ranked list below */
+.visitor-globe__caption { margin-top: .6em; text-align: center; font-family: $sans-serif; font-size: .66em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: $ink-3; }
+.visitor-globe__stat { -webkit-appearance: none; appearance: none; background: none; border: 0; padding: 0; font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit; cursor: pointer; border-bottom: 1px dotted rgba($ink-3, .5); }
+.visitor-globe__stat:hover, .visitor-globe__stat:focus-visible { color: $accent; border-bottom-color: rgba($accent, .6); }
+.visitor-globe__stat.is-open { color: $accent; border-bottom: 1px solid $accent; }
+.visitor-globe__sep { margin: 0 .5em; opacity: .6; }
+.visitor-globe__panel { margin-top: .7em; border: 1px solid $rule-2; background: $panel; padding: .5em .6em .6em; }
+.visitor-globe__panel-head { font-family: $sans-serif; font-size: .6em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: $ink-3; padding-bottom: .4em; border-bottom: 1px solid $rule-2; }
+.visitor-globe__list { list-style: none; margin: 0; padding: 0; }
+.visitor-globe__list li { margin: 0; padding: 0; border-bottom: 1px solid $rule-2; }
+.visitor-globe__list li:last-child { border-bottom: 0; }
+.visitor-globe__row { -webkit-appearance: none; appearance: none; background: none; border: 0; width: 100%; display: flex; align-items: baseline; gap: .45em; padding: .32em .1em; font-family: $serif; font-size: .76em; line-height: 1.35; color: $ink; text-align: left; cursor: pointer; }
+.visitor-globe__row:hover, .visitor-globe__row:focus-visible { color: $accent; background: rgba($accent, .05); }
+.visitor-globe__row.is-focused, .visitor-globe__row.is-focused .visitor-globe__count { color: $accent; }
+.visitor-globe__rank { flex: 0 0 auto; min-width: 1.1em; font-size: .82em; font-variant-numeric: tabular-nums; color: $ink-3; opacity: .7; }
+.visitor-globe__place { flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.visitor-globe__count { flex: 0 0 auto; font-variant-numeric: tabular-nums; color: $ink-3; }
+.visitor-globe__more { -webkit-appearance: none; appearance: none; background: none; border: 0; display: block; width: 100%; margin-top: .45em; padding: .2em 0; font-family: $sans-serif; font-size: .6em; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: $ink-3; cursor: pointer; }
+.visitor-globe__more:hover, .visitor-globe__more:focus-visible { color: $accent; }
+.visitor-globe__tooltip { position: absolute; transform: translate(-50%, -100%); background: $panel; border: 1px solid $rule; color: $ink; font-family: $sans-serif; font-size: .72em; line-height: 1.9; padding: 0 .6em; white-space: nowrap; pointer-events: none; box-shadow: 0 2px 8px rgba($ink, .12); }
 
 /* Earlier updates, folded */
 .updates-earlier { margin: -.5em 0 2em; }
