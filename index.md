@@ -15,7 +15,7 @@ Recent Updates
 ----
 
 <div class="updates">
-  <span class="updates__date">Sep 2026</span>
+  <span class="updates__date">Oct 2026</span>
   <span><span aria-hidden="true">💼</span> Joined <a href="https://www.yale.edu/">Yale University</a> as a Research Affiliate.</span>
 
   <span class="updates__date">Sep 2026</span>
