@@ -33,7 +33,6 @@ excerpt: "Academic service, leadership and honors of Lening Li: journal and conf
 - IEEE
 - IEEE Young Professionals
 - IEEE Robotics and Automation Society
-- Association for Women in Mathematics
 - Alpha Chapter of Rho Beta Epsilon (robotics honor society), WPI
 
 ## Leadership
