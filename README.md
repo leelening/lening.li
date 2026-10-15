@@ -40,6 +40,8 @@ git submodule update --remote files/cv && git commit -am "Bump CV submodule"
 
 ## Editing checklist
 
+- **Analytics** — `google_analytics_id` in `_config.yml` configures the Google tag in the shared page head. It loads only when `JEKYLL_ENV=production`, including GitHub Pages deployments, so local previews do not record visits. The `lening.li` GA4 property is `559129749`, with web stream `16137377445`.
+
 - **News** — the "Recent Updates" grid in `index.md`.
 - **Publications** — add BibTeX to `_bibliography/references.bib` (types used: `@preprint`, `@inproceedings`, `@article`, `@inbook`, `@phdthesis`; add a `pdf = {…}` field for the PDF button).
 - **Fonts** — Source Serif 4 and Inter are self-hosted in `assets/fonts/text/` (Fontsource builds, declared in `_sass/_webfonts.scss`). Font Awesome (`assets/webfonts/`) and Academicons (`assets/fonts/`) are **subset** to the icons the templates reference (see `_includes/author-profile.html`); to use a new icon, re-run `pyftsubset` on the full font with the extra codepoint added.

@@ -11,6 +11,9 @@ repository               : "leelening/lening.li"
 github_username          : leelening
 twitter_username         : LeeLening
 
+# Google Analytics 4; loaded only in production builds.
+google_analytics_id      : "G-JVSEB38R7P"
+
 # Sidebar author profile
 author:
   avatar           : "profile.jpg"
