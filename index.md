@@ -16,6 +16,9 @@ Recent Updates
 
 <div class="updates">
   <span class="updates__date">Oct 2026</span>
+  <span><span aria-hidden="true">🤖</span> Introducing <a href="{{ '/research/kinex/' | relative_url }}">Kinex</a>: a robotics harness that connects coding agents to real robots and simulators. <a href="https://github.com/stacx-lab/kinex">v1.0.0 is now available</a>.</span>
+
+  <span class="updates__date">Oct 2026</span>
   <span><span aria-hidden="true">💼</span> Joined <a href="https://www.yale.edu/">Yale University</a> as a Research Affiliate.</span>
 
   <span class="updates__date">Sep 2026</span>
