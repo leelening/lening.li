@@ -241,6 +241,12 @@ body { padding-bottom: 2em; }
 .feature__item .archive__item-teaser img { border: 0 !important; padding: 0 !important; background: transparent !important; border-radius: 2px; }
 .feature__item .archive__item-title { color: $ink; }
 
+/* Center the Kinex wordmark beside its project description. */
+@include breakpoint($small) {
+  .feature__item--kinex .archive__item { display: flex; align-items: center; }
+  .feature__item--kinex .archive__item-teaser { margin-bottom: 0; }
+}
+
 /* Buttons: primary is filled */
 .btn--primary, .page__content .btn--primary { background: $accent !important; color: #fff !important; border-color: $accent !important; }
 .btn--primary:hover, .page__content .btn--primary:hover { background: darken($accent,8%) !important; border-color: darken($accent,8%) !important; }
