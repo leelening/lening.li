@@ -5,6 +5,7 @@ title: Research
 author_profile: true
 feature_row:
   - image_path: teasers/kinex.svg
+    class: feature__item--kinex
     alt: "Kinex logo"
     title: "Kinex: One Agent for Any Robot"
     excerpt: "A robotics harness that connects coding agents to real hardware and simulators through skills, tools, and devices, including ROS 2 integration."
