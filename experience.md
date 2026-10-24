@@ -13,7 +13,7 @@ I build **robotics software for real-world deployment**, combining motion planni
 **Research Affiliate**<br>
 *New Haven, CT, USA | Oct 2026 – Present*
 
-Research on agentic AI for robotics in collaboration with Prof. [Na Li](https://nali.seas.harvard.edu/).
+Research on agentic AI for robotics in collaboration with Prof. Na Li.
 </div>
 
 ## Harvard University
