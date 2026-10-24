@@ -21,9 +21,6 @@ Recent Updates
   <span class="updates__date">Oct 2026</span>
   <span><span aria-hidden="true">💼</span> Joined <a href="https://www.yale.edu/">Yale University</a> as a Research Affiliate.</span>
 
-  <span class="updates__date">Sep 2026</span>
-  <span><span aria-hidden="true">🎉</span> Our paper <a href="https://arxiv.org/abs/2304.10041">Topology-Guided Modular Actor-Critic Learning for Continuous Systems under Temporal Objectives</a> was accepted to the <a href="https://www.icicc.org/">4th International Conference on Intelligent Control and Computing (IC&amp;C 2026)</a>, Harbin, China.</span>
-
   <span class="updates__date">Dec 2025</span>
   <span><span aria-hidden="true">💼</span> Joined <a href="https://www.harvard.edu/">Harvard University</a> as a Robotic Lab Advisor in Prof. <a href="https://nali.seas.harvard.edu/">Na Li</a>'s group.</span>
 
