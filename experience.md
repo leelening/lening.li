@@ -2,11 +2,19 @@
 layout: single
 permalink: /experience/
 title: Experience
-excerpt: "Research, industry, and advisory experience of Lening Li: Yale University, Harvard University, Symbotic, Berkshire Grey, Rudolph Technologies, Neusoft."
+excerpt: "Entrepreneurship, research, and industry experience of Lening Li: co-founder of a startup in stealth, Yale University, Harvard University, Symbotic, and Berkshire Grey."
 ---
 
-I build **robotics software for real-world deployment**, combining motion planning, control, state estimation, and teleoperation with research in reinforcement learning and formal methods. At **Symbotic**, I developed planning and control software for warehouse robots and served as technical lead for teleoperation, coordinating with R&D and operations to deliver it to production. At **Berkshire Grey**, I led the unknown-SKU effort, enabling robots to grasp previously unseen products.
+I am a **co-founder of a startup in stealth**, building **physical AI** that connects AI agents with robots, scientific instruments, and other connected devices. My background spans robotics research and production systems, including planning, control, and teleoperation at **Symbotic** and robotic grasping at **Berkshire Grey**.
 {: .lede}
+
+## Startup in Stealth
+<div class="indent" markdown="1">
+**Co-Founder**<br>
+*Oct 2026 – Present*
+
+Building physical AI that connects AI agents with robots, scientific instruments, and other connected devices.
+</div>
 
 ## Yale University
 <div class="indent" markdown="1">
