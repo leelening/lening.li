@@ -2,11 +2,11 @@
 layout: single
 permalink: /
 title: "Lening Li (郦乐宁)"
-excerpt: "Robotics engineer and researcher — reinforcement learning, optimal control, game theory, and formal methods."
+excerpt: "Co-founder building physical AI in stealth, Ph.D. in Robotics Engineering, and MBA candidate at Carnegie Mellon Tepper."
 author_profile: true
 ---
 
-I am a **Research Affiliate** at **Yale University** and a **Robotic Lab Advisor** at **Harvard University**. My Yale research focuses on **agentic AI for robotics** in collaboration with Prof. [Na Li](https://nali.seas.harvard.edu/). At Harvard, I advise her group on robotics, large language models, and coding agents. I am also pursuing an **MBA** at **Carnegie Mellon University’s Tepper School of Business**, with expected graduation in **May 2028**.
+I am a **co-founder of a startup in stealth**, building **physical AI** that connects AI agents with robots, scientific instruments, and other connected devices. I am also a **Research Affiliate at Yale University**, a **Robotic Lab Advisor at Harvard University**, and an **MBA candidate at Carnegie Mellon University’s Tepper School of Business** (expected **May 2028**).
 {: .lede}
 
 I earned my **Ph.D. in Robotics Engineering** from **Worcester Polytechnic Institute (WPI)** in 2022, advised by Prof. [Jie Fu](https://fujie.ece.ufl.edu/). My research lies at the intersection of **reinforcement learning**, **stochastic optimal control**, **game theory**, and **formal methods**: giving robots high-level task specifications and returning policies with provable guarantees. Before my Ph.D., I completed M.S. degrees in Robotics Engineering and Computer Science at WPI (advised by Prof. [Michael A. Gennert](https://web.cs.wpi.edu/~michaelg/)), and a B.E. in Information Security alongside a B.A. in English Language and Literature at **Harbin Institute of Technology**.
@@ -15,6 +15,9 @@ Recent Updates
 ----
 
 <div class="updates">
+  <span class="updates__date">Oct 2026</span>
+  <span><span aria-hidden="true">💼</span> Started a new chapter as co-founder of a startup in stealth, building technology to connect AI agents with the physical world.</span>
+
   <span class="updates__date">Oct 2026</span>
   <span><span aria-hidden="true">🤖</span> Introducing <a href="{{ '/research/kinex/' | relative_url }}">Kinex</a>: a robotics harness that connects coding agents to real robots and simulators. <a href="https://github.com/stacx-lab/kinex">v1.0.0 is now available</a>.</span>
 
